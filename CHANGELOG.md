@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/gusadolfo123/siigo_api_test/compare/v1.0.1...v1.1.0) (2021-11-08)
+
+
+### Features
+
+* **index:** new feature ([554fead](https://github.com/gusadolfo123/siigo_api_test/commit/554fead6ee5be0d7a997d691fa9bcbdd526672b9))
+
 ## [1.0.1](https://github.com/gusadolfo123/siigo_api_test/compare/v1.0.0...v1.0.1) (2021-11-08)
 
 
