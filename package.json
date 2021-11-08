@@ -50,5 +50,13 @@
     "test": "test"
   },
   "keywords": [],
-  "author": "gusadolfo123"
+  "author": "gusadolfo123",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusadolfo123/siigo_api_test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gusadolfo123/siigo_api_test/issues"
+  },
+  "homepage": "https://github.com/gusadolfo123/siigo_api_test#readme"
 }
