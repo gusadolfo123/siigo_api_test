@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/gusadolfo123/siigo_api_test/compare/v4.1.0...v4.2.0) (2021-11-09)
+
+
+### Features
+
+* **package:** change package ([abb5d84](https://github.com/gusadolfo123/siigo_api_test/commit/abb5d84ee7f6318395efc7509636ac5da708bdef))
+
 # [4.1.0](https://github.com/gusadolfo123/siigo_api_test/compare/v4.0.0...v4.1.0) (2021-11-09)
 
 
