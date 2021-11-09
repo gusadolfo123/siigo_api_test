@@ -163,8 +163,8 @@ export function prueba2(){
   return "prueba2";
 }
 
-export function prueba4(){
-  return "prueba4";
+export function prueba6(){
+  return "prueba6";
 }
 
 /**
