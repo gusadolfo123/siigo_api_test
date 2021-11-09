@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/gusadolfo123/siigo_api_test/compare/v3.0.0...v3.1.0) (2021-11-09)
+
+
+### Features
+
+* **index:** prueba ([a1499f9](https://github.com/gusadolfo123/siigo_api_test/commit/a1499f9157f7fcdcf3daed2d8ba7108a02735489))
+
 # [3.0.0](https://github.com/gusadolfo123/siigo_api_test/compare/v2.1.0...v3.0.0) (2021-11-08)
 
 
