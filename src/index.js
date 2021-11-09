@@ -160,6 +160,9 @@ export function initialize({ basePath, urlSignIn, userName, accessKey }) {
 }
 
 
+function prueba2 (){
+	return "asd";
+}
 
 /**
 * Siigo_Api_v1.<br>
