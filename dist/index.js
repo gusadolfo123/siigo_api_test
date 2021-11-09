@@ -804,6 +804,8 @@ Object.defineProperty(exports, "WarehousesApi", {
   }
 });
 exports.initialize = initialize;
+exports.prueba2 = prueba2;
+exports.prueba3 = prueba3;
 
 var _ApiClient = _interopRequireDefault(require("./ApiClient"));
 
@@ -1104,6 +1106,14 @@ function initialize(_ref) {
     userName: userName,
     accessKey: accessKey
   });
+}
+
+function prueba2() {
+  return "prueba2";
+}
+
+function prueba3() {
+  return "prueba3";
 }
 /**
 * Siigo_Api_v1.<br>
