@@ -159,6 +159,10 @@ export function initialize({ basePath, urlSignIn, userName, accessKey }) {
   ApiClient.initialize({ basePath, urlSignIn, userName, accessKey });
 }
 
+function prueba2 (){
+	return "asd";
+}
+
 /**
 * Siigo_Api_v1.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
