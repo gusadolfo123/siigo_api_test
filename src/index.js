@@ -159,8 +159,8 @@ export function initialize({ basePath, urlSignIn, userName, accessKey }) {
   ApiClient.initialize({ basePath, urlSignIn, userName, accessKey });
 }
 
-export function prueba2(){
-  return "prueba2";
+export function prueba22(){
+  return "prueba22";
 }
 
 export function prueba12(){
