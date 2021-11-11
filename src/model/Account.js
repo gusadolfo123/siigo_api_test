@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Account model module.
  * @module model/Account
- * @version 0.1.0
+ * @version 0.0.0
  */
 class Account {
     /**
@@ -61,11 +61,13 @@ class Account {
 }
 
 /**
+ * Represents Accounting account code.
  * @member {String} code
  */
 Account.prototype['code'] = undefined;
 
 /**
+ * Represents the type of movement, this movement will be 'Debit' or 'Credit'.
  * @member {String} movement
  */
 Account.prototype['movement'] = undefined;

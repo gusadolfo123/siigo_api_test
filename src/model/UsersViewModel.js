@@ -18,12 +18,12 @@ import UsersModel from './UsersModel';
 /**
  * The UsersViewModel model module.
  * @module model/UsersViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class UsersViewModel {
     /**
      * Constructs a new <code>UsersViewModel</code>.
-     * Class that contain the jsons that the client will see after request  a user list with pagination that came from msusers
+     * Class that contain the jsons that the client will see after request  a user list with pagination that came from msusers.
      * @alias module:model/UsersViewModel
      */
     constructor() { 
@@ -69,6 +69,7 @@ class UsersViewModel {
 UsersViewModel.prototype['pagination'] = undefined;
 
 /**
+ * Contains the Results, this results will be a list of users.
  * @member {Array.<module:model/UsersModel>} results
  */
 UsersViewModel.prototype['results'] = undefined;

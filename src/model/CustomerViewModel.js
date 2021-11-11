@@ -24,7 +24,7 @@ import RelatedUsersModel from './RelatedUsersModel';
 /**
  * The CustomerViewModel model module.
  * @module model/CustomerViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class CustomerViewModel {
     /**
@@ -120,19 +120,19 @@ class CustomerViewModel {
 }
 
 /**
- * Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+ * Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 CustomerViewModel.prototype['id'] = undefined;
 
 /**
- * Represents the customer type (\"Customer\", \"Supplier\" and \"Other\"),  this field will be \"Customer\" by default
+ * Represents the customer type (this type can be 'Customer', 'Supplier 'and 'Other'),  this field will be 'Customer' by default.
  * @member {String} type
  */
 CustomerViewModel.prototype['type'] = undefined;
 
 /**
- * Represents the person type, this type can be a \"Person\" or \"Company\"
+ * Represents the person type, this type can be a 'Person' or 'Company'.
  * @member {String} person_type
  */
 CustomerViewModel.prototype['person_type'] = undefined;
@@ -143,19 +143,19 @@ CustomerViewModel.prototype['person_type'] = undefined;
 CustomerViewModel.prototype['id_type'] = undefined;
 
 /**
- * Represents the identification number of customer
+ * Represents the identification number of customer.  For example, the identifitication number '13832081'.
  * @member {String} identification
  */
 CustomerViewModel.prototype['identification'] = undefined;
 
 /**
- * Represents the branch office of customer, this value by default will be 0
+ * Represents the branch office of customer, this value by default will be 0.
  * @member {Number} branch_office
  */
 CustomerViewModel.prototype['branch_office'] = undefined;
 
 /**
- * Represents the check digit, this digit will be calculated automatically
+ * Represents the check digit, this digit will be calculated automatically.
  * @member {String} check_digit
  */
 CustomerViewModel.prototype['check_digit'] = undefined;
@@ -167,25 +167,25 @@ CustomerViewModel.prototype['check_digit'] = undefined;
 CustomerViewModel.prototype['name'] = undefined;
 
 /**
- * Represents the commercial name of customer organization
+ * Represents the commercial name of customer organization.  For example, 'Siigo'.
  * @member {String} commercial_name
  */
 CustomerViewModel.prototype['commercial_name'] = undefined;
 
 /**
- * Represents the state of customer, this value by default will be true
+ * Represents the state of customer.  This value can be 'true' or 'false', by default will be true.
  * @member {Boolean} active
  */
 CustomerViewModel.prototype['active'] = undefined;
 
 /**
- * Represents whether a person is responsible for VAT, by default will be false
+ * Represents whether a person is responsible for VAT.  This value can be 'true' or 'false', by default will be false.
  * @member {Boolean} vat_responsible
  */
 CustomerViewModel.prototype['vat_responsible'] = undefined;
 
 /**
- * Represents a list of tax responsibilities of a person, by default will be R-99-PN
+ * Represents a list of tax responsibilities of a person, by default will be 'R-99-PN'.
  * @member {Array.<module:model/FiscalResponsabilitiesModel>} fiscal_responsibilities
  */
 CustomerViewModel.prototype['fiscal_responsibilities'] = undefined;
@@ -196,19 +196,19 @@ CustomerViewModel.prototype['fiscal_responsibilities'] = undefined;
 CustomerViewModel.prototype['address'] = undefined;
 
 /**
- * Represents the phones of client
+ * Represents the phones of the customer.
  * @member {Array.<module:model/PhoneModel>} phones
  */
 CustomerViewModel.prototype['phones'] = undefined;
 
 /**
- * Represents the associated contantacts of customer
+ * Represents the associated contantacts of customer.
  * @member {Array.<module:model/ContactModel>} contacts
  */
 CustomerViewModel.prototype['contacts'] = undefined;
 
 /**
- * Represents additional comments or observations
+ * Represents additional comments or observations.
  * @member {String} comments
  */
 CustomerViewModel.prototype['comments'] = undefined;

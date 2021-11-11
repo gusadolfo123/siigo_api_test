@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PricesListProducts model module.
  * @module model/PricesListProducts
- * @version 0.1.0
+ * @version 0.0.0
  */
 class PricesListProducts {
     /**
@@ -61,11 +61,13 @@ class PricesListProducts {
 }
 
 /**
+ * Represents the unique id of price list
  * @member {Number} position
  */
 PricesListProducts.prototype['position'] = undefined;
 
 /**
+ * Represents product price
  * @member {Number} value
  */
 PricesListProducts.prototype['value'] = undefined;

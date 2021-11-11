@@ -23,7 +23,7 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.DocumentTypeApi();
 
 let opts = {
-  'type': "type_example" // String | 
+  'type': FV // String | Represents the document type. For example, 'FV' to invoices, 'NC' to credit notes, or 'RC' to vouchers.
 };
 
 apiInstance.getDocumentTypes(opts).then((data) => {
@@ -41,7 +41,7 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.DocumentTypeApi();
     let opts = {
-    'type': "type_example" // String | 
+    'type': FV // String | Represents the document type. For example, 'FV' to invoices, 'NC' to credit notes, or 'RC' to vouchers.
     };
 
     const data = await apiInstance.getDocumentTypes(opts);
@@ -58,7 +58,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type** | **String**|  | [optional] 
+ **type** | **String**| Represents the document type. For example, &#39;FV&#39; to invoices, &#39;NC&#39; to credit notes, or &#39;RC&#39; to vouchers. | [optional] 
 
 ### Return type
 

@@ -2,7 +2,7 @@
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createCustomer**](CustomerApi.md#createCustomer) | **POST** /v1/customers | Creates a Customer
+[**createCustomer**](CustomerApi.md#createCustomer) | **POST** /v1/customers | Creates a Customer.
 [**deleteCustomer**](CustomerApi.md#deleteCustomer) | **DELETE** /v1/customers/{id} | Deletes a Customer by GUID.
 [**getCustomer**](CustomerApi.md#getCustomer) | **GET** /v1/customers/{id} | Gets a Customer by GUID.
 [**getCustomers**](CustomerApi.md#getCustomers) | **GET** /v1/customers | Gets a list of Customers.
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 > CustomerViewModel createCustomer(opts)
 
-Creates a Customer
+Creates a Customer.
 
 ### Example
 
@@ -27,7 +27,7 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.CustomerApi();
 
 let opts = {
-  'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information
+  'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information.
 };
 
 apiInstance.createCustomer(opts).then((data) => {
@@ -45,7 +45,7 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.CustomerApi();
     let opts = {
-    'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information
+    'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information.
     };
 
     const data = await apiInstance.createCustomer(opts);
@@ -62,7 +62,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **createCustomerCommand** | [**CreateCustomerCommand**](CreateCustomerCommand.md)| Represents the request with the customer information | [optional] 
+ **createCustomerCommand** | [**CreateCustomerCommand**](CreateCustomerCommand.md)| Represents the request with the customer information. | [optional] 
 
 ### Return type
 
@@ -93,7 +93,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.CustomerApi();
 
-let id = null; // String | Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+let id = null; // String | Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
 
 apiInstance.deleteCustomer(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -109,7 +109,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.CustomerApi();
-    let id = null; // String | Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+    let id = null; // String | Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
 
     const data = await apiInstance.deleteCustomer(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -125,7 +125,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)| Represents the unique Id of customer, this value must be a \&quot;Guid\&quot;  with the next format 00000000-0000-0000-0000-000000000000 | 
+ **id** | [**String**](.md)| Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000. | 
 
 ### Return type
 
@@ -156,7 +156,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.CustomerApi();
 
-let id = null; // String | Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+let id = null; // String | Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
 
 apiInstance.getCustomer(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -172,7 +172,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.CustomerApi();
-    let id = null; // String | Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+    let id = null; // String | Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
 
     const data = await apiInstance.getCustomer(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -188,7 +188,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)| Represents the unique Id of customer, this value must be a \&quot;Guid\&quot;  with the next format 00000000-0000-0000-0000-000000000000 | 
+ **id** | [**String**](.md)| Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000. | 
 
 ### Return type
 
@@ -220,11 +220,11 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.CustomerApi();
 
 let opts = {
-  'identification': "identification_example", // String | Represents the identification number of customer
-  'branchOffice': 0, // Number | Represents the branch office of customer, this value by default will be 0
-  'active': true, // String | Represents the state of customer, this value by default will be true
-  'type': "type_example", // String | Represents the customer type (\"Customer\", \"Supplier\" and \"Other\"),  this field will be \"Customer\" by default
-  'personType': "personType_example", // String | Represents the person type, this type can be a \"Person\" or \"Company\"
+  'identification': 13832081, // String | Represents the identification number of customer.  For example, the identifitication number '13832081'.
+  'branchOffice': 0, // Number | Represents the branch office of customer, this value by default will be 0.
+  'active': true, // String | Represents the state of customer.  This value can be 'true' or 'false', by default will be true.
+  'type': Customer, // String | Represents the customer type (this type can be 'Customer', 'Supplier 'and 'Other'),  this field will be 'Customer' by default.
+  'personType': 'Person', // String | Represents the person type, this type can be a 'Person' or 'Company'.
   'createdStart': new Date("2013-10-20T19:20:30+01:00"), // Date | Returns results where the \"created\" field is greater or equal than the entered date
   'createdEnd': new Date("2013-10-20T19:20:30+01:00"), // Date | Returns results where the \"created\" field is less or equal than the entered date
   'dateStart': new Date("2013-10-20T19:20:30+01:00"), // Date | Returns results with date greater or equal than the \"date_start\" date
@@ -250,11 +250,11 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.CustomerApi();
     let opts = {
-    'identification': "identification_example", // String | Represents the identification number of customer
-    'branchOffice': 0, // Number | Represents the branch office of customer, this value by default will be 0
-    'active': true, // String | Represents the state of customer, this value by default will be true
-    'type': "type_example", // String | Represents the customer type (\"Customer\", \"Supplier\" and \"Other\"),  this field will be \"Customer\" by default
-    'personType': "personType_example", // String | Represents the person type, this type can be a \"Person\" or \"Company\"
+    'identification': 13832081, // String | Represents the identification number of customer.  For example, the identifitication number '13832081'.
+    'branchOffice': 0, // Number | Represents the branch office of customer, this value by default will be 0.
+    'active': true, // String | Represents the state of customer.  This value can be 'true' or 'false', by default will be true.
+    'type': Customer, // String | Represents the customer type (this type can be 'Customer', 'Supplier 'and 'Other'),  this field will be 'Customer' by default.
+    'personType': 'Person', // String | Represents the person type, this type can be a 'Person' or 'Company'.
     'createdStart': new Date("2013-10-20T19:20:30+01:00"), // Date | Returns results where the \"created\" field is greater or equal than the entered date
     'createdEnd': new Date("2013-10-20T19:20:30+01:00"), // Date | Returns results where the \"created\" field is less or equal than the entered date
     'dateStart': new Date("2013-10-20T19:20:30+01:00"), // Date | Returns results with date greater or equal than the \"date_start\" date
@@ -279,11 +279,11 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **identification** | **String**| Represents the identification number of customer | [optional] 
- **branchOffice** | **Number**| Represents the branch office of customer, this value by default will be 0 | [optional] 
- **active** | **String**| Represents the state of customer, this value by default will be true | [optional] 
- **type** | **String**| Represents the customer type (\&quot;Customer\&quot;, \&quot;Supplier\&quot; and \&quot;Other\&quot;),  this field will be \&quot;Customer\&quot; by default | [optional] 
- **personType** | **String**| Represents the person type, this type can be a \&quot;Person\&quot; or \&quot;Company\&quot; | [optional] 
+ **identification** | **String**| Represents the identification number of customer.  For example, the identifitication number &#39;13832081&#39;. | [optional] 
+ **branchOffice** | **Number**| Represents the branch office of customer, this value by default will be 0. | [optional] 
+ **active** | **String**| Represents the state of customer.  This value can be &#39;true&#39; or &#39;false&#39;, by default will be true. | [optional] 
+ **type** | **String**| Represents the customer type (this type can be &#39;Customer&#39;, &#39;Supplier &#39;and &#39;Other&#39;),  this field will be &#39;Customer&#39; by default. | [optional] 
+ **personType** | **String**| Represents the person type, this type can be a &#39;Person&#39; or &#39;Company&#39;. | [optional] 
  **createdStart** | **Date**| Returns results where the \&quot;created\&quot; field is greater or equal than the entered date | [optional] 
  **createdEnd** | **Date**| Returns results where the \&quot;created\&quot; field is less or equal than the entered date | [optional] 
  **dateStart** | **Date**| Returns results with date greater or equal than the \&quot;date_start\&quot; date | [optional] 
@@ -322,9 +322,9 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.CustomerApi();
 
-let id = null; // String | Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+let id = null; // String | Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
 let opts = {
-  'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information
+  'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information.
 };
 
 apiInstance.updateCustomer(id, opts).then((data) => {
@@ -341,9 +341,9 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.CustomerApi();
-    let id = null; // String | Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+    let id = null; // String | Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
     let opts = {
-    'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information
+    'createCustomerCommand': new SiigoApi.CreateCustomerCommand() // CreateCustomerCommand | Represents the request with the customer information.
     };
 
     const data = await apiInstance.updateCustomer(id, opts);
@@ -360,8 +360,8 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)| Represents the unique Id of customer, this value must be a \&quot;Guid\&quot;  with the next format 00000000-0000-0000-0000-000000000000 | 
- **createCustomerCommand** | [**CreateCustomerCommand**](CreateCustomerCommand.md)| Represents the request with the customer information | [optional] 
+ **id** | [**String**](.md)| Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000. | 
+ **createCustomerCommand** | [**CreateCustomerCommand**](CreateCustomerCommand.md)| Represents the request with the customer information. | [optional] 
 
 ### Return type
 

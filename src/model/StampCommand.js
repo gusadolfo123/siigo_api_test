@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The StampCommand model module.
  * @module model/StampCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class StampCommand {
     /**
@@ -58,6 +58,7 @@ class StampCommand {
 }
 
 /**
+ * Represents the status of document.
  * @member {Boolean} send
  */
 StampCommand.prototype['send'] = undefined;

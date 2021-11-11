@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentVoucher model module.
  * @module model/DocumentVoucher
- * @version 0.1.0
+ * @version 0.0.0
  */
 class DocumentVoucher {
     /**
@@ -58,6 +58,7 @@ class DocumentVoucher {
 }
 
 /**
+ * Represents the id of the document, the value of this field must be an integer  number that represents the unique id of the document.
  * @member {Number} id
  */
 DocumentVoucher.prototype['id'] = undefined;

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ProductTaxesCommand model module.
  * @module model/ProductTaxesCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class ProductTaxesCommand {
     /**
@@ -58,6 +58,7 @@ class ProductTaxesCommand {
 }
 
 /**
+ * Represents the Id of the tax
  * @member {Number} id
  */
 ProductTaxesCommand.prototype['id'] = undefined;

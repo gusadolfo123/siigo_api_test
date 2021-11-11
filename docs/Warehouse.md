@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | [optional] 
-**name** | **String** |  | [optional] 
-**quantity** | **Number** |  | [optional] 
+**id** | **Number** | Represents the unique id of the warehouse. | [optional] 
+**name** | **String** | Represents the name of the warehouse. | [optional] 
+**quantity** | **Number** | Represents the available quantity of the product in warehouse. | [optional] 
 
 

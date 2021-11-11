@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The UnitProductsViewModel model module.
  * @module model/UnitProductsViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class UnitProductsViewModel {
     /**
@@ -61,11 +61,13 @@ class UnitProductsViewModel {
 }
 
 /**
+ * Represents the id of an unit of measurement, by default this field will be 94.
  * @member {String} code
  */
 UnitProductsViewModel.prototype['code'] = undefined;
 
 /**
+ * Represents the name of an unit of measurement.
  * @member {String} name
  */
 UnitProductsViewModel.prototype['name'] = undefined;

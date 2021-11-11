@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RelatedUsersModel model module.
  * @module model/RelatedUsersModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class RelatedUsersModel {
     /**
@@ -61,13 +61,13 @@ class RelatedUsersModel {
 }
 
 /**
- * Represents the seller Id
+ * Represents the seller Id.
  * @member {Number} seller_id
  */
 RelatedUsersModel.prototype['seller_id'] = undefined;
 
 /**
- * Represents the debt collector Id
+ * Represents the debt collector Id.
  * @member {Number} collector_id
  */
 RelatedUsersModel.prototype['collector_id'] = undefined;

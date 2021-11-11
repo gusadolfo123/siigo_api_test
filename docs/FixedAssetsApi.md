@@ -2,17 +2,17 @@
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAssetGroup**](FixedAssetsApi.md#getAssetGroup) | **GET** /v1/asset-groups | Gets a list of fixed assets
-[**getFixedAssets**](FixedAssetsApi.md#getFixedAssets) | **GET** /v1/fixed-assets | Gets a list of fixed assets
+[**getAssetGroups**](FixedAssetsApi.md#getAssetGroups) | **GET** /v1/asset-groups | Gets a list of fixed assets.
+[**getFixedAssets**](FixedAssetsApi.md#getFixedAssets) | **GET** /v1/fixed-assets | Gets a list of fixed assets.
 
 
 
 
-## getAssetGroup
+## getAssetGroups
 
-> [AssetGroupsViewModel] getAssetGroup()
+> [AssetGroupsViewModel] getAssetGroups()
 
-Gets a list of fixed assets
+Gets a list of fixed assets.
 
 ### Example
 
@@ -24,7 +24,7 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.FixedAssetsApi();
 
 
-apiInstance.getAssetGroup().then((data) => {
+apiInstance.getAssetGroups().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -39,7 +39,7 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.FixedAssetsApi();
 
-    const data = await apiInstance.getAssetGroup();
+    const data = await apiInstance.getAssetGroups();
     console.log('API called successfully. Returned data: ' + data);
   } catch (error) {
     console.error(error);
@@ -70,7 +70,7 @@ This endpoint does not need any parameter.
 
 > [FixedAssetsViewModel] getFixedAssets()
 
-Gets a list of fixed assets
+Gets a list of fixed assets.
 
 ### Example
 

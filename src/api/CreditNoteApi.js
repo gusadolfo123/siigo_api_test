@@ -21,7 +21,7 @@ import CreditNotesViewModel from '../model/CreditNotesViewModel';
 /**
 * CreditNote service.
 * @module api/CreditNoteApi
-* @version 0.1.0
+* @version 0.0.0
 */
 export default class CreditNoteApi {
 
@@ -41,7 +41,7 @@ export default class CreditNoteApi {
     /**
      * Creates a Credit Note.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateCreditNoteCommand} opts.createCreditNoteCommand Represents the request with the credit note information
+     * @param {module:model/CreateCreditNoteCommand} opts.createCreditNoteCommand Represents the request with the credit note information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreditNotesViewModel} and HTTP response
      */
     createCreditNoteWithHttpInfo(opts) {
@@ -71,7 +71,7 @@ export default class CreditNoteApi {
     /**
      * Creates a Credit Note.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateCreditNoteCommand} opts.createCreditNoteCommand Represents the request with the credit note information
+     * @param {module:model/CreateCreditNoteCommand} opts.createCreditNoteCommand Represents the request with the credit note information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreditNotesViewModel}
      */
     createCreditNote(opts) {
@@ -84,7 +84,7 @@ export default class CreditNoteApi {
 
     /**
      * Gets a CreditNote by GUID.
-     * @param {String} id Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreditNoteViewModel} and HTTP response
      */
     getCreditNoteWithHttpInfo(id) {
@@ -117,7 +117,7 @@ export default class CreditNoteApi {
 
     /**
      * Gets a CreditNote by GUID.
-     * @param {String} id Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreditNoteViewModel}
      */
     getCreditNote(id) {
@@ -129,8 +129,8 @@ export default class CreditNoteApi {
 
 
     /**
-     * Gets an Credit Note PDF by GUID.
-     * @param {String} id Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * Gets a Credit Note PDF by GUID.
+     * @param {String} id Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreditNotePdfViewModel} and HTTP response
      */
     getCreditNotePdfWithHttpInfo(id) {
@@ -162,8 +162,8 @@ export default class CreditNoteApi {
     }
 
     /**
-     * Gets an Credit Note PDF by GUID.
-     * @param {String} id Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * Gets a Credit Note PDF by GUID.
+     * @param {String} id Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreditNotePdfViewModel}
      */
     getCreditNotePdf(id) {

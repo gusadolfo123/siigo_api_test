@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The IdTypeModel model module.
  * @module model/IdTypeModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class IdTypeModel {
     /**
@@ -61,13 +61,13 @@ class IdTypeModel {
 }
 
 /**
- * Represents the code of type id
+ * Represents the code of type id.
  * @member {String} code
  */
 IdTypeModel.prototype['code'] = undefined;
 
 /**
- * Represents the name of type id
+ * Represents the name of type id.
  * @member {String} name
  */
 IdTypeModel.prototype['name'] = undefined;

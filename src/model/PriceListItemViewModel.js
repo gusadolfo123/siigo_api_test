@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PriceListItemViewModel model module.
  * @module model/PriceListItemViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class PriceListItemViewModel {
     /**
@@ -64,16 +64,19 @@ class PriceListItemViewModel {
 }
 
 /**
+ * Represents the unique id of price list.
  * @member {Number} position
  */
 PriceListItemViewModel.prototype['position'] = undefined;
 
 /**
+ * Represents the name of price list.
  * @member {String} name
  */
 PriceListItemViewModel.prototype['name'] = undefined;
 
 /**
+ * Represents product price
  * @member {Number} value
  */
 PriceListItemViewModel.prototype['value'] = undefined;

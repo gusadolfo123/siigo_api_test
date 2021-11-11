@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CurrencyModel model module.
  * @module model/CurrencyModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class CurrencyModel {
     /**
@@ -61,13 +61,13 @@ class CurrencyModel {
 }
 
 /**
- * Represents the Id code of currency
+ * Represents the Id code of currency. For example, 'USD' represents   the dollar and 'EUR' means 'Euro'.
  * @member {String} code
  */
 CurrencyModel.prototype['code'] = undefined;
 
 /**
- * Represents the exchange rate of currency
+ * Represents the exchange rate of currency. For example, 'USD' could have   an exchange rate of '0.86' to 'EUR'.
  * @member {Number} exchange_rate
  */
 CurrencyModel.prototype['exchange_rate'] = undefined;

@@ -18,7 +18,7 @@ import AccountGroupViewModel from '../model/AccountGroupViewModel';
 /**
 * AccountGroups service.
 * @module api/AccountGroupsApi
-* @version 0.1.0
+* @version 0.0.0
 */
 export default class AccountGroupsApi {
 

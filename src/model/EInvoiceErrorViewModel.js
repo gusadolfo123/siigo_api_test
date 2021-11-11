@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EInvoiceErrorViewModel model module.
  * @module model/EInvoiceErrorViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class EInvoiceErrorViewModel {
     /**
@@ -58,6 +58,7 @@ class EInvoiceErrorViewModel {
 }
 
 /**
+ * Respresents a message error like 'Error 401: ...'.
  * @member {String} message
  */
 EInvoiceErrorViewModel.prototype['message'] = undefined;

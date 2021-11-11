@@ -2,16 +2,146 @@
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1VouchersGet**](VoucherApi.md#v1VouchersGet) | **GET** /v1/vouchers | Gets a list of Vouchers with pagination.
-[**v1VouchersIdGet**](VoucherApi.md#v1VouchersIdGet) | **GET** /v1/vouchers/{id} | Gets a Voucher by GUID.
-[**v1VouchersPost**](VoucherApi.md#v1VouchersPost) | **POST** /v1/vouchers | Creates an Voucher.
+[**createVoucher**](VoucherApi.md#createVoucher) | **POST** /v1/vouchers | Creates a Voucher.
+[**getVoucher**](VoucherApi.md#getVoucher) | **GET** /v1/vouchers/{id} | Gets a Voucher by GUID.
+[**getVouchers**](VoucherApi.md#getVouchers) | **GET** /v1/vouchers | Gets a list of Vouchers with pagination.
 
 
 
 
-## v1VouchersGet
+## createVoucher
 
-> VouchersViewModel v1VouchersGet(opts)
+> VoucherViewModel createVoucher(opts)
+
+Creates a Voucher.
+
+### Example
+
+#### - calls with promises
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+let apiInstance = new SiigoApi.VoucherApi();
+
+let opts = {
+  'createVoucherCommand': new SiigoApi.CreateVoucherCommand() // CreateVoucherCommand | Represents the request with the voucher information.
+};
+
+apiInstance.createVoucher(opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+```
+#### - calls with async await
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+async function main(){
+  try {
+    let apiInstance = new SiigoApi.VoucherApi();
+    let opts = {
+    'createVoucherCommand': new SiigoApi.CreateVoucherCommand() // CreateVoucherCommand | Represents the request with the voucher information.
+    };
+
+    const data = await apiInstance.createVoucher(opts);
+    console.log('API called successfully. Returned data: ' + data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createVoucherCommand** | [**CreateVoucherCommand**](CreateVoucherCommand.md)| Represents the request with the voucher information. | [optional] 
+
+### Return type
+
+[**VoucherViewModel**](VoucherViewModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
+
+
+## getVoucher
+
+> VoucherViewModel getVoucher(id)
+
+Gets a Voucher by GUID.
+
+### Example
+
+#### - calls with promises
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+let apiInstance = new SiigoApi.VoucherApi();
+
+let id = null; // String | Represents the unique Id of vocher, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+
+apiInstance.getVoucher(id).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+```
+#### - calls with async await
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+async function main(){
+  try {
+    let apiInstance = new SiigoApi.VoucherApi();
+    let id = null; // String | Represents the unique Id of vocher, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+
+    const data = await apiInstance.getVoucher(id);
+    console.log('API called successfully. Returned data: ' + data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | [**String**](.md)| Represents the unique Id of vocher, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000. | 
+
+### Return type
+
+[**VoucherViewModel**](VoucherViewModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: text/plain, application/json, text/json
+
+
+## getVouchers
+
+> VouchersViewModel getVouchers(opts)
 
 Gets a list of Vouchers with pagination.
 
@@ -35,7 +165,7 @@ let opts = {
   'pageSize': 25 // Number | Represents the number of results per page.
 };
 
-apiInstance.v1VouchersGet(opts).then((data) => {
+apiInstance.getVouchers(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -60,7 +190,7 @@ async function main(){
     'pageSize': 25 // Number | Represents the number of results per page.
     };
 
-    const data = await apiInstance.v1VouchersGet(opts);
+    const data = await apiInstance.getVouchers(opts);
     console.log('API called successfully. Returned data: ' + data);
   } catch (error) {
     console.error(error);
@@ -94,135 +224,5 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
-
-
-## v1VouchersIdGet
-
-> VoucherViewModel v1VouchersIdGet(id)
-
-Gets a Voucher by GUID.
-
-### Example
-
-#### - calls with promises
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-let apiInstance = new SiigoApi.VoucherApi();
-
-let id = null; // String | 
-
-apiInstance.v1VouchersIdGet(id).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-```
-#### - calls with async await
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-async function main(){
-  try {
-    let apiInstance = new SiigoApi.VoucherApi();
-    let id = null; // String | 
-
-    const data = await apiInstance.v1VouchersIdGet(id);
-    console.log('API called successfully. Returned data: ' + data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-```
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)|  | 
-
-### Return type
-
-[**VoucherViewModel**](VoucherViewModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
-
-
-## v1VouchersPost
-
-> VoucherViewModel v1VouchersPost(opts)
-
-Creates an Voucher.
-
-### Example
-
-#### - calls with promises
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-let apiInstance = new SiigoApi.VoucherApi();
-
-let opts = {
-  'createVoucherCommand': new SiigoApi.CreateVoucherCommand() // CreateVoucherCommand | 
-};
-
-apiInstance.v1VouchersPost(opts).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-```
-#### - calls with async await
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-async function main(){
-  try {
-    let apiInstance = new SiigoApi.VoucherApi();
-    let opts = {
-    'createVoucherCommand': new SiigoApi.CreateVoucherCommand() // CreateVoucherCommand | 
-    };
-
-    const data = await apiInstance.v1VouchersPost(opts);
-    console.log('API called successfully. Returned data: ' + data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-```
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **createVoucherCommand** | [**CreateVoucherCommand**](CreateVoucherCommand.md)|  | [optional] 
-
-### Return type
-
-[**VoucherViewModel**](VoucherViewModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: text/plain, application/json, text/json
 

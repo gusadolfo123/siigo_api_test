@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The WarehouseModel model module.
  * @module model/WarehouseModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class WarehouseModel {
     /**
@@ -61,11 +61,13 @@ class WarehouseModel {
 }
 
 /**
+ * Represents the id of warehouse, by default this field will be null.
  * @member {Number} id
  */
 WarehouseModel.prototype['id'] = undefined;
 
 /**
+ * Represents the name of warehouse.
  * @member {String} name
  */
 WarehouseModel.prototype['name'] = undefined;

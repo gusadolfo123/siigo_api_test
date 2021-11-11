@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The MetadataModel model module.
  * @module model/MetadataModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class MetadataModel {
     /**
@@ -61,13 +61,13 @@ class MetadataModel {
 }
 
 /**
- * Represents the creation date of organization
+ * Represents the creation date of organization.
  * @member {Date} created
  */
 MetadataModel.prototype['created'] = undefined;
 
 /**
- * Represents the last update date of organization, this field by the default will be null
+ * Represents the last update date of organization, this field by the default will be null.
  * @member {Date} last_updated
  */
 MetadataModel.prototype['last_updated'] = undefined;

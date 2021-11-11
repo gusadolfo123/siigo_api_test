@@ -19,7 +19,7 @@ import PageListModel from './PageListModel';
 /**
  * The CustomersViewModel model module.
  * @module model/CustomersViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class CustomersViewModel {
     /**
@@ -73,7 +73,7 @@ class CustomersViewModel {
 CustomersViewModel.prototype['pagination'] = undefined;
 
 /**
- * Contains the Results, this results will be a list of Customers
+ * Contains the Results, this results will be a list of Customers.
  * @member {Array.<module:model/CustomerViewModel>} results
  */
 CustomersViewModel.prototype['results'] = undefined;

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentTypeViewModel model module.
  * @module model/DocumentTypeViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class DocumentTypeViewModel {
     /**
@@ -124,116 +124,139 @@ class DocumentTypeViewModel {
 }
 
 /**
+ * Represents the id of the document type, the value of this field must be an integer  number that represents the unique id of the document type. For example '5636'.
  * @member {Number} id
  */
 DocumentTypeViewModel.prototype['id'] = undefined;
 
 /**
+ * Represents the document type code. This value must be an integer  code that will represent the code id of the document type. For example, '1'.
  * @member {String} code
  */
 DocumentTypeViewModel.prototype['code'] = undefined;
 
 /**
+ * Represents the name of the document type. This value can be an alphanumeric name  like 'Factura' (invoice).
  * @member {String} name
  */
 DocumentTypeViewModel.prototype['name'] = undefined;
 
 /**
+ * Represents the description of the document type. For example, 'This is a description'.
  * @member {String} description
  */
 DocumentTypeViewModel.prototype['description'] = undefined;
 
 /**
+ * Represents the document types. This type can be 'FV' to invoices, 'RC' to vouchers,   'NC' to credit notes, 'FC' to purchases or, 'CC' to journals.
  * @member {String} type
  */
 DocumentTypeViewModel.prototype['type'] = undefined;
 
 /**
+ * Represents if document type status is activated or disabled,   the value of this status will be true (for activated) or false (disabled).  By default, this field will be true.
  * @member {Boolean} active
  */
 DocumentTypeViewModel.prototype['active'] = undefined;
 
 /**
+ * Represents if the document type Handles a seller by item or not.  This field can be 'true' or 'false'.
  * @member {Boolean} seller_by_item
  */
 DocumentTypeViewModel.prototype['seller_by_item'] = undefined;
 
 /**
+ * Represents if the document type Handles a cost center or not.  This field can be 'true' or 'false'.
  * @member {Boolean} cost_center
  */
 DocumentTypeViewModel.prototype['cost_center'] = undefined;
 
 /**
+ * Represents if the document type Handles a required cost center or not.  This field can be 'true' or 'false'.
  * @member {Boolean} cost_center_mandatory
  */
 DocumentTypeViewModel.prototype['cost_center_mandatory'] = undefined;
 
 /**
+ * Represents the id number of the default cost center.  By default, this field will be null.
  * @member {Number} cost_center_default
  */
 DocumentTypeViewModel.prototype['cost_center_default'] = undefined;
 
 /**
+ * Represents if the document type Handles automatic numbering or not.  This field can be 'true' or 'false'.
  * @member {Boolean} automatic_number
  */
 DocumentTypeViewModel.prototype['automatic_number'] = undefined;
 
 /**
+ * Represents the consecutive number of the document type.
  * @member {Number} consecutive
  */
 DocumentTypeViewModel.prototype['consecutive'] = undefined;
 
 /**
+ * Represents if the document type Manages a percentage or a value to discounts.  This field can be 'Percentage' or 'Value'.
  * @member {String} discount_type
  */
 DocumentTypeViewModel.prototype['discount_type'] = undefined;
 
 /**
+ * Represents if the document type handles Handles decimals or not.  This field can be 'true' or 'false'.
  * @member {Boolean} decimals
  */
 DocumentTypeViewModel.prototype['decimals'] = undefined;
 
 /**
+ * Represents if the document type handles Manage copayments/advances or not.  This field can be 'true' or 'false'.
  * @member {Boolean} advance_payment
  */
 DocumentTypeViewModel.prototype['advance_payment'] = undefined;
 
 /**
+ * Represents if the document type handles 'Reteiva' or not.  This field can be 'true' or 'false'.
  * @member {Boolean} reteiva
  */
 DocumentTypeViewModel.prototype['reteiva'] = undefined;
 
 /**
+ * Represents if the document type handles 'Reteica' or not.  This field can be 'true' or 'false'.
  * @member {Boolean} reteica
  */
 DocumentTypeViewModel.prototype['reteica'] = undefined;
 
 /**
+ * Represents if the document type handles self-withholding decree 2201 or not.  This field can be 'true' or 'false'.
  * @member {Boolean} self_withholding
  */
 DocumentTypeViewModel.prototype['self_withholding'] = undefined;
 
 /**
+ * Represents the self withholding limit, the self withholding value will be applied only for values greater than the specified limit.  By default, this field will be null.
  * @member {Number} self_withholding_limit
  */
 DocumentTypeViewModel.prototype['self_withholding_limit'] = undefined;
 
 /**
+ * Represents the type of the invoice. This type can be 'NoElectronic',   'Electronicvoice', 'ContingencyInvoice' or 'ExportInvoice'.
  * @member {String} electronic_type
  */
 DocumentTypeViewModel.prototype['electronic_type'] = undefined;
 
 /**
+ * Represents the official book type of the Journals. This value can be '0' to sales book,  '1' to sales returns book, '2' to purchase book, or '3' to purchase return book.
  * @member {String} official_book
  */
 DocumentTypeViewModel.prototype['official_book'] = undefined;
 
 /**
+ * Represents if the Journals supports documents or not.
  * @member {Boolean} document_support
  */
 DocumentTypeViewModel.prototype['document_support'] = undefined;
 
 /**
+ * Invoice prefix to which the credit or payent will be applied. For example, 'FV-1'.
  * @member {String} prefix
  */
 DocumentTypeViewModel.prototype['prefix'] = undefined;

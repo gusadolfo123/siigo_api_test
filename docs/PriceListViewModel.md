@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**currencyCode** | **String** |  | [optional] 
-**priceList** | [**[PriceListItemViewModel]**](PriceListItemViewModel.md) |  | [optional] 
+**currencyCode** | **String** | Represents the currency code. | [optional] 
+**priceList** | [**[PriceListItemViewModel]**](PriceListItemViewModel.md) | Contains a price list. | [optional] 
 
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PurchaseOrderCommand model module.
  * @module model/PurchaseOrderCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class PurchaseOrderCommand {
     /**
@@ -61,11 +61,13 @@ class PurchaseOrderCommand {
 }
 
 /**
+ * Represent the prefix of order type.
  * @member {String} prefix
  */
 PurchaseOrderCommand.prototype['prefix'] = undefined;
 
 /**
+ * Represents the number of the purchase.
  * @member {String} number
  */
 PurchaseOrderCommand.prototype['number'] = undefined;

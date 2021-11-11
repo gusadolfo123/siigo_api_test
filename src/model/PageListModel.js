@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PageListModel model module.
  * @module model/PageListModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class PageListModel {
     /**
@@ -64,7 +64,7 @@ class PageListModel {
 }
 
 /**
- * Represents the current page
+ * Represents the current page.
  * @member {Number} page
  */
 PageListModel.prototype['page'] = undefined;
@@ -76,7 +76,7 @@ PageListModel.prototype['page'] = undefined;
 PageListModel.prototype['page_size'] = undefined;
 
 /**
- * Respresents the total count of the results
+ * Respresents the total count of the results.
  * @member {Number} total_results
  */
 PageListModel.prototype['total_results'] = undefined;

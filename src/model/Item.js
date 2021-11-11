@@ -19,7 +19,7 @@ import TaxesCommand from './TaxesCommand';
 /**
  * The Item model module.
  * @module model/Item
- * @version 0.1.0
+ * @version 0.0.0
  */
 class Item {
     /**
@@ -78,6 +78,7 @@ class Item {
 Item.prototype['account'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} description
  */
 Item.prototype['description'] = undefined;
@@ -93,6 +94,7 @@ Item.prototype['due'] = undefined;
 Item.prototype['tax'] = undefined;
 
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 Item.prototype['value'] = undefined;

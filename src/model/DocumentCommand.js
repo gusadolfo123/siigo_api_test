@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentCommand model module.
  * @module model/DocumentCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class DocumentCommand {
     /**
@@ -58,6 +58,7 @@ class DocumentCommand {
 }
 
 /**
+ * Represents the Id of document. The value of this field must be an integer  number that represents the unique id of the document type, for example '22'.
  * @member {Number} id
  */
 DocumentCommand.prototype['id'] = undefined;

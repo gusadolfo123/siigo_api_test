@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AccountGroup model module.
  * @module model/AccountGroup
- * @version 0.1.0
+ * @version 0.0.0
  */
 class AccountGroup {
     /**
@@ -61,11 +61,13 @@ class AccountGroup {
 }
 
 /**
+ * Represents the id of inventory classification.
  * @member {Number} id
  */
 AccountGroup.prototype['id'] = undefined;
 
 /**
+ * Represents the name of inventory classification.
  * @member {String} name
  */
 AccountGroup.prototype['name'] = undefined;

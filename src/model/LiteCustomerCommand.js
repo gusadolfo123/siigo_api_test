@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The LiteCustomerCommand model module.
  * @module model/LiteCustomerCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class LiteCustomerCommand {
     /**
@@ -61,11 +61,13 @@ class LiteCustomerCommand {
 }
 
 /**
+ * Represents the identification number of customer.
  * @member {String} identification
  */
 LiteCustomerCommand.prototype['identification'] = undefined;
 
 /**
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 LiteCustomerCommand.prototype['branch_office'] = undefined;

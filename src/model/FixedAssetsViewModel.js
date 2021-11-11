@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The FixedAssetsViewModel model module.
  * @module model/FixedAssetsViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class FixedAssetsViewModel {
     /**
@@ -67,21 +67,25 @@ class FixedAssetsViewModel {
 }
 
 /**
+ * Represents the id of the fixed asset, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 FixedAssetsViewModel.prototype['id'] = undefined;
 
 /**
+ * Represents the name of the fixed asset. This value can be an alphanumeric  name like 'Personal computer' or 'Furniture'.
  * @member {String} name
  */
 FixedAssetsViewModel.prototype['name'] = undefined;
 
 /**
+ * Represents the Name of the fixed assets group.
  * @member {String} group
  */
 FixedAssetsViewModel.prototype['group'] = undefined;
 
 /**
+ * Indicates if the fixed assets group is in use.  the value of this status will be true or false.  By default, this field will be active (true).
  * @member {Boolean} active
  */
 FixedAssetsViewModel.prototype['active'] = undefined;

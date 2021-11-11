@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PhoneModel model module.
  * @module model/PhoneModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class PhoneModel {
     /**
@@ -64,19 +64,19 @@ class PhoneModel {
 }
 
 /**
- * Represents the indicative number of country
+ * Represents the indicative number of country.  For example, the number '57' representate to Colombia.
  * @member {String} indicative
  */
 PhoneModel.prototype['indicative'] = undefined;
 
 /**
- * Represents the phone number
+ * Represents the phone number.  For example, the phone number '3006003345'.
  * @member {String} number
  */
 PhoneModel.prototype['number'] = undefined;
 
 /**
- * Represents the extension number
+ * Represents the extension number.  For example, the extension number '132'.
  * @member {String} extension
  */
 PhoneModel.prototype['extension'] = undefined;

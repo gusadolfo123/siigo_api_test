@@ -18,7 +18,7 @@ import WarehouseViewModel from '../model/WarehouseViewModel';
 /**
 * Warehouses service.
 * @module api/WarehousesApi
-* @version 0.1.0
+* @version 0.0.0
 */
 export default class WarehousesApi {
 
@@ -39,7 +39,7 @@ export default class WarehousesApi {
      * Gets a list of Warehouses.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/WarehouseViewModel} and HTTP response
      */
-    v1WarehousesGetWithHttpInfo() {
+    getProductWarehouseWithHttpInfo() {
       let postBody = null;
 
       let pathParams = {
@@ -66,8 +66,8 @@ export default class WarehousesApi {
      * Gets a list of Warehouses.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/WarehouseViewModel}
      */
-    v1WarehousesGet() {
-      return this.v1WarehousesGetWithHttpInfo()
+    getProductWarehouse() {
+      return this.getProductWarehouseWithHttpInfo()
         .then(function(response_and_data) {
           return response_and_data.data;
         });

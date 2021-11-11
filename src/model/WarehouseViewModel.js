@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The WarehouseViewModel model module.
  * @module model/WarehouseViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class WarehouseViewModel {
     /**
@@ -67,21 +67,25 @@ class WarehouseViewModel {
 }
 
 /**
+ * Represents the id of the warehouse, the value of this field must be an integer  number that represents the unique id of the warehouse. For example '1270'.
  * @member {Number} id
  */
 WarehouseViewModel.prototype['id'] = undefined;
 
 /**
+ * Represents the warehouse name. This value can be an alphanumeric name  like 'Main Warehouse' or 'Warehouse 1'.
  * @member {String} name
  */
 WarehouseViewModel.prototype['name'] = undefined;
 
 /**
+ * Represents if warehouse status is activated or disabled,   the value of this status will be 'true' (for activated) or 'false' (disabled).  By default, this field will be 'true'.
  * @member {Boolean} active
  */
 WarehouseViewModel.prototype['active'] = undefined;
 
 /**
+ * Indicates if the winery has associated movements. This field could be 'true' or 'false'   depending on the associated movements.
  * @member {Boolean} has_movements
  */
 WarehouseViewModel.prototype['has_movements'] = undefined;

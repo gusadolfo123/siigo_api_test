@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The InvoicePdfViewModel model module.
  * @module model/InvoicePdfViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class InvoicePdfViewModel {
     /**
@@ -64,16 +64,19 @@ class InvoicePdfViewModel {
 }
 
 /**
+ * Represents the unique Id of invoice, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 InvoicePdfViewModel.prototype['id'] = undefined;
 
 /**
+ * Represents the CUFE of credit note.
  * @member {String} cufe
  */
 InvoicePdfViewModel.prototype['cufe'] = undefined;
 
 /**
+ * Represents the data of the invoice on base 64 to convert it to PDF.
  * @member {String} base64
  */
 InvoicePdfViewModel.prototype['base64'] = undefined;

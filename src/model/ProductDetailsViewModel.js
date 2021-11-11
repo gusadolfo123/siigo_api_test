@@ -17,7 +17,7 @@ import ProductDetail from './ProductDetail';
 /**
  * The ProductDetailsViewModel model module.
  * @module model/ProductDetailsViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class ProductDetailsViewModel {
     /**
@@ -72,26 +72,31 @@ class ProductDetailsViewModel {
 }
 
 /**
+ * Represents the identification code of the product. This value can be an alphanumeric  code that will represent the code id of the cost center.  For example, this name can be 'Item-1' or 'toy007'.
  * @member {String} product_id
  */
 ProductDetailsViewModel.prototype['product_id'] = undefined;
 
 /**
+ * Represents the name of product or service.
  * @member {String} product_name
  */
 ProductDetailsViewModel.prototype['product_name'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} product_description
  */
 ProductDetailsViewModel.prototype['product_description'] = undefined;
 
 /**
+ * Represents product price.
  * @member {Number} product_price
  */
 ProductDetailsViewModel.prototype['product_price'] = undefined;
 
 /**
+ * Contains a list of products details.
  * @member {Array.<module:model/ProductDetail>} product_details
  */
 ProductDetailsViewModel.prototype['product_details'] = undefined;

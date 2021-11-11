@@ -19,7 +19,7 @@ import VoucherViewModel from './VoucherViewModel';
 /**
  * The VouchersViewModel model module.
  * @module model/VouchersViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class VouchersViewModel {
     /**
@@ -72,6 +72,7 @@ class VouchersViewModel {
 VouchersViewModel.prototype['pagination'] = undefined;
 
 /**
+ * Contains the Results, this results will be a list of Vouchers
  * @member {Array.<module:model/VoucherViewModel>} results
  */
 VouchersViewModel.prototype['results'] = undefined;

@@ -17,7 +17,7 @@ import PricesListProducts from './PricesListProducts';
 /**
  * The PricesProducts model module.
  * @module model/PricesProducts
- * @version 0.1.0
+ * @version 0.0.0
  */
 class PricesProducts {
     /**
@@ -62,11 +62,13 @@ class PricesProducts {
 }
 
 /**
+ * Represents the currency code
  * @member {String} currency_code
  */
 PricesProducts.prototype['currency_code'] = undefined;
 
 /**
+ * Contains a price list
  * @member {Array.<module:model/PricesListProducts>} price_list
  */
 PricesProducts.prototype['price_list'] = undefined;

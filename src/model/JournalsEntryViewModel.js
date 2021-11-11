@@ -19,7 +19,7 @@ import PageListModel from './PageListModel';
 /**
  * The JournalsEntryViewModel model module.
  * @module model/JournalsEntryViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class JournalsEntryViewModel {
     /**
@@ -73,6 +73,7 @@ class JournalsEntryViewModel {
 JournalsEntryViewModel.prototype['pagination'] = undefined;
 
 /**
+ * Contains the Results, this results will be a list of Journals.
  * @member {Array.<module:model/JournalEntryViewModel>} results
  */
 JournalsEntryViewModel.prototype['results'] = undefined;

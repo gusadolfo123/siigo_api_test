@@ -22,7 +22,7 @@ import RetentionsCommand from './RetentionsCommand';
 /**
  * The CreateCreditNoteCommand model module.
  * @module model/CreateCreditNoteCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class CreateCreditNoteCommand {
     /**
@@ -108,25 +108,25 @@ class CreateCreditNoteCommand {
 CreateCreditNoteCommand.prototype['document'] = undefined;
 
 /**
- * Represents the sequential number of the document,   this number is required depending of document type
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 CreateCreditNoteCommand.prototype['number'] = undefined;
 
 /**
- * Represents the information about document type,   document type Id and the sequential number of the document
+ * Represents information about document type,   document type Id, and the sequential number of the document.  For example 'NC-2-22' indicates that its document type is a 'Credit note',  its document type id is '2' and its sequential number is '22'.
  * @member {String} name
  */
 CreateCreditNoteCommand.prototype['name'] = undefined;
 
 /**
- * Represents the date of document. This format must be yyyy-MM-dd
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'  for example, '2021-10-31' to indicate the date 'October 31st, 2021'.
  * @member {String} date
  */
 CreateCreditNoteCommand.prototype['date'] = undefined;
 
 /**
- * Represents the GUID of invoice to which the credit note was applied
+ * Represents the GUID of invoice to which the credit note was applied.
  * @member {String} invoice
  */
 CreateCreditNoteCommand.prototype['invoice'] = undefined;
@@ -137,13 +137,13 @@ CreateCreditNoteCommand.prototype['invoice'] = undefined;
 CreateCreditNoteCommand.prototype['reason'] = undefined;
 
 /**
- * Represents the Id of seller associated to invoice
+ * Represents the Id of the seller associated with the invoice,   for example, the id '629' can represent a seller called 'Micke'.
  * @member {Number} seller
  */
 CreateCreditNoteCommand.prototype['seller'] = undefined;
 
 /**
- * Represents the number of the cost center
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 CreateCreditNoteCommand.prototype['cost_center'] = undefined;
@@ -154,31 +154,31 @@ CreateCreditNoteCommand.prototype['cost_center'] = undefined;
 CreateCreditNoteCommand.prototype['currency'] = undefined;
 
 /**
- * Contains a list information about every Retention associated to invoice
+ * Contains a list of information about every Retention associated to the invoice.
  * @member {Array.<module:model/RetentionsCommand>} retentions
  */
 CreateCreditNoteCommand.prototype['retentions'] = undefined;
 
 /**
- * Represent the Advance Payment
+ * Represent the Advance Payment. For example, an advance payment of 33.3 dollars  for a product of 40 dollars.
  * @member {Number} advance_payment
  */
 CreateCreditNoteCommand.prototype['advance_payment'] = undefined;
 
 /**
- * Represent additional comments in document
+ * Represent additional comments in document.
  * @member {String} observations
  */
 CreateCreditNoteCommand.prototype['observations'] = undefined;
 
 /**
- * Contains a list with items associated to invoice
+ * Contains a list with items associated to invoice.
  * @member {Array.<module:model/ItemsCommand>} items
  */
 CreateCreditNoteCommand.prototype['items'] = undefined;
 
 /**
- * Contains a list with payments types associated to invoice
+ * Contains a list with payments types associated to invoice.
  * @member {Array.<module:model/PaymentsCommand>} payments
  */
 CreateCreditNoteCommand.prototype['payments'] = undefined;

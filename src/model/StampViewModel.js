@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The StampViewModel model module.
  * @module model/StampViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class StampViewModel {
     /**
@@ -70,26 +70,31 @@ class StampViewModel {
 }
 
 /**
+ * Represents the status of an electronic document, this state could be:  \"Draft\": The document was saved correctly in SiigoCloud but this document.  was not sent to the tax collector entity.  \"Accepted\": The document was sent and accepted correctly.  \"Rejected\": The document was sent with errors therefore it was rejected.
  * @member {String} status
  */
 StampViewModel.prototype['status'] = undefined;
 
 /**
+ * Represents Unique electronic billing code.
  * @member {String} cufe
  */
 StampViewModel.prototype['cufe'] = undefined;
 
 /**
+ * Represents Unique Code of electronic document.
  * @member {String} cude
  */
 StampViewModel.prototype['cude'] = undefined;
 
 /**
+ * Represents observations associated to an electronic document.
  * @member {String} observations
  */
 StampViewModel.prototype['observations'] = undefined;
 
 /**
+ * Represents the document errors.
  * @member {String} errors
  */
 StampViewModel.prototype['errors'] = undefined;

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaxesCommand model module.
  * @module model/TaxesCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class TaxesCommand {
     /**
@@ -58,6 +58,7 @@ class TaxesCommand {
 }
 
 /**
+ * Represents the id of the tax, the value of this field must be an integer  number that represents the unique id of the tax.
  * @member {Number} id
  */
 TaxesCommand.prototype['id'] = undefined;

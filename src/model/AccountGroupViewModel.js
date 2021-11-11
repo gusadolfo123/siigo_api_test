@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AccountGroupViewModel model module.
  * @module model/AccountGroupViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class AccountGroupViewModel {
     /**
@@ -65,19 +65,19 @@ class AccountGroupViewModel {
 }
 
 /**
- * The id of the account-group
+ * Represents the id of the account group, the value of this field must be an integer  number that represents the unique id of the account group.
  * @member {Number} id
  */
 AccountGroupViewModel.prototype['id'] = undefined;
 
 /**
- * The name of the account-group
+ * Represents the name of the account group.
  * @member {String} name
  */
 AccountGroupViewModel.prototype['name'] = undefined;
 
 /**
- * The status of the account-group
+ * Represents if the status of an account group is activated or disabled,   the value of this status will be true (for activated) or false (disabled).  By default, this field will be active.
  * @member {Boolean} active
  */
 AccountGroupViewModel.prototype['active'] = undefined;

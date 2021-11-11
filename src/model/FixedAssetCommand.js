@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The FixedAssetCommand model module.
  * @module model/FixedAssetCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class FixedAssetCommand {
     /**
@@ -58,6 +58,7 @@ class FixedAssetCommand {
 }
 
 /**
+ * Represents the id of the fixed asset, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 FixedAssetCommand.prototype['id'] = undefined;

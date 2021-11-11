@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Warehouse model module.
  * @module model/Warehouse
- * @version 0.1.0
+ * @version 0.0.0
  */
 class Warehouse {
     /**
@@ -64,16 +64,19 @@ class Warehouse {
 }
 
 /**
+ * Represents the unique id of the warehouse.
  * @member {Number} id
  */
 Warehouse.prototype['id'] = undefined;
 
 /**
+ * Represents the name of the warehouse.
  * @member {String} name
  */
 Warehouse.prototype['name'] = undefined;
 
 /**
+ * Represents the available quantity of the product in warehouse.
  * @member {Number} quantity
  */
 Warehouse.prototype['quantity'] = undefined;

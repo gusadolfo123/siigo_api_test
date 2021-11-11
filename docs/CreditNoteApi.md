@@ -4,7 +4,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createCreditNote**](CreditNoteApi.md#createCreditNote) | **POST** /v1/credit-notes | Creates a Credit Note.
 [**getCreditNote**](CreditNoteApi.md#getCreditNote) | **GET** /v1/credit-notes/{id} | Gets a CreditNote by GUID.
-[**getCreditNotePdf**](CreditNoteApi.md#getCreditNotePdf) | **GET** /v1/credit-notes/{id}/pdf | Gets an Credit Note PDF by GUID.
+[**getCreditNotePdf**](CreditNoteApi.md#getCreditNotePdf) | **GET** /v1/credit-notes/{id}/pdf | Gets a Credit Note PDF by GUID.
 [**getCreditNotes**](CreditNoteApi.md#getCreditNotes) | **GET** /v1/credit-notes | Gets a list of Credit Notes with pagination.
 
 
@@ -26,7 +26,7 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.CreditNoteApi();
 
 let opts = {
-  'createCreditNoteCommand': new SiigoApi.CreateCreditNoteCommand() // CreateCreditNoteCommand | Represents the request with the credit note information
+  'createCreditNoteCommand': new SiigoApi.CreateCreditNoteCommand() // CreateCreditNoteCommand | Represents the request with the credit note information.
 };
 
 apiInstance.createCreditNote(opts).then((data) => {
@@ -44,7 +44,7 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.CreditNoteApi();
     let opts = {
-    'createCreditNoteCommand': new SiigoApi.CreateCreditNoteCommand() // CreateCreditNoteCommand | Represents the request with the credit note information
+    'createCreditNoteCommand': new SiigoApi.CreateCreditNoteCommand() // CreateCreditNoteCommand | Represents the request with the credit note information.
     };
 
     const data = await apiInstance.createCreditNote(opts);
@@ -61,7 +61,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **createCreditNoteCommand** | [**CreateCreditNoteCommand**](CreateCreditNoteCommand.md)| Represents the request with the credit note information | [optional] 
+ **createCreditNoteCommand** | [**CreateCreditNoteCommand**](CreateCreditNoteCommand.md)| Represents the request with the credit note information. | [optional] 
 
 ### Return type
 
@@ -92,7 +92,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.CreditNoteApi();
 
-let id = null; // String | Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+let id = null; // String | Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
 
 apiInstance.getCreditNote(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -108,7 +108,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.CreditNoteApi();
-    let id = null; // String | Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+    let id = null; // String | Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
 
     const data = await apiInstance.getCreditNote(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -124,7 +124,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)| Represents the unique Id of credit note, this value must be a \&quot;Guid\&quot;  with the next format 00000000-0000-0000-0000-000000000000 | 
+ **id** | [**String**](.md)| Represents the unique Id of credit note, this value must be a &#39;Guid&#39;  with the next format 00000000-0000-0000-0000-000000000000. | 
 
 ### Return type
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 > CreditNotePdfViewModel getCreditNotePdf(id)
 
-Gets an Credit Note PDF by GUID.
+Gets a Credit Note PDF by GUID.
 
 ### Example
 
@@ -155,7 +155,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.CreditNoteApi();
 
-let id = null; // String | Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+let id = null; // String | Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
 
 apiInstance.getCreditNotePdf(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -171,7 +171,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.CreditNoteApi();
-    let id = null; // String | Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+    let id = null; // String | Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
 
     const data = await apiInstance.getCreditNotePdf(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -187,7 +187,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)| Represents the unique Id of credit note, this value must be a \&quot;Guid\&quot;  with the next format 00000000-0000-0000-0000-000000000000 | 
+ **id** | [**String**](.md)| Represents the unique Id of credit note, this value must be a &#39;Guid&#39;  with the next format 00000000-0000-0000-0000-000000000000. | 
 
 ### Return type
 

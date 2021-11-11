@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaxesModel model module.
  * @module model/TaxesModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class TaxesModel {
     /**
@@ -73,31 +73,37 @@ class TaxesModel {
 }
 
 /**
+ * Represents the id of the tax, the value of this field must be an integer  number that represents the unique id of the tax.
  * @member {Number} id
  */
 TaxesModel.prototype['id'] = undefined;
 
 /**
+ * Represents the name of the VAT. This value can be an alphanumeric  name like 'VAT 19%' or 'RET 0.55%'.
  * @member {String} name
  */
 TaxesModel.prototype['name'] = undefined;
 
 /**
+ * Represents the type of tax. For example, 'IVA', 'Retefuente', 'ReteIVA',  'ReteICA', 'Impoconsumo', 'AdValorem', or 'Autorretencion'.
  * @member {String} type
  */
 TaxesModel.prototype['type'] = undefined;
 
 /**
+ * Represents the percentage of the tax. For example, for Colombia in the year 2021   the percentage value of the VAT was 19%.
  * @member {Number} percentage
  */
 TaxesModel.prototype['percentage'] = undefined;
 
 /**
+ * Represents the value of retention associated with the document.   For example, 5 dollars.
  * @member {Number} value
  */
 TaxesModel.prototype['value'] = undefined;
 
 /**
+ * Represents the base value to get the tax.
  * @member {Number} base_value
  */
 TaxesModel.prototype['base_value'] = undefined;

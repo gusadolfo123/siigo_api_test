@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The JournalEntryDocumentModel model module.
  * @module model/JournalEntryDocumentModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class JournalEntryDocumentModel {
     /**
@@ -58,6 +58,7 @@ class JournalEntryDocumentModel {
 }
 
 /**
+ * Represents the id of the journal.  For example, the number id '27441'.
  * @member {Number} id
  */
 JournalEntryDocumentModel.prototype['id'] = undefined;

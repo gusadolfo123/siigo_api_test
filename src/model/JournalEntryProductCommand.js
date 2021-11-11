@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The JournalEntryProductCommand model module.
  * @module model/JournalEntryProductCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class JournalEntryProductCommand {
     /**
@@ -64,16 +64,19 @@ class JournalEntryProductCommand {
 }
 
 /**
+ * Represents the unique code of the item. This value can be an alphanumeric  code that will represent the code id of the item.  For example,'item-1' or 'toy-007'.
  * @member {String} code
  */
 JournalEntryProductCommand.prototype['code'] = undefined;
 
 /**
+ * Represents the id of the Warehouse, the value of this field must be an integer  number that represents the unique id of the warehouse.
  * @member {Number} warehouse
  */
 JournalEntryProductCommand.prototype['warehouse'] = undefined;
 
 /**
+ * Represents product quantity.  For example, '2' quantities of the 'item-01'.
  * @member {Number} quantity
  */
 JournalEntryProductCommand.prototype['quantity'] = undefined;

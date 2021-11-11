@@ -21,7 +21,7 @@ import Payment from './Payment';
 /**
  * The CreateVoucherCommand model module.
  * @module model/CreateVoucherCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class CreateVoucherCommand {
     /**
@@ -98,21 +98,25 @@ class CreateVoucherCommand {
 CreateVoucherCommand.prototype['document'] = undefined;
 
 /**
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 CreateVoucherCommand.prototype['number'] = undefined;
 
 /**
+ * Contains information about document type,   document type Id and the sequential number of the document.  For example, 'RC-2-22' indicates that its document type is a 'voucher',  its document type id is '2' and its sequential number is '22'.
  * @member {String} name
  */
 CreateVoucherCommand.prototype['name'] = undefined;
 
 /**
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'.  For example, '2021-10-31' to indicate the date 'October 31st, 2021'.
  * @member {String} date
  */
 CreateVoucherCommand.prototype['date'] = undefined;
 
 /**
+ * Represents the voucher type, this type will be 'DebtPayment', 'AdvancePayment' or 'Detailed'.
  * @member {String} type
  */
 CreateVoucherCommand.prototype['type'] = undefined;
@@ -123,6 +127,7 @@ CreateVoucherCommand.prototype['type'] = undefined;
 CreateVoucherCommand.prototype['customer'] = undefined;
 
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 CreateVoucherCommand.prototype['cost_center'] = undefined;
@@ -133,6 +138,7 @@ CreateVoucherCommand.prototype['cost_center'] = undefined;
 CreateVoucherCommand.prototype['currency'] = undefined;
 
 /**
+ * Contains a list with items associated to voucher.
  * @member {Array.<module:model/Item>} items
  */
 CreateVoucherCommand.prototype['items'] = undefined;
@@ -143,6 +149,7 @@ CreateVoucherCommand.prototype['items'] = undefined;
 CreateVoucherCommand.prototype['payment'] = undefined;
 
 /**
+ * Represent additional comments in document.
  * @member {String} observations
  */
 CreateVoucherCommand.prototype['observations'] = undefined;

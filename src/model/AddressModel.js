@@ -17,7 +17,7 @@ import CityModel from './CityModel';
 /**
  * The AddressModel model module.
  * @module model/AddressModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class AddressModel {
     /**
@@ -65,7 +65,7 @@ class AddressModel {
 }
 
 /**
- * Represents the address of customer
+ * Represents the address of customer.
  * @member {String} address
  */
 AddressModel.prototype['address'] = undefined;
@@ -76,7 +76,7 @@ AddressModel.prototype['address'] = undefined;
 AddressModel.prototype['city'] = undefined;
 
 /**
- * Represent the Postal Code of customer
+ * Represent the Postal Code of customer.  For example, the code '110911'
  * @member {String} postal_code
  */
 AddressModel.prototype['postal_code'] = undefined;

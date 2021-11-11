@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaxViewModel model module.
  * @module model/TaxViewModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class TaxViewModel {
     /**
@@ -70,26 +70,31 @@ class TaxViewModel {
 }
 
 /**
+ * Represents the id of the tax, the value of this field must be an integer  number that represents the unique id of the tax.
  * @member {Number} id
  */
 TaxViewModel.prototype['id'] = undefined;
 
 /**
+ * Represents the name of tax. For example, 'VAT 19%'.
  * @member {String} name
  */
 TaxViewModel.prototype['name'] = undefined;
 
 /**
+ * Represents the type of the tax. This field can be 'Retefuente', 'IVA', 'ReteIVA',  'ReteICA', 'Impoconsumo', 'AdValorem', or 'Autorretencion'.
  * @member {String} type
  */
 TaxViewModel.prototype['type'] = undefined;
 
 /**
+ * Represents the numerical percentage of the tax. For example, '19' is equal to '19%'.
  * @member {Number} percentage
  */
 TaxViewModel.prototype['percentage'] = undefined;
 
 /**
+ * Represents if the status of the tax is activated or disabled,   the value of this status will be true (for activated) or false (disabled).  By default, this field will be active.
  * @member {Boolean} active
  */
 TaxViewModel.prototype['active'] = undefined;

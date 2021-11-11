@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AdditionalFields model module.
  * @module model/AdditionalFields
- * @version 0.1.0
+ * @version 0.0.0
  */
 class AdditionalFields {
     /**
@@ -67,21 +67,25 @@ class AdditionalFields {
 }
 
 /**
+ * Represents the barcode.
  * @member {String} barcode
  */
 AdditionalFields.prototype['barcode'] = undefined;
 
 /**
+ * Represents the brand of product.
  * @member {String} brand
  */
 AdditionalFields.prototype['brand'] = undefined;
 
 /**
+ * Represents the tariff code of product.
  * @member {String} tariff
  */
 AdditionalFields.prototype['tariff'] = undefined;
 
 /**
+ * Represents the model of product.
  * @member {String} model
  */
 AdditionalFields.prototype['model'] = undefined;

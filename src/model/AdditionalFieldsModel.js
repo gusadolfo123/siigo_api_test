@@ -18,7 +18,7 @@ import PursacheOrderModel from './PursacheOrderModel';
 /**
  * The AdditionalFieldsModel model module.
  * @module model/AdditionalFieldsModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class AdditionalFieldsModel {
     /**

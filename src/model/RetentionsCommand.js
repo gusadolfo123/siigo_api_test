@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RetentionsCommand model module.
  * @module model/RetentionsCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class RetentionsCommand {
     /**
@@ -58,6 +58,7 @@ class RetentionsCommand {
 }
 
 /**
+ * Represents the id of the retention, the value of this field must be an integer  number that represents the unique id of the retention.
  * @member {Number} id
  */
 RetentionsCommand.prototype['id'] = undefined;

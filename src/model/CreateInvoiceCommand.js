@@ -24,7 +24,7 @@ import StampCommand from './StampCommand';
 /**
  * The CreateInvoiceCommand model module.
  * @module model/CreateInvoiceCommand
- * @version 0.1.0
+ * @version 0.0.0
  */
 class CreateInvoiceCommand {
     /**
@@ -113,16 +113,19 @@ class CreateInvoiceCommand {
 CreateInvoiceCommand.prototype['document'] = undefined;
 
 /**
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 CreateInvoiceCommand.prototype['number'] = undefined;
 
 /**
+ * Contains information about document type,   document type Id, and the sequential number of the document.  For example, 'FV-2-22' indicates that its document type is an 'invoice',  its document type id is '2' and its sequential number is '22'.
  * @member {String} name
  */
 CreateInvoiceCommand.prototype['name'] = undefined;
 
 /**
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'.  For example, '2021-10-31' to indicate the date 'October 31st, 2021'.
  * @member {String} date
  */
 CreateInvoiceCommand.prototype['date'] = undefined;
@@ -133,6 +136,7 @@ CreateInvoiceCommand.prototype['date'] = undefined;
 CreateInvoiceCommand.prototype['customer'] = undefined;
 
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 CreateInvoiceCommand.prototype['cost_center'] = undefined;
@@ -143,31 +147,37 @@ CreateInvoiceCommand.prototype['cost_center'] = undefined;
 CreateInvoiceCommand.prototype['currency'] = undefined;
 
 /**
+ * Represents the Id of the seller associated with the invoice.   For example, the id '629' can represent a seller called 'Mike'.
  * @member {Number} seller
  */
 CreateInvoiceCommand.prototype['seller'] = undefined;
 
 /**
+ * Contains a list information about every Retention associated to invoice.
  * @member {Array.<module:model/RetentionsCommand>} retentions
  */
 CreateInvoiceCommand.prototype['retentions'] = undefined;
 
 /**
+ * Represent the Advance Payment. For example, an advance payment of 33.3 dollars  for a product of 40 dollars.
  * @member {Number} advance_payment
  */
 CreateInvoiceCommand.prototype['advance_payment'] = undefined;
 
 /**
+ * Represent additional comments in document.
  * @member {String} observations
  */
 CreateInvoiceCommand.prototype['observations'] = undefined;
 
 /**
+ * Contains a list of items associated with the invoice.
  * @member {Array.<module:model/ItemsCommand>} items
  */
 CreateInvoiceCommand.prototype['items'] = undefined;
 
 /**
+ * Contains a list with payments types associated to invoice.
  * @member {Array.<module:model/PaymentsCommand>} payments
  */
 CreateInvoiceCommand.prototype['payments'] = undefined;

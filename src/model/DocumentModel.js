@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentModel model module.
  * @module model/DocumentModel
- * @version 0.1.0
+ * @version 0.0.0
  */
 class DocumentModel {
     /**
@@ -58,7 +58,7 @@ class DocumentModel {
 }
 
 /**
- * Represents the Id of document
+ * Represents the Id of document. The value of this field must be an integer  number that represents the unique id of the document type, for example '22'.
  * @member {Number} id
  */
 DocumentModel.prototype['id'] = undefined;

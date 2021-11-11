@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Customer model module.
  * @module model/Customer
- * @version 0.1.0
+ * @version 0.0.0
  */
 class Customer {
     /**
@@ -61,11 +61,13 @@ class Customer {
 }
 
 /**
+ * Represents the identification number of customer.  For example, this identification can be like '13832081'.
  * @member {String} identification
  */
 Customer.prototype['identification'] = undefined;
 
 /**
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 Customer.prototype['branch_office'] = undefined;
