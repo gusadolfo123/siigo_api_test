@@ -163,10 +163,6 @@ export function prueba22(){
   return "prueba22";
 }
 
-export function prueba12(){
-  return "prueba12";
-}
-
 /**
 * Siigo_Api_v1.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
