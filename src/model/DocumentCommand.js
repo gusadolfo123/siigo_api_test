@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentCommand model module.
  * @module model/DocumentCommand
- * @version 0.1.0
+ * @version v1
  */
 class DocumentCommand {
     /**

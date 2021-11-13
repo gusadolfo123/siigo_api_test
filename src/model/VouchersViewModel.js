@@ -19,7 +19,7 @@ import VoucherViewModel from './VoucherViewModel';
 /**
  * The VouchersViewModel model module.
  * @module model/VouchersViewModel
- * @version 0.1.0
+ * @version v1
  */
 class VouchersViewModel {
     /**

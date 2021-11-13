@@ -18,7 +18,7 @@ import PaymentTypesViewModel from '../model/PaymentTypesViewModel';
 /**
 * PaymentTypes service.
 * @module api/PaymentTypesApi
-* @version 0.1.0
+* @version v1
 */
 export default class PaymentTypesApi {
 

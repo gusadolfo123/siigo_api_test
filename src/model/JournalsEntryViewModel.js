@@ -19,7 +19,7 @@ import PageListModel from './PageListModel';
 /**
  * The JournalsEntryViewModel model module.
  * @module model/JournalsEntryViewModel
- * @version 0.1.0
+ * @version v1
  */
 class JournalsEntryViewModel {
     /**

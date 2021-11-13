@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PaymentTypesViewModel model module.
  * @module model/PaymentTypesViewModel
- * @version 0.1.0
+ * @version v1
  */
 class PaymentTypesViewModel {
     /**

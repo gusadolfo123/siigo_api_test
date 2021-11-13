@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CityModel model module.
  * @module model/CityModel
- * @version 0.1.0
+ * @version v1
  */
 class CityModel {
     /**

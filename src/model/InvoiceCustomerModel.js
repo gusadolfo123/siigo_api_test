@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The InvoiceCustomerModel model module.
  * @module model/InvoiceCustomerModel
- * @version 0.1.0
+ * @version v1
  */
 class InvoiceCustomerModel {
     /**

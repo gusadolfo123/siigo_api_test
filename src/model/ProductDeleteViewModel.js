@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ProductDeleteViewModel model module.
  * @module model/ProductDeleteViewModel
- * @version 0.1.0
+ * @version v1
  */
 class ProductDeleteViewModel {
     /**

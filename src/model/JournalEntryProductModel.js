@@ -17,7 +17,7 @@ import JournalEntryWarehouseModel from './JournalEntryWarehouseModel';
 /**
  * The JournalEntryProductModel model module.
  * @module model/JournalEntryProductModel
- * @version 0.1.0
+ * @version v1
  */
 class JournalEntryProductModel {
     /**

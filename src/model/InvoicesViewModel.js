@@ -19,7 +19,7 @@ import PageListModel from './PageListModel';
 /**
  * The InvoicesViewModel model module.
  * @module model/InvoicesViewModel
- * @version 0.1.0
+ * @version v1
  */
 class InvoicesViewModel {
     /**

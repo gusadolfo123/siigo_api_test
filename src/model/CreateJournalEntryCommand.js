@@ -19,7 +19,7 @@ import JournalEntryItem from './JournalEntryItem';
 /**
  * The CreateJournalEntryCommand model module.
  * @module model/CreateJournalEntryCommand
- * @version 0.1.0
+ * @version v1
  */
 class CreateJournalEntryCommand {
     /**

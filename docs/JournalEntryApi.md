@@ -112,7 +112,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.JournalEntryApi();
 
-let id = null; // String | Represent the Journal id by GUID.
+let id = "id_example"; // String | Represent the Journal id by GUID.
 
 apiInstance.getJournalsId(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -128,7 +128,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.JournalEntryApi();
-    let id = null; // String | Represent the Journal id by GUID.
+    let id = "id_example"; // String | Represent the Journal id by GUID.
 
     const data = await apiInstance.getJournalsId(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -144,7 +144,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)| Represent the Journal id by GUID. | 
+ **id** | **String**| Represent the Journal id by GUID. | 
 
 ### Return type
 

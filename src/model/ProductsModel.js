@@ -23,7 +23,7 @@ import Warehouse from './Warehouse';
 /**
  * The ProductsModel model module.
  * @module model/ProductsModel
- * @version 0.1.0
+ * @version v1
  */
 class ProductsModel {
     /**

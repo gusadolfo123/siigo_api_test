@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PursacheOrderModel model module.
  * @module model/PursacheOrderModel
- * @version 0.1.0
+ * @version v1
  */
 class PursacheOrderModel {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The JournalDue model module.
  * @module model/JournalDue
- * @version 0.1.0
+ * @version v1
  */
 class JournalDue {
     /**

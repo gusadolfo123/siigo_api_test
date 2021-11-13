@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The FiscalResponsabilitiesModel model module.
  * @module model/FiscalResponsabilitiesModel
- * @version 0.1.0
+ * @version v1
  */
 class FiscalResponsabilitiesModel {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The InvoicePdfViewModel model module.
  * @module model/InvoicePdfViewModel
- * @version 0.1.0
+ * @version v1
  */
 class InvoicePdfViewModel {
     /**

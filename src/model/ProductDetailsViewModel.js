@@ -17,7 +17,7 @@ import ProductDetail from './ProductDetail';
 /**
  * The ProductDetailsViewModel model module.
  * @module model/ProductDetailsViewModel
- * @version 0.1.0
+ * @version v1
  */
 class ProductDetailsViewModel {
     /**

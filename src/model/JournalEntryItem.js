@@ -22,7 +22,7 @@ import TaxesCommand from './TaxesCommand';
 /**
  * The JournalEntryItem model module.
  * @module model/JournalEntryItem
- * @version 0.1.0
+ * @version v1
  */
 class JournalEntryItem {
     /**

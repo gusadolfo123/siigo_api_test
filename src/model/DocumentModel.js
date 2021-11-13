@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentModel model module.
  * @module model/DocumentModel
- * @version 0.1.0
+ * @version v1
  */
 class DocumentModel {
     /**

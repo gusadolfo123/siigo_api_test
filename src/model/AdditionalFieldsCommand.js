@@ -18,7 +18,7 @@ import PurchaseOrderCommand from './PurchaseOrderCommand';
 /**
  * The AdditionalFieldsCommand model module.
  * @module model/AdditionalFieldsCommand
- * @version 0.1.0
+ * @version v1
  */
 class AdditionalFieldsCommand {
     /**

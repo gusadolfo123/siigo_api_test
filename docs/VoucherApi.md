@@ -112,7 +112,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.VoucherApi();
 
-let id = null; // String | 
+let id = "id_example"; // String | 
 
 apiInstance.v1VouchersIdGet(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -128,7 +128,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.VoucherApi();
-    let id = null; // String | 
+    let id = "id_example"; // String | 
 
     const data = await apiInstance.v1VouchersIdGet(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -144,7 +144,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)|  | 
+ **id** | **String**|  | 
 
 ### Return type
 

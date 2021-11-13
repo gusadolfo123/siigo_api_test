@@ -18,7 +18,7 @@ import UsersModel from './UsersModel';
 /**
  * The UsersViewModel model module.
  * @module model/UsersViewModel
- * @version 0.1.0
+ * @version v1
  */
 class UsersViewModel {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ProductTaxesCommand model module.
  * @module model/ProductTaxesCommand
- * @version 0.1.0
+ * @version v1
  */
 class ProductTaxesCommand {
     /**

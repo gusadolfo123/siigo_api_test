@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AssetGroupsViewModel model module.
  * @module model/AssetGroupsViewModel
- * @version 0.1.0
+ * @version v1
  */
 class AssetGroupsViewModel {
     /**

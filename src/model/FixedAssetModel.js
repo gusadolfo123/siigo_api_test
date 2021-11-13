@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The FixedAssetModel model module.
  * @module model/FixedAssetModel
- * @version 0.1.0
+ * @version v1
  */
 class FixedAssetModel {
     /**

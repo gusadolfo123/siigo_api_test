@@ -19,7 +19,7 @@ import FixedAssetsViewModel from '../model/FixedAssetsViewModel';
 /**
 * FixedAssets service.
 * @module api/FixedAssetsApi
-* @version 0.1.0
+* @version v1
 */
 export default class FixedAssetsApi {
 
