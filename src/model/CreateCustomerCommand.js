@@ -22,7 +22,7 @@ import RelatedUsersCommand from './RelatedUsersCommand';
 /**
  * The CreateCustomerCommand model module.
  * @module model/CreateCustomerCommand
- * @version 0.1.0
+ * @version v1
  */
 class CreateCustomerCommand {
     /**

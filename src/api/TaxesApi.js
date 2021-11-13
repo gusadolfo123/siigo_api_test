@@ -18,7 +18,7 @@ import TaxViewModel from '../model/TaxViewModel';
 /**
 * Taxes service.
 * @module api/TaxesApi
-* @version 0.1.0
+* @version v1
 */
 export default class TaxesApi {
 

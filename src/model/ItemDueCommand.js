@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ItemDueCommand model module.
  * @module model/ItemDueCommand
- * @version 0.1.0
+ * @version v1
  */
 class ItemDueCommand {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The FixedAssetCommand model module.
  * @module model/FixedAssetCommand
- * @version 0.1.0
+ * @version v1
  */
 class FixedAssetCommand {
     /**

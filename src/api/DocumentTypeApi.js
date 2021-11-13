@@ -18,7 +18,7 @@ import DocumentTypeViewModel from '../model/DocumentTypeViewModel';
 /**
 * DocumentType service.
 * @module api/DocumentTypeApi
-* @version 0.1.0
+* @version v1
 */
 export default class DocumentTypeApi {
 

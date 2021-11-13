@@ -19,7 +19,7 @@ import TaxesModel from './TaxesModel';
 /**
  * The ItemVoucher model module.
  * @module model/ItemVoucher
- * @version 0.1.0
+ * @version v1
  */
 class ItemVoucher {
     /**

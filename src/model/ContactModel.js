@@ -17,7 +17,7 @@ import PhoneModel from './PhoneModel';
 /**
  * The ContactModel model module.
  * @module model/ContactModel
- * @version 0.1.0
+ * @version v1
  */
 class ContactModel {
     /**

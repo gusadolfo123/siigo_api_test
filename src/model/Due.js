@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Due model module.
  * @module model/Due
- * @version 0.1.0
+ * @version v1
  */
 class Due {
     /**

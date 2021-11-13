@@ -22,7 +22,7 @@ import InvoicesViewModel from '../model/InvoicesViewModel';
 /**
 * Invoice service.
 * @module api/InvoiceApi
-* @version 0.1.0
+* @version v1
 */
 export default class InvoiceApi {
 

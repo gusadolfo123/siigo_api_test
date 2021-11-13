@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The JournalEntryWarehouseModel model module.
  * @module model/JournalEntryWarehouseModel
- * @version 0.1.0
+ * @version v1
  */
 class JournalEntryWarehouseModel {
     /**

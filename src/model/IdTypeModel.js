@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The IdTypeModel model module.
  * @module model/IdTypeModel
- * @version 0.1.0
+ * @version v1
  */
 class IdTypeModel {
     /**

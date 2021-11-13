@@ -17,7 +17,7 @@ import PricesListProducts from './PricesListProducts';
 /**
  * The PricesProducts model module.
  * @module model/PricesProducts
- * @version 0.1.0
+ * @version v1
  */
 class PricesProducts {
     /**

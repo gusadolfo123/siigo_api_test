@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EInvoiceErrorViewModel model module.
  * @module model/EInvoiceErrorViewModel
- * @version 0.1.0
+ * @version v1
  */
 class EInvoiceErrorViewModel {
     /**

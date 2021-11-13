@@ -18,7 +18,7 @@ import UsersViewModel from '../model/UsersViewModel';
 /**
 * Users service.
 * @module api/UsersApi
-* @version 0.1.0
+* @version v1
 */
 export default class UsersApi {
 

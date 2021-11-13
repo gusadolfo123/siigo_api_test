@@ -21,7 +21,7 @@ import Payment from './Payment';
 /**
  * The CreateVoucherCommand model module.
  * @module model/CreateVoucherCommand
- * @version 0.1.0
+ * @version v1
  */
 class CreateVoucherCommand {
     /**

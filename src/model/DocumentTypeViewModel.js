@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentTypeViewModel model module.
  * @module model/DocumentTypeViewModel
- * @version 0.1.0
+ * @version v1
  */
 class DocumentTypeViewModel {
     /**

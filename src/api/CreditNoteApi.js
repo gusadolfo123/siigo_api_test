@@ -21,7 +21,7 @@ import CreditNotesViewModel from '../model/CreditNotesViewModel';
 /**
 * CreditNote service.
 * @module api/CreditNoteApi
-* @version 0.1.0
+* @version v1
 */
 export default class CreditNoteApi {
 

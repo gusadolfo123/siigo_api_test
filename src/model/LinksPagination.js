@@ -17,7 +17,7 @@ import Link from './Link';
 /**
  * The LinksPagination model module.
  * @module model/LinksPagination
- * @version 0.1.0
+ * @version v1
  */
 class LinksPagination {
     /**

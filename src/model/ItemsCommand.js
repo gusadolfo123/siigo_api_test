@@ -17,7 +17,7 @@ import TaxesCommand from './TaxesCommand';
 /**
  * The ItemsCommand model module.
  * @module model/ItemsCommand
- * @version 0.1.0
+ * @version v1
  */
 class ItemsCommand {
     /**

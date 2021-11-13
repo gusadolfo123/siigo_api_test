@@ -19,7 +19,7 @@ import PageListModel from './PageListModel';
 /**
  * The CustomersViewModel model module.
  * @module model/CustomersViewModel
- * @version 0.1.0
+ * @version v1
  */
 class CustomersViewModel {
     /**

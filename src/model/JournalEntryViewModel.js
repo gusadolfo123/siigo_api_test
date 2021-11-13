@@ -20,7 +20,7 @@ import Metadata from './Metadata';
 /**
  * The JournalEntryViewModel model module.
  * @module model/JournalEntryViewModel
- * @version 0.1.0
+ * @version v1
  */
 class JournalEntryViewModel {
     /**

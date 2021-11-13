@@ -22,7 +22,7 @@ import RetentionsCommand from './RetentionsCommand';
 /**
  * The CreateCreditNoteCommand model module.
  * @module model/CreateCreditNoteCommand
- * @version 0.1.0
+ * @version v1
  */
 class CreateCreditNoteCommand {
     /**

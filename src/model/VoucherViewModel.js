@@ -22,7 +22,7 @@ import PaymentsModel from './PaymentsModel';
 /**
  * The VoucherViewModel model module.
  * @module model/VoucherViewModel
- * @version 0.1.0
+ * @version v1
  */
 class VoucherViewModel {
     /**

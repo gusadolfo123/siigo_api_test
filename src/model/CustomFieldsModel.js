@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CustomFieldsModel model module.
  * @module model/CustomFieldsModel
- * @version 0.1.0
+ * @version v1
  */
 class CustomFieldsModel {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreditNotePdfViewModel model module.
  * @module model/CreditNotePdfViewModel
- * @version 0.1.0
+ * @version v1
  */
 class CreditNotePdfViewModel {
     /**

@@ -19,7 +19,7 @@ import ProductTaxesCommand from './ProductTaxesCommand';
 /**
  * The ProductCommand model module.
  * @module model/ProductCommand
- * @version 0.1.0
+ * @version v1
  */
 class ProductCommand {
     /**

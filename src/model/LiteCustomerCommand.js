@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The LiteCustomerCommand model module.
  * @module model/LiteCustomerCommand
- * @version 0.1.0
+ * @version v1
  */
 class LiteCustomerCommand {
     /**

@@ -18,7 +18,7 @@ import PriceListsViewModel from '../model/PriceListsViewModel';
 /**
 * PriceLists service.
 * @module api/PriceListsApi
-* @version 0.1.0
+* @version v1
 */
 export default class PriceListsApi {
 

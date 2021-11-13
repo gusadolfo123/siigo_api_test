@@ -17,7 +17,7 @@ import PriceListItemViewModel from './PriceListItemViewModel';
 /**
  * The PriceListViewModel model module.
  * @module model/PriceListViewModel
- * @version 0.1.0
+ * @version v1
  */
 class PriceListViewModel {
     /**

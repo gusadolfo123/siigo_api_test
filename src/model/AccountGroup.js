@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AccountGroup model module.
  * @module model/AccountGroup
- * @version 0.1.0
+ * @version v1
  */
 class AccountGroup {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CustomFieldsCommand model module.
  * @module model/CustomFieldsCommand
- * @version 0.1.0
+ * @version v1
  */
 class CustomFieldsCommand {
     /**

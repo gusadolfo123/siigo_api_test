@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RetentionsCommand model module.
  * @module model/RetentionsCommand
- * @version 0.1.0
+ * @version v1
  */
 class RetentionsCommand {
     /**

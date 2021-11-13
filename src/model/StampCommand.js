@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The StampCommand model module.
  * @module model/StampCommand
- * @version 0.1.0
+ * @version v1
  */
 class StampCommand {
     /**

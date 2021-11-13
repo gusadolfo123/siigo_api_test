@@ -25,7 +25,7 @@ import StampViewModel from './StampViewModel';
 /**
  * The InvoiceViewModel model module.
  * @module model/InvoiceViewModel
- * @version 0.1.0
+ * @version v1
  */
 class InvoiceViewModel {
     /**

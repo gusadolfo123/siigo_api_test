@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RetentionsOutModel model module.
  * @module model/RetentionsOutModel
- * @version 0.1.0
+ * @version v1
  */
 class RetentionsOutModel {
     /**

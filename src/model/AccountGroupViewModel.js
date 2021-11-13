@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AccountGroupViewModel model module.
  * @module model/AccountGroupViewModel
- * @version 0.1.0
+ * @version v1
  */
 class AccountGroupViewModel {
     /**
