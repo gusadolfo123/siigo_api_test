@@ -19,7 +19,7 @@ import PageListModel from './PageListModel';
 /**
  * The CreditNotesViewModel model module.
  * @module model/CreditNotesViewModel
- * @version 0.1.0
+ * @version v1
  */
 class CreditNotesViewModel {
     /**

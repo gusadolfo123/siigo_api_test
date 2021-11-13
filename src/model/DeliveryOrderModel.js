@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeliveryOrderModel model module.
  * @module model/DeliveryOrderModel
- * @version 0.1.0
+ * @version v1
  */
 class DeliveryOrderModel {
     /**

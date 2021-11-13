@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaxViewModel model module.
  * @module model/TaxViewModel
- * @version 0.1.0
+ * @version v1
  */
 class TaxViewModel {
     /**

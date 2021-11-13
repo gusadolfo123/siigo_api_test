@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PhoneModel model module.
  * @module model/PhoneModel
- * @version 0.1.0
+ * @version v1
  */
 class PhoneModel {
     /**

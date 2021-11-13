@@ -18,7 +18,7 @@ import WarehouseViewModel from '../model/WarehouseViewModel';
 /**
 * Warehouses service.
 * @module api/WarehousesApi
-* @version 0.1.0
+* @version v1
 */
 export default class WarehousesApi {
 

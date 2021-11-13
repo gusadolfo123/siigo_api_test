@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentVoucher model module.
  * @module model/DocumentVoucher
- * @version 0.1.0
+ * @version v1
  */
 class DocumentVoucher {
     /**

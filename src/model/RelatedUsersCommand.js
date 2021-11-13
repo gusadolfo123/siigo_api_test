@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RelatedUsersCommand model module.
  * @module model/RelatedUsersCommand
- * @version 0.1.0
+ * @version v1
  */
 class RelatedUsersCommand {
     /**

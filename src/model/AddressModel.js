@@ -17,7 +17,7 @@ import CityModel from './CityModel';
 /**
  * The AddressModel model module.
  * @module model/AddressModel
- * @version 0.1.0
+ * @version v1
  */
 class AddressModel {
     /**

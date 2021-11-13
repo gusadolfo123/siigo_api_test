@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CostCentersViewModel model module.
  * @module model/CostCentersViewModel
- * @version 0.1.0
+ * @version v1
  */
 class CostCentersViewModel {
     /**

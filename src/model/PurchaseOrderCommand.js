@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PurchaseOrderCommand model module.
  * @module model/PurchaseOrderCommand
- * @version 0.1.0
+ * @version v1
  */
 class PurchaseOrderCommand {
     /**

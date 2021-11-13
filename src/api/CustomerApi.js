@@ -21,7 +21,7 @@ import CustomersViewModel from '../model/CustomersViewModel';
 /**
 * Customer service.
 * @module api/CustomerApi
-* @version 0.1.0
+* @version v1
 */
 export default class CustomerApi {
 

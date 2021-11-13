@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The StampViewModel model module.
  * @module model/StampViewModel
- * @version 0.1.0
+ * @version v1
  */
 class StampViewModel {
     /**

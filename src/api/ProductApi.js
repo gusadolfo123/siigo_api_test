@@ -21,7 +21,7 @@ import ProductsModel from '../model/ProductsModel';
 /**
 * Product service.
 * @module api/ProductApi
-* @version 0.1.0
+* @version v1
 */
 export default class ProductApi {
 

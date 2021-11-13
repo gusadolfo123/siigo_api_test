@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The JournalEntryCustomerModel model module.
  * @module model/JournalEntryCustomerModel
- * @version 0.1.0
+ * @version v1
  */
 class JournalEntryCustomerModel {
     /**

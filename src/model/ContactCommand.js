@@ -17,7 +17,7 @@ import PhoneCommand from './PhoneCommand';
 /**
  * The ContactCommand model module.
  * @module model/ContactCommand
- * @version 0.1.0
+ * @version v1
  */
 class ContactCommand {
     /**

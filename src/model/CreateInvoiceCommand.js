@@ -24,7 +24,7 @@ import StampCommand from './StampCommand';
 /**
  * The CreateInvoiceCommand model module.
  * @module model/CreateInvoiceCommand
- * @version 0.1.0
+ * @version v1
  */
 class CreateInvoiceCommand {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The WarehouseViewModel model module.
  * @module model/WarehouseViewModel
- * @version 0.1.0
+ * @version v1
  */
 class WarehouseViewModel {
     /**

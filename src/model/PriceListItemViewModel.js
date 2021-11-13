@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PriceListItemViewModel model module.
  * @module model/PriceListItemViewModel
- * @version 0.1.0
+ * @version v1
  */
 class PriceListItemViewModel {
     /**

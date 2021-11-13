@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The JournalEntryTaxModel model module.
  * @module model/JournalEntryTaxModel
- * @version 0.1.0
+ * @version v1
  */
 class JournalEntryTaxModel {
     /**

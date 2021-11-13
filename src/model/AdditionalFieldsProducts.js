@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AdditionalFieldsProducts model module.
  * @module model/AdditionalFieldsProducts
- * @version 0.1.0
+ * @version v1
  */
 class AdditionalFieldsProducts {
     /**

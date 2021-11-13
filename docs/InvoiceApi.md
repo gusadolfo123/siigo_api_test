@@ -126,7 +126,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.InvoiceApi();
 
-let id = null; // String | 
+let id = "id_example"; // String | 
 
 apiInstance.v1InvoicesIdGet(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -142,7 +142,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.InvoiceApi();
-    let id = null; // String | 
+    let id = "id_example"; // String | 
 
     const data = await apiInstance.v1InvoicesIdGet(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -158,7 +158,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)|  | 
+ **id** | **String**|  | 
 
 ### Return type
 
@@ -189,7 +189,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.InvoiceApi();
 
-let id = null; // String | 
+let id = "id_example"; // String | 
 
 apiInstance.v1InvoicesIdPdfGet(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -205,7 +205,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.InvoiceApi();
-    let id = null; // String | 
+    let id = "id_example"; // String | 
 
     const data = await apiInstance.v1InvoicesIdPdfGet(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -221,7 +221,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)|  | 
+ **id** | **String**|  | 
 
 ### Return type
 
@@ -252,7 +252,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.InvoiceApi();
 
-let id = null; // String | 
+let id = "id_example"; // String | 
 
 apiInstance.v1InvoicesIdStampErrorsGet(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -268,7 +268,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.InvoiceApi();
-    let id = null; // String | 
+    let id = "id_example"; // String | 
 
     const data = await apiInstance.v1InvoicesIdStampErrorsGet(id);
     console.log('API called successfully. Returned data: ' + data);
@@ -284,7 +284,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | [**String**](.md)|  | 
+ **id** | **String**|  | 
 
 ### Return type
 

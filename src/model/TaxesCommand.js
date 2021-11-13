@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaxesCommand model module.
  * @module model/TaxesCommand
- * @version 0.1.0
+ * @version v1
  */
 class TaxesCommand {
     /**

@@ -20,7 +20,7 @@ import VouchersViewModel from '../model/VouchersViewModel';
 /**
 * Voucher service.
 * @module api/VoucherApi
-* @version 0.1.0
+* @version v1
 */
 export default class VoucherApi {
 

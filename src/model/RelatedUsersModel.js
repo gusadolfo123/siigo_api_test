@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RelatedUsersModel model module.
  * @module model/RelatedUsersModel
- * @version 0.1.0
+ * @version v1
  */
 class RelatedUsersModel {
     /**

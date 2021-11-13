@@ -25,7 +25,7 @@ import StampViewModel from './StampViewModel';
 /**
  * The CreditNoteViewModel model module.
  * @module model/CreditNoteViewModel
- * @version 0.1.0
+ * @version v1
  */
 class CreditNoteViewModel {
     /**
