@@ -1,6 +1,6 @@
 /**
  * Siigo API
- * Siigo Api v1
+ * Siigo Api v2
  *
  * The version of the OpenAPI document: v1
  * 
