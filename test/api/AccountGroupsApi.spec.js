@@ -11,70 +11,61 @@
  *
  */
 
- //var app = require('../app.js')
+//var app = require('../app.js')
 
- (function(root, factory) {
-   if (typeof define === 'function' && define.amd) {
-     // AMD.
-     define(['expect.js', process.cwd()+'/src/index', process.cwd()+'/test/app'], factory);
-   } else if (typeof module === 'object' && module.exports) {
-     // CommonJS-like environments that support module.exports, like Node.
-     factory(require('expect.js'), require(process.cwd()+'/src/index'), require(process.cwd()+'/test/app.js'));
-   } else {
-     // Browser globals (root is window)
-     factory(root.expect, root.SiigoApi, root.app);
-   }
- }(this, function(expect, SiigoApi, app) {
-   'use strict';
- 
-   var instance;
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD.
+    define(['expect.js', process.cwd() + '/src/index', process.cwd() + '/test/app'], factory);
+  } else if (typeof module === 'object' && module.exports) {
+    // CommonJS-like environments that support module.exports, like Node.
+    factory(require('expect.js'), require(process.cwd() + '/src/index'), require(process.cwd() + '/test/app.js'));
+  } else {
+    // Browser globals (root is window)
+    factory(root.expect, root.SiigoApi, root.app);
+  }
+}(this, function (expect, SiigoApi, app) {
+  'use strict';
 
-   var data;
- 
-   before(function() {
-     SiigoApi = app._test.initialize(SiigoApi);
-     instance = new SiigoApi.AccountGroupsApi();
-     // console.log(app);
-     // console.log(instance)
+  var instance;
+  var result;
 
+  before(function () {
+    SiigoApi = app._test.initialize(SiigoApi);
+    instance = new SiigoApi.AccountGroupsApi();
+  });
 
-   });
- 
-   var getProperty = function(object, getter, property) {
-     // Use getter method if present; otherwise, get the property directly.
-     if (typeof object[getter] === 'function')
-       return object[getter]();
-     else
-       return object[property];
-   }
- 
-   var setProperty = function(object, setter, property, value) {
-     // Use setter method if present; otherwise, set the property directly.
-     if (typeof object[setter] === 'function')
-       object[setter](value);
-     else
-       object[property] = value;
-   }
- 
-   describe('AccountGroupsApi', function() {
-     describe('getAccountGroups', function() {
-       it('should call getAccountGroups successfully', async function() {
-         //uncomment below and update the code to test getAccountGroups
-         //instance.getAccountGroups(function(data,error) {
-           //  if (error) throw error;
-           // expect().to.be();
-           try {
-            data = await instance.getAccountGroups();
-           } catch (error) {
-            throw error
-           }
-           //console.log(data);
-           expect(data[0].id).to.be(26529);
-           expect(data[0].name).to.be('Productos');
-           expect(data[0].active).to.be(true);
-       });
-     });
-   });
- 
- }));
- 
+  var getProperty = function (object, getter, property) {
+    // Use getter method if present; otherwise, get the property directly.
+    if (typeof object[getter] === 'function')
+      return object[getter]();
+    else
+      return object[property];
+  }
+
+  var setProperty = function (object, setter, property, value) {
+    // Use setter method if present; otherwise, set the property directly.
+    if (typeof object[setter] === 'function')
+      object[setter](value);
+    else
+      object[property] = value;
+  }
+
+  describe('AccountGroupsApi', function () {
+    describe('getAccountGroups', function () {
+      it('should call getAccountGroups successfully', async function () {
+        try {
+          result = await instance.getAccountGroupsWithHttpInfo();
+        } catch (error) {
+          throw error
+        }
+        expect(result.response.statusCode).to.be(200);
+        expect(result.response.body[0].id).to.be(26529);
+        expect(result.response.body[0].name).to.be('Productos');
+        expect(result.response.body[0].active).to.be(true);
+      });
+    });
+  });
+
+}));
+
