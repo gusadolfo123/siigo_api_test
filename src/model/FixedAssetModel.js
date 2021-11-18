@@ -61,11 +61,13 @@ class FixedAssetModel {
 }
 
 /**
+ * Represents the id of the fixed asset, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 FixedAssetModel.prototype['id'] = undefined;
 
 /**
+ * Represents the name of the fixed asset. This value can be an alphanumeric  name like 'Personal computer' or 'Furniture'.
  * @member {String} name
  */
 FixedAssetModel.prototype['name'] = undefined;

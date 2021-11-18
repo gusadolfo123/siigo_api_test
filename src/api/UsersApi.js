@@ -38,11 +38,11 @@ export default class UsersApi {
     /**
      * Gets a list of Users with pagination.
      * @param {Object} opts Optional parameters
-     * @param {Number} opts.page 
-     * @param {Number} opts.pageSize 
+     * @param {Number} opts.page Represents the current page of the results that you get. For example, '1'.
+     * @param {Number} opts.pageSize Represents the number of users that you will get per page. For example, '20'.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UsersViewModel} and HTTP response
      */
-    v1UsersGetWithHttpInfo(opts) {
+    getUsersWithHttpInfo(opts) {
       opts = opts || {};
       let postBody = null;
 
@@ -71,12 +71,12 @@ export default class UsersApi {
     /**
      * Gets a list of Users with pagination.
      * @param {Object} opts Optional parameters
-     * @param {Number} opts.page 
-     * @param {Number} opts.pageSize 
+     * @param {Number} opts.page Represents the current page of the results that you get. For example, '1'.
+     * @param {Number} opts.pageSize Represents the number of users that you will get per page. For example, '20'.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UsersViewModel}
      */
-    v1UsersGet(opts) {
-      return this.v1UsersGetWithHttpInfo(opts)
+    getUsers(opts) {
+      return this.getUsersWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

@@ -61,13 +61,13 @@ class FiscalResponsabilitiesModel {
 }
 
 /**
- * Represents the fiscal Responsability code
+ * Represents the fiscal Responsability code.  For example, the code 'R-99-PN'.
  * @member {String} code
  */
 FiscalResponsabilitiesModel.prototype['code'] = undefined;
 
 /**
- * Represents the fiscal Responsability name
+ * Represents the fiscal Responsability name.
  * @member {String} name
  */
 FiscalResponsabilitiesModel.prototype['name'] = undefined;

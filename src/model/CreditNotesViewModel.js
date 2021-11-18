@@ -73,7 +73,7 @@ class CreditNotesViewModel {
 CreditNotesViewModel.prototype['pagination'] = undefined;
 
 /**
- * Contains the Results, this results will be a list of Credit Notes
+ * Contains the Results, this results will be a list of Credit Notes.
  * @member {Array.<module:model/CreditNoteViewModel>} results
  */
 CreditNotesViewModel.prototype['results'] = undefined;

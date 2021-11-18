@@ -58,6 +58,7 @@ class FixedAssetCommand {
 }
 
 /**
+ * Represents the id of the fixed asset, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 FixedAssetCommand.prototype['id'] = undefined;

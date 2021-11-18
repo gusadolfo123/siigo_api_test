@@ -67,21 +67,25 @@ class ItemDueCommand {
 }
 
 /**
+ * Represents the prefix of the invoice to which the credit or payment will be applied.
  * @member {String} prefix
  */
 ItemDueCommand.prototype['prefix'] = undefined;
 
 /**
+ * Represents the consecutive of the invoice to which the credit or payment will be applied.
  * @member {Number} consecutive
  */
 ItemDueCommand.prototype['consecutive'] = undefined;
 
 /**
+ * Represents the quota number of the credit or payment.
  * @member {Number} quote
  */
 ItemDueCommand.prototype['quote'] = undefined;
 
 /**
+ * Represents the payment date of the fee.  This field must be the next format 'yyyy-MM-dd'.
  * @member {String} date
  */
 ItemDueCommand.prototype['date'] = undefined;

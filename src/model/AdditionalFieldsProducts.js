@@ -67,21 +67,25 @@ class AdditionalFieldsProducts {
 }
 
 /**
+ * Represents the barcode.
  * @member {String} barcode
  */
 AdditionalFieldsProducts.prototype['barcode'] = undefined;
 
 /**
+ * Represents the brand of product.
  * @member {String} brand
  */
 AdditionalFieldsProducts.prototype['brand'] = undefined;
 
 /**
+ * Represents the tariff code of product.
  * @member {String} tariff
  */
 AdditionalFieldsProducts.prototype['tariff'] = undefined;
 
 /**
+ * Represents the model of product.
  * @member {String} model
  */
 AdditionalFieldsProducts.prototype['model'] = undefined;

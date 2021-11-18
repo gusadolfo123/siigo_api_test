@@ -2,11 +2,141 @@
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**createJournal**](JournalEntryApi.md#createJournal) | **POST** /v1/journals | Creates JournalEntry.
+[**getJournal**](JournalEntryApi.md#getJournal) | **GET** /v1/journals/{id} | Gets a Journal by GUID.
 [**getJournals**](JournalEntryApi.md#getJournals) | **GET** /v1/journals | Gets a list of Journals Entry with pagination.
-[**getJournalsId**](JournalEntryApi.md#getJournalsId) | **GET** /v1/journals/{id} | Gets a Journal by GUID.
-[**postJournals**](JournalEntryApi.md#postJournals) | **POST** /v1/journals | Creates JournalEntry.
 
 
+
+
+## createJournal
+
+> JournalEntryViewModel createJournal(opts)
+
+Creates JournalEntry.
+
+### Example
+
+#### - calls with promises
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+let apiInstance = new SiigoApi.JournalEntryApi();
+
+let opts = {
+  'createJournalEntryCommand': new SiigoApi.CreateJournalEntryCommand() // CreateJournalEntryCommand | Represents the request with the journal entry information.
+};
+
+apiInstance.createJournal(opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+```
+#### - calls with async await
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+async function main(){
+  try {
+    let apiInstance = new SiigoApi.JournalEntryApi();
+    let opts = {
+    'createJournalEntryCommand': new SiigoApi.CreateJournalEntryCommand() // CreateJournalEntryCommand | Represents the request with the journal entry information.
+    };
+
+    const data = await apiInstance.createJournal(opts);
+    console.log('API called successfully. Returned data: ' + data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createJournalEntryCommand** | [**CreateJournalEntryCommand**](CreateJournalEntryCommand.md)| Represents the request with the journal entry information. | [optional] 
+
+### Return type
+
+[**JournalEntryViewModel**](JournalEntryViewModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
+
+
+## getJournal
+
+> JournalEntryViewModel getJournal(id)
+
+Gets a Journal by GUID.
+
+### Example
+
+#### - calls with promises
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+let apiInstance = new SiigoApi.JournalEntryApi();
+
+let id = "id_example"; // String | Represent the Journal id by GUID.
+
+apiInstance.getJournal(id).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+```
+#### - calls with async await
+
+```javascript
+import * as SiigoApi from 'siigo_api';
+
+async function main(){
+  try {
+    let apiInstance = new SiigoApi.JournalEntryApi();
+    let id = "id_example"; // String | Represent the Journal id by GUID.
+
+    const data = await apiInstance.getJournal(id);
+    console.log('API called successfully. Returned data: ' + data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| Represent the Journal id by GUID. | 
+
+### Return type
+
+[**JournalEntryViewModel**](JournalEntryViewModel.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: text/plain, application/json, text/json
 
 
 ## getJournals
@@ -94,135 +224,5 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
-
-
-## getJournalsId
-
-> JournalEntryViewModel getJournalsId(id)
-
-Gets a Journal by GUID.
-
-### Example
-
-#### - calls with promises
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-let apiInstance = new SiigoApi.JournalEntryApi();
-
-let id = "id_example"; // String | Represent the Journal id by GUID.
-
-apiInstance.getJournalsId(id).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-```
-#### - calls with async await
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-async function main(){
-  try {
-    let apiInstance = new SiigoApi.JournalEntryApi();
-    let id = "id_example"; // String | Represent the Journal id by GUID.
-
-    const data = await apiInstance.getJournalsId(id);
-    console.log('API called successfully. Returned data: ' + data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-```
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**| Represent the Journal id by GUID. | 
-
-### Return type
-
-[**JournalEntryViewModel**](JournalEntryViewModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
-
-
-## postJournals
-
-> JournalEntryViewModel postJournals(opts)
-
-Creates JournalEntry.
-
-### Example
-
-#### - calls with promises
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-let apiInstance = new SiigoApi.JournalEntryApi();
-
-let opts = {
-  'createJournalEntryCommand': new SiigoApi.CreateJournalEntryCommand() // CreateJournalEntryCommand | Represents the request with the journal entry information
-};
-
-apiInstance.postJournals(opts).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-```
-#### - calls with async await
-
-```javascript
-import * as SiigoApi from 'siigo_api';
-
-async function main(){
-  try {
-    let apiInstance = new SiigoApi.JournalEntryApi();
-    let opts = {
-    'createJournalEntryCommand': new SiigoApi.CreateJournalEntryCommand() // CreateJournalEntryCommand | Represents the request with the journal entry information
-    };
-
-    const data = await apiInstance.postJournals(opts);
-    console.log('API called successfully. Returned data: ' + data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-```
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **createJournalEntryCommand** | [**CreateJournalEntryCommand**](CreateJournalEntryCommand.md)| Represents the request with the journal entry information | [optional] 
-
-### Return type
-
-[**JournalEntryViewModel**](JournalEntryViewModel.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
 - **Accept**: text/plain, application/json, text/json
 

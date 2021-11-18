@@ -39,14 +39,150 @@ export default class ProductApi {
 
 
     /**
+     * Creates a produc
+     * @param {Object} opts Optional parameters
+     * @param {module:model/ProductCommand} opts.productCommand Represents the request with the product information.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsModel} and HTTP response
+     */
+    createProductWithHttpInfo(opts) {
+      opts = opts || {};
+      let postBody = opts['productCommand'];
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Bearer'];
+      let contentTypes = ['application/json-patch+json', 'application/json', 'text/json', 'application/_*+json'];
+      let accepts = ['text/plain', 'application/json', 'text/json'];
+      let returnType = ProductsModel;
+      return this.apiClient.callApi(
+        '/v1/products', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Creates a produc
+     * @param {Object} opts Optional parameters
+     * @param {module:model/ProductCommand} opts.productCommand Represents the request with the product information.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsModel}
+     */
+    createProduct(opts) {
+      return this.createProductWithHttpInfo(opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Deletes a Product by GUID
+     * @param {String} id Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductDeleteViewModel} and HTTP response
+     */
+    deleteProductWithHttpInfo(id) {
+      let postBody = null;
+      // verify the required parameter 'id' is set
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling deleteProduct");
+      }
+
+      let pathParams = {
+        'id': id
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Bearer'];
+      let contentTypes = [];
+      let accepts = ['text/plain', 'application/json', 'text/json'];
+      let returnType = ProductDeleteViewModel;
+      return this.apiClient.callApi(
+        '/v1/products/{id}', 'DELETE',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Deletes a Product by GUID
+     * @param {String} id Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductDeleteViewModel}
+     */
+    deleteProduct(id) {
+      return this.deleteProductWithHttpInfo(id)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Gets a Product by GUID.
+     * @param {String} id Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsModel} and HTTP response
+     */
+    getProductWithHttpInfo(id) {
+      let postBody = null;
+      // verify the required parameter 'id' is set
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling getProduct");
+      }
+
+      let pathParams = {
+        'id': id
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['Bearer'];
+      let contentTypes = [];
+      let accepts = ['text/plain', 'application/json', 'text/json'];
+      let returnType = ProductsModel;
+      return this.apiClient.callApi(
+        '/v1/products/{id}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Gets a Product by GUID.
+     * @param {String} id Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsModel}
+     */
+    getProduct(id) {
+      return this.getProductWithHttpInfo(id)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
      * Gets a list of Products with pagination.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.code 
-     * @param {String} opts.accountGroup 
-     * @param {String} opts.type 
-     * @param {String} opts.stockControl 
-     * @param {String} opts.active 
-     * @param {String} opts.ids 
+     * @param {String} opts.code Represents the identification code of the product. This value can be an alphanumeric  code that will represent the code id of the cost center.  For example, this name can be 'Item-1' or 'toy007'.
+     * @param {String} opts.accountGroup Represents the id of inventory classification
+     * @param {String} opts.type Represents the type of product. This product could be of type 'Product', 'Service' or 'Consumer Good',  by the default this field will be Product.
+     * @param {String} opts.stockControl Represents the inventory control, by the fault this field will be false.
+     * @param {String} opts.active Represents the status of product, by default this field will be true.
+     * @param {String} opts.ids Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.  Up to 20 id can be filtered at a time:  https://api.siigo.com/v1/products?ids={GUID},{GUID}
      * @param {Date} opts.createdStart Returns results where the \"created\" field is greater or equal than the entered date
      * @param {Date} opts.createdEnd Returns results where the \"created\" field is less or equal than the entered date
      * @param {Date} opts.dateStart Returns results with date greater or equal than the \"date_start\" date
@@ -57,7 +193,7 @@ export default class ProductApi {
      * @param {Number} opts.pageSize Represents the number of results per page.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductDetailsViewModel} and HTTP response
      */
-    v1ProductsGetWithHttpInfo(opts) {
+    getProductsWithHttpInfo(opts) {
       opts = opts || {};
       let postBody = null;
 
@@ -98,12 +234,12 @@ export default class ProductApi {
     /**
      * Gets a list of Products with pagination.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.code 
-     * @param {String} opts.accountGroup 
-     * @param {String} opts.type 
-     * @param {String} opts.stockControl 
-     * @param {String} opts.active 
-     * @param {String} opts.ids 
+     * @param {String} opts.code Represents the identification code of the product. This value can be an alphanumeric  code that will represent the code id of the cost center.  For example, this name can be 'Item-1' or 'toy007'.
+     * @param {String} opts.accountGroup Represents the id of inventory classification
+     * @param {String} opts.type Represents the type of product. This product could be of type 'Product', 'Service' or 'Consumer Good',  by the default this field will be Product.
+     * @param {String} opts.stockControl Represents the inventory control, by the fault this field will be false.
+     * @param {String} opts.active Represents the status of product, by default this field will be true.
+     * @param {String} opts.ids Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.  Up to 20 id can be filtered at a time:  https://api.siigo.com/v1/products?ids={GUID},{GUID}
      * @param {Date} opts.createdStart Returns results where the \"created\" field is greater or equal than the entered date
      * @param {Date} opts.createdEnd Returns results where the \"created\" field is less or equal than the entered date
      * @param {Date} opts.dateStart Returns results with date greater or equal than the \"date_start\" date
@@ -114,100 +250,8 @@ export default class ProductApi {
      * @param {Number} opts.pageSize Represents the number of results per page.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductDetailsViewModel}
      */
-    v1ProductsGet(opts) {
-      return this.v1ProductsGetWithHttpInfo(opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Deletes a Product by GUID
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductDeleteViewModel} and HTTP response
-     */
-    v1ProductsIdDeleteWithHttpInfo(id) {
-      let postBody = null;
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling v1ProductsIdDelete");
-      }
-
-      let pathParams = {
-        'id': id
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Bearer'];
-      let contentTypes = [];
-      let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = ProductDeleteViewModel;
-      return this.apiClient.callApi(
-        '/v1/products/{id}', 'DELETE',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * Deletes a Product by GUID
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductDeleteViewModel}
-     */
-    v1ProductsIdDelete(id) {
-      return this.v1ProductsIdDeleteWithHttpInfo(id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Gets a Product by GUID.
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsModel} and HTTP response
-     */
-    v1ProductsIdGetWithHttpInfo(id) {
-      let postBody = null;
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling v1ProductsIdGet");
-      }
-
-      let pathParams = {
-        'id': id
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Bearer'];
-      let contentTypes = [];
-      let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = ProductsModel;
-      return this.apiClient.callApi(
-        '/v1/products/{id}', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * Gets a Product by GUID.
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsModel}
-     */
-    v1ProductsIdGet(id) {
-      return this.v1ProductsIdGetWithHttpInfo(id)
+    getProducts(opts) {
+      return this.getProductsWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -216,17 +260,17 @@ export default class ProductApi {
 
     /**
      * Updates a Product by GUID
-     * @param {String} id 
+     * @param {String} id Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @param {Object} opts Optional parameters
-     * @param {module:model/ProductCommand} opts.productCommand 
+     * @param {module:model/ProductCommand} opts.productCommand Represents the request with the product information to update.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsModel} and HTTP response
      */
-    v1ProductsIdPutWithHttpInfo(id, opts) {
+    updateProductWithHttpInfo(id, opts) {
       opts = opts || {};
       let postBody = opts['productCommand'];
       // verify the required parameter 'id' is set
       if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling v1ProductsIdPut");
+        throw new Error("Missing the required parameter 'id' when calling updateProduct");
       }
 
       let pathParams = {
@@ -252,57 +296,13 @@ export default class ProductApi {
 
     /**
      * Updates a Product by GUID
-     * @param {String} id 
+     * @param {String} id Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @param {Object} opts Optional parameters
-     * @param {module:model/ProductCommand} opts.productCommand 
+     * @param {module:model/ProductCommand} opts.productCommand Represents the request with the product information to update.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsModel}
      */
-    v1ProductsIdPut(id, opts) {
-      return this.v1ProductsIdPutWithHttpInfo(id, opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Creates a Product.
-     * @param {Object} opts Optional parameters
-     * @param {module:model/ProductCommand} opts.productCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsModel} and HTTP response
-     */
-    v1ProductsPostWithHttpInfo(opts) {
-      opts = opts || {};
-      let postBody = opts['productCommand'];
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Bearer'];
-      let contentTypes = ['application/json-patch+json', 'application/json', 'text/json', 'application/_*+json'];
-      let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = ProductsModel;
-      return this.apiClient.callApi(
-        '/v1/products', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * Creates a Product.
-     * @param {Object} opts Optional parameters
-     * @param {module:model/ProductCommand} opts.productCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsModel}
-     */
-    v1ProductsPost(opts) {
-      return this.v1ProductsPostWithHttpInfo(opts)
+    updateProduct(id, opts) {
+      return this.updateProductWithHttpInfo(id, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

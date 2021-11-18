@@ -61,13 +61,13 @@ class RelatedUsersCommand {
 }
 
 /**
- * Represents the seller Id
+ * Represents the seller Id.
  * @member {Number} seller_id
  */
 RelatedUsersCommand.prototype['seller_id'] = undefined;
 
 /**
- * Represents the debt collector Id
+ * Represents the debt collector Id.
  * @member {Number} collector_id
  */
 RelatedUsersCommand.prototype['collector_id'] = undefined;

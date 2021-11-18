@@ -58,6 +58,7 @@ class ProductTaxesCommand {
 }
 
 /**
+ * Represents the Id of the tax
  * @member {Number} id
  */
 ProductTaxesCommand.prototype['id'] = undefined;

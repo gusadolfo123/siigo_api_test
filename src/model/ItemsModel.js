@@ -88,31 +88,37 @@ class ItemsModel {
 }
 
 /**
+ * Represents the unique Id of item, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 ItemsModel.prototype['id'] = undefined;
 
 /**
+ * Represents the unique code of the item. This value can be an alphanumeric  code that will represent the code id of the item.  For example,'item-1' or 'toy-007'.
  * @member {String} code
  */
 ItemsModel.prototype['code'] = undefined;
 
 /**
+ * Represents product quantity.  For example, '2' quantities of the 'item-01'.
  * @member {Number} quantity
  */
 ItemsModel.prototype['quantity'] = undefined;
 
 /**
+ * Represents product price.  For example, '50', dollars.
  * @member {Number} price
  */
 ItemsModel.prototype['price'] = undefined;
 
 /**
+ * Represents the Id of the seller associated with the invoice,   for example, the id '629' can represent a seller called 'Micke'.
  * @member {Number} seller
  */
 ItemsModel.prototype['seller'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} description
  */
 ItemsModel.prototype['description'] = undefined;
@@ -123,6 +129,7 @@ ItemsModel.prototype['description'] = undefined;
 ItemsModel.prototype['discount'] = undefined;
 
 /**
+ * Contains a list of taxes associated to item.
  * @member {Array.<module:model/TaxesModel>} taxes
  */
 ItemsModel.prototype['taxes'] = undefined;
@@ -133,6 +140,7 @@ ItemsModel.prototype['taxes'] = undefined;
 ItemsModel.prototype['warehouse'] = undefined;
 
 /**
+ * Represents the price of item with the tax included.
  * @member {Number} total
  */
 ItemsModel.prototype['total'] = undefined;

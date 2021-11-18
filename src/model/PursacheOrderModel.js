@@ -61,11 +61,13 @@ class PursacheOrderModel {
 }
 
 /**
+ * For example, 'OE' represents 'Delivery Order' and 'OC' means 'Purchase Order'.
  * @member {String} prefix
  */
 PursacheOrderModel.prototype['prefix'] = undefined;
 
 /**
+ * Represents the number of the purchase order..
  * @member {String} number
  */
 PursacheOrderModel.prototype['number'] = undefined;

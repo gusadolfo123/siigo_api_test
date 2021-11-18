@@ -61,13 +61,13 @@ class CustomFieldsModel {
 }
 
 /**
- * Represents the Id of additional field
+ * Represents the Id of additional field  For example, an additional field called 'YearsOld'.
  * @member {String} key
  */
 CustomFieldsModel.prototype['key'] = undefined;
 
 /**
- * Represents the value of additional field
+ * Represents the value of additional field.  For example, this field can be '29'.
  * @member {String} value
  */
 CustomFieldsModel.prototype['value'] = undefined;

@@ -67,21 +67,25 @@ class JournalDue {
 }
 
 /**
+ * Represents the prefix of the invoice to which the credit or payment will be applied.
  * @member {String} prefix
  */
 JournalDue.prototype['prefix'] = undefined;
 
 /**
+ * Represents the consecutive of the invoice to which the credit or payment will be applied.
  * @member {Number} consecutive
  */
 JournalDue.prototype['consecutive'] = undefined;
 
 /**
+ * Represents the quota number of the credit or payment.
  * @member {Number} quote
  */
 JournalDue.prototype['quote'] = undefined;
 
 /**
+ * Represents the payment date of the fee.  This field must be the next format 'yyyy-MM-dd'.
  * @member {String} date
  */
 JournalDue.prototype['date'] = undefined;

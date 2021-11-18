@@ -73,6 +73,7 @@ class InvoicesViewModel {
 InvoicesViewModel.prototype['pagination'] = undefined;
 
 /**
+ * Contains the Results, this results will be a list of invoices
  * @member {Array.<module:model/InvoiceViewModel>} results
  */
 InvoicesViewModel.prototype['results'] = undefined;

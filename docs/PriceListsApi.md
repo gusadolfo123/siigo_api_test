@@ -2,14 +2,14 @@
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1PriceListsGet**](PriceListsApi.md#v1PriceListsGet) | **GET** /v1/price-lists | Get a list of Price Lists.
+[**getPriceList**](PriceListsApi.md#getPriceList) | **GET** /v1/price-lists | Get a list of Price Lists.
 
 
 
 
-## v1PriceListsGet
+## getPriceList
 
-> [PriceListsViewModel] v1PriceListsGet()
+> [PriceListsViewModel] getPriceList()
 
 Get a list of Price Lists.
 
@@ -23,7 +23,7 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.PriceListsApi();
 
 
-apiInstance.v1PriceListsGet().then((data) => {
+apiInstance.getPriceList().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -38,7 +38,7 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.PriceListsApi();
 
-    const data = await apiInstance.v1PriceListsGet();
+    const data = await apiInstance.getPriceList();
     console.log('API called successfully. Returned data: ' + data);
   } catch (error) {
     console.error(error);

@@ -39,9 +39,9 @@ export default class CustomerApi {
 
 
     /**
-     * Creates a Customer
+     * Creates a Customer.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information
+     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CustomerViewModel} and HTTP response
      */
     createCustomerWithHttpInfo(opts) {
@@ -69,9 +69,9 @@ export default class CustomerApi {
     }
 
     /**
-     * Creates a Customer
+     * Creates a Customer.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information
+     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CustomerViewModel}
      */
     createCustomer(opts) {
@@ -84,7 +84,7 @@ export default class CustomerApi {
 
     /**
      * Deletes a Customer by GUID.
-     * @param {String} id Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CustomerDeleteViewModel} and HTTP response
      */
     deleteCustomerWithHttpInfo(id) {
@@ -117,7 +117,7 @@ export default class CustomerApi {
 
     /**
      * Deletes a Customer by GUID.
-     * @param {String} id Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CustomerDeleteViewModel}
      */
     deleteCustomer(id) {
@@ -130,7 +130,7 @@ export default class CustomerApi {
 
     /**
      * Gets a Customer by GUID.
-     * @param {String} id Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CustomerViewModel} and HTTP response
      */
     getCustomerWithHttpInfo(id) {
@@ -163,7 +163,7 @@ export default class CustomerApi {
 
     /**
      * Gets a Customer by GUID.
-     * @param {String} id Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CustomerViewModel}
      */
     getCustomer(id) {
@@ -177,11 +177,11 @@ export default class CustomerApi {
     /**
      * Gets a list of Customers.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.identification Represents the identification number of customer
-     * @param {Number} opts.branchOffice Represents the branch office of customer, this value by default will be 0
-     * @param {String} opts.active Represents the state of customer, this value by default will be true
-     * @param {String} opts.type Represents the customer type (\"Customer\", \"Supplier\" and \"Other\"),  this field will be \"Customer\" by default
-     * @param {String} opts.personType Represents the person type, this type can be a \"Person\" or \"Company\"
+     * @param {String} opts.identification Represents the identification number of customer.  For example, the identifitication number '13832081'.
+     * @param {Number} opts.branchOffice Represents the branch office of customer, this value by default will be 0.
+     * @param {String} opts.active Represents the state of customer.  This value can be 'true' or 'false', by default will be true.
+     * @param {String} opts.type Represents the customer type (this type can be 'Customer', 'Supplier 'and 'Other'),  this field will be 'Customer' by default.
+     * @param {String} opts.personType Represents the person type, this type can be a 'Person' or 'Company'.
      * @param {Date} opts.createdStart Returns results where the \"created\" field is greater or equal than the entered date
      * @param {Date} opts.createdEnd Returns results where the \"created\" field is less or equal than the entered date
      * @param {Date} opts.dateStart Returns results with date greater or equal than the \"date_start\" date
@@ -232,11 +232,11 @@ export default class CustomerApi {
     /**
      * Gets a list of Customers.
      * @param {Object} opts Optional parameters
-     * @param {String} opts.identification Represents the identification number of customer
-     * @param {Number} opts.branchOffice Represents the branch office of customer, this value by default will be 0
-     * @param {String} opts.active Represents the state of customer, this value by default will be true
-     * @param {String} opts.type Represents the customer type (\"Customer\", \"Supplier\" and \"Other\"),  this field will be \"Customer\" by default
-     * @param {String} opts.personType Represents the person type, this type can be a \"Person\" or \"Company\"
+     * @param {String} opts.identification Represents the identification number of customer.  For example, the identifitication number '13832081'.
+     * @param {Number} opts.branchOffice Represents the branch office of customer, this value by default will be 0.
+     * @param {String} opts.active Represents the state of customer.  This value can be 'true' or 'false', by default will be true.
+     * @param {String} opts.type Represents the customer type (this type can be 'Customer', 'Supplier 'and 'Other'),  this field will be 'Customer' by default.
+     * @param {String} opts.personType Represents the person type, this type can be a 'Person' or 'Company'.
      * @param {Date} opts.createdStart Returns results where the \"created\" field is greater or equal than the entered date
      * @param {Date} opts.createdEnd Returns results where the \"created\" field is less or equal than the entered date
      * @param {Date} opts.dateStart Returns results with date greater or equal than the \"date_start\" date
@@ -257,9 +257,9 @@ export default class CustomerApi {
 
     /**
      * Updates a Customer by GUID.
-     * @param {String} id Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information
+     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CustomerViewModel} and HTTP response
      */
     updateCustomerWithHttpInfo(id, opts) {
@@ -293,9 +293,9 @@ export default class CustomerApi {
 
     /**
      * Updates a Customer by GUID.
-     * @param {String} id Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+     * @param {String} id Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information
+     * @param {module:model/CreateCustomerCommand} opts.createCustomerCommand Represents the request with the customer information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CustomerViewModel}
      */
     updateCustomer(id, opts) {

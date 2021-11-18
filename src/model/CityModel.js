@@ -73,37 +73,37 @@ class CityModel {
 }
 
 /**
- * Represents the city Code
+ * Represents the country Code.  For example, the code 'Co' to Colombia.
  * @member {String} country_code
  */
 CityModel.prototype['country_code'] = undefined;
 
 /**
- * Represents the city name
+ * Represents the city name.  For example, the name 'Colombia'.
  * @member {String} country_name
  */
 CityModel.prototype['country_name'] = undefined;
 
 /**
- * Represents the state code
+ * Represents the state code.  For example, the state code '19' to 'Cauca'.
  * @member {String} state_code
  */
 CityModel.prototype['state_code'] = undefined;
 
 /**
- * Represents the state name
+ * Represents the state name.  For example, the state name 'Cauca'.
  * @member {String} state_name
  */
 CityModel.prototype['state_name'] = undefined;
 
 /**
- * Represents the city code
+ * Represents the city code  For example, the code '19001' to 'Popay�n'.
  * @member {String} city_code
  */
 CityModel.prototype['city_code'] = undefined;
 
 /**
- * Represents the city name
+ * Represents the city name.  For example, the name 'Popay�n'.
  * @member {String} city_name
  */
 CityModel.prototype['city_name'] = undefined;

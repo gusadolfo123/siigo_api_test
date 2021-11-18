@@ -68,25 +68,25 @@ class PriceListsViewModel {
 }
 
 /**
- * Unique identifier of the price list.
+ * Represents the id of the price list, the value of this field must be an integer  number that represents the unique id of the price list. For example '2766'.
  * @member {Number} id
  */
 PriceListsViewModel.prototype['id'] = undefined;
 
 /**
- * Name of the price list.
+ * Represents the name of the price list. This value can be an alphanumeric name  like 'Sale Price 1' or 'Product Prices'.
  * @member {String} name
  */
 PriceListsViewModel.prototype['name'] = undefined;
 
 /**
- * Indicates if the price list in use.
+ * Represents if price list status is activated or disabled,   the value of this status will be true (for activated) or false (disabled).  By default, this field will be true.
  * @member {Boolean} active
  */
 PriceListsViewModel.prototype['active'] = undefined;
 
 /**
- * Price list position.
+ * Represents the Price position on the list.  For example, '1'.
  * @member {Number} position
  */
 PriceListsViewModel.prototype['position'] = undefined;

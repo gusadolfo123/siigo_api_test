@@ -98,6 +98,7 @@ JournalEntryItem.prototype['account'] = undefined;
 JournalEntryItem.prototype['customer'] = undefined;
 
 /**
+ * Represents a description associated with the journal.
  * @member {String} description
  */
 JournalEntryItem.prototype['description'] = undefined;
@@ -118,6 +119,7 @@ JournalEntryItem.prototype['due'] = undefined;
 JournalEntryItem.prototype['product'] = undefined;
 
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 JournalEntryItem.prototype['cost_center'] = undefined;
@@ -128,6 +130,7 @@ JournalEntryItem.prototype['cost_center'] = undefined;
 JournalEntryItem.prototype['fixed_asset'] = undefined;
 
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 JournalEntryItem.prototype['value'] = undefined;

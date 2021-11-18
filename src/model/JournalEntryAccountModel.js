@@ -61,11 +61,13 @@ class JournalEntryAccountModel {
 }
 
 /**
+ * Represents the Accounting account code.
  * @member {String} code
  */
 JournalEntryAccountModel.prototype['code'] = undefined;
 
 /**
+ * Represents the type of movement to be made with the account.  This field can be 'Debit' or 'Credit'.
  * @member {String} movement
  */
 JournalEntryAccountModel.prototype['movement'] = undefined;

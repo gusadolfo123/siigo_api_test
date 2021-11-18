@@ -39,7 +39,7 @@ export default class TaxesApi {
      * Gets a list of Taxes.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TaxViewModel} and HTTP response
      */
-    v1TaxesGetWithHttpInfo() {
+    getTaxesWithHttpInfo() {
       let postBody = null;
 
       let pathParams = {
@@ -66,8 +66,8 @@ export default class TaxesApi {
      * Gets a list of Taxes.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TaxViewModel}
      */
-    v1TaxesGet() {
-      return this.v1TaxesGetWithHttpInfo()
+    getTaxes() {
+      return this.getTaxesWithHttpInfo()
         .then(function(response_and_data) {
           return response_and_data.data;
         });

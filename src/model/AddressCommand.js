@@ -65,7 +65,7 @@ class AddressCommand {
 }
 
 /**
- * Represents the address of customer
+ * Represents the address of customer.
  * @member {String} address
  */
 AddressCommand.prototype['address'] = undefined;
@@ -76,7 +76,7 @@ AddressCommand.prototype['address'] = undefined;
 AddressCommand.prototype['city'] = undefined;
 
 /**
- * Represent the Postal Code of customer
+ * Represent the Postal Code of customer.  For example, the code '110911'
  * @member {String} postal_code
  */
 AddressCommand.prototype['postal_code'] = undefined;

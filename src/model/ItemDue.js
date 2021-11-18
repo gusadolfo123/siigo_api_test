@@ -67,21 +67,25 @@ class ItemDue {
 }
 
 /**
+ * Represents the prefix of the invoice to which the credit or payment will be applied.
  * @member {String} prefix
  */
 ItemDue.prototype['prefix'] = undefined;
 
 /**
+ * Represents the consecutive of the invoice to which the credit or payment will be applied.
  * @member {Number} consecutive
  */
 ItemDue.prototype['consecutive'] = undefined;
 
 /**
+ * Represents the quota number of the credit or payment.
  * @member {Number} quote
  */
 ItemDue.prototype['quote'] = undefined;
 
 /**
+ * Represents the payment date of the fee.
  * @member {String} date
  */
 ItemDue.prototype['date'] = undefined;

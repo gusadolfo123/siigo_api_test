@@ -70,31 +70,31 @@ class PaymentTypesViewModel {
 }
 
 /**
- * Unique identifier of the payment method
+ * Represents the id of the payment method, the value of this field must be an integer  number that represents the unique id of the payment method. For example '5636'.
  * @member {Number} id
  */
 PaymentTypesViewModel.prototype['id'] = undefined;
 
 /**
- * Name of the payment method.
+ * Represents the name of the payment method. This value can be an alphanumeric name  like 'Crédito' (credit).
  * @member {String} name
  */
 PaymentTypesViewModel.prototype['name'] = undefined;
 
 /**
- * Type of the payment method.
+ * Type of the payment method. This value can be 'Cartera', 'Proveedor' or 'CarteraProveedor'.
  * @member {String} type
  */
 PaymentTypesViewModel.prototype['type'] = undefined;
 
 /**
- * State of the payment method.
+ * Represents if payment method status is activated or disabled,   the value of this status will be true (for activated) or false (disabled).  By default, this field will be true.
  * @member {Boolean} active
  */
 PaymentTypesViewModel.prototype['active'] = undefined;
 
 /**
- * Indicates if the payment method has an expiration date.
+ * Indicates if the payment method has an expiration date. This value can be 'true' or 'false'.
  * @member {Boolean} due_date
  */
 PaymentTypesViewModel.prototype['due_date'] = undefined;
