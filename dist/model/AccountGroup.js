@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The AccountGroup model module.
  * @module model/AccountGroup
- * @version 0.1.0
+ * @version v1
  */
 var AccountGroup = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var AccountGroup = /*#__PURE__*/function () {
   return AccountGroup;
 }();
 /**
+ * Represents the id of inventory classification.
  * @member {Number} id
  */
 
 
 AccountGroup.prototype['id'] = undefined;
 /**
+ * Represents the name of inventory classification.
  * @member {String} name
  */
 

@@ -33,7 +33,7 @@ var _FixedAssetsViewModel = _interopRequireDefault(require("../model/FixedAssets
 /**
 * FixedAssets service.
 * @module api/FixedAssetsApi
-* @version 0.1.0
+* @version v1
 */
 var FixedAssetsApi = /*#__PURE__*/function () {
   /**
@@ -48,14 +48,14 @@ var FixedAssetsApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Gets a list of fixed assets
+   * Returns a list of asset groups.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/AssetGroupsViewModel>} and HTTP response
    */
 
 
   (0, _createClass2["default"])(FixedAssetsApi, [{
-    key: "getAssetGroupWithHttpInfo",
-    value: function getAssetGroupWithHttpInfo() {
+    key: "getAssetGroupsWithHttpInfo",
+    value: function getAssetGroupsWithHttpInfo() {
       var postBody = null;
       var pathParams = {};
       var queryParams = {};
@@ -68,19 +68,19 @@ var FixedAssetsApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/v1/asset-groups', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Gets a list of fixed assets
+     * Returns a list of asset groups.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/AssetGroupsViewModel>}
      */
 
   }, {
-    key: "getAssetGroup",
-    value: function getAssetGroup() {
-      return this.getAssetGroupWithHttpInfo().then(function (response_and_data) {
+    key: "getAssetGroups",
+    value: function getAssetGroups() {
+      return this.getAssetGroupsWithHttpInfo().then(function (response_and_data) {
         return response_and_data.data;
       });
     }
     /**
-     * Gets a list of fixed assets
+     * Returns a list of fixed assets.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/FixedAssetsViewModel>} and HTTP response
      */
 
@@ -99,7 +99,7 @@ var FixedAssetsApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/v1/fixed-assets', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Gets a list of fixed assets
+     * Returns a list of fixed assets.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/FixedAssetsViewModel>}
      */
 

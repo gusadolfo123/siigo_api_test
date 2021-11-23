@@ -67,21 +67,25 @@ class PaymentsModel {
 }
 
 /**
+ * Represents the id of payment method.
  * @member {Number} id
  */
 PaymentsModel.prototype['id'] = undefined;
 
 /**
+ * Represents the name of the payment method.
  * @member {String} name
  */
 PaymentsModel.prototype['name'] = undefined;
 
 /**
+ * represents the amount to paid per installment,  this value will be associated to payment method.
  * @member {Number} value
  */
 PaymentsModel.prototype['value'] = undefined;
 
 /**
+ * Represents the date of fee payment.
  * @member {String} due_date
  */
 PaymentsModel.prototype['due_date'] = undefined;

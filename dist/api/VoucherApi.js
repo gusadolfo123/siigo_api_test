@@ -35,7 +35,7 @@ var _VouchersViewModel = _interopRequireDefault(require("../model/VouchersViewMo
 /**
 * Voucher service.
 * @module api/VoucherApi
-* @version 0.1.0
+* @version v1
 */
 var VoucherApi = /*#__PURE__*/function () {
   /**
@@ -50,27 +50,105 @@ var VoucherApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Gets a list of Vouchers with pagination.
+   * Creates a voucher.
    * @param {Object} opts Optional parameters
-   * @param {Date} opts.createdStart Returns results where the \"created\" field is greater or equal than the entered date
-   * @param {Date} opts.createdEnd Returns results where the \"created\" field is less or equal than the entered date
-   * @param {Date} opts.dateStart Returns results with date greater or equal than the \"date_start\" date
-   * @param {Date} opts.dateEnd Returns results with date less or equal than the \"date_end\" date
-   * @param {Date} opts.updatedStart Returns results where the \"last_updated\" field is greater or equal than the entered date
-   * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
-   * @param {Number} opts.page Represents the current page
-   * @param {Number} opts.pageSize Represents the number of results per page.
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VouchersViewModel} and HTTP response
+   * @param {module:model/CreateVoucherCommand} opts.createVoucherCommand Represents the request with the voucher information.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoucherViewModel} and HTTP response
    */
 
 
   (0, _createClass2["default"])(VoucherApi, [{
-    key: "v1VouchersGetWithHttpInfo",
-    value: function v1VouchersGetWithHttpInfo(opts) {
+    key: "createVoucherWithHttpInfo",
+    value: function createVoucherWithHttpInfo(opts) {
+      opts = opts || {};
+      var postBody = opts['createVoucherCommand'];
+      var pathParams = {};
+      var queryParams = {};
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['Bearer'];
+      var contentTypes = ['application/json-patch+json', 'application/json', 'text/json', 'application/_*+json'];
+      var accepts = ['text/plain', 'application/json', 'text/json'];
+      var returnType = _VoucherViewModel["default"];
+      return this.apiClient.callApi('/v1/vouchers', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Creates a voucher.
+     * @param {Object} opts Optional parameters
+     * @param {module:model/CreateVoucherCommand} opts.createVoucherCommand Represents the request with the voucher information.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/VoucherViewModel}
+     */
+
+  }, {
+    key: "createVoucher",
+    value: function createVoucher(opts) {
+      return this.createVoucherWithHttpInfo(opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Gets the voucher by GUID.
+     * @param {String} id Represents the unique Id of vocher, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoucherViewModel} and HTTP response
+     */
+
+  }, {
+    key: "getVoucherWithHttpInfo",
+    value: function getVoucherWithHttpInfo(id) {
+      var postBody = null; // verify the required parameter 'id' is set
+
+      if (id === undefined || id === null) {
+        throw new Error("Missing the required parameter 'id' when calling getVoucher");
+      }
+
+      var pathParams = {
+        'id': id
+      };
+      var queryParams = {};
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['Bearer'];
+      var contentTypes = [];
+      var accepts = ['text/plain', 'application/json', 'text/json'];
+      var returnType = _VoucherViewModel["default"];
+      return this.apiClient.callApi('/v1/vouchers/{id}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Gets the voucher by GUID.
+     * @param {String} id Represents the unique Id of vocher, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/VoucherViewModel}
+     */
+
+  }, {
+    key: "getVoucher",
+    value: function getVoucher(id) {
+      return this.getVoucherWithHttpInfo(id).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Returns a paginated list of vouchers.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.name Represents the name of voucher.  For example, the name of a voucher can be like 'RC-01-45'.
+     * @param {Date} opts.createdStart Returns results where the \"created\" field is greater or equal than the entered date
+     * @param {Date} opts.createdEnd Returns results where the \"created\" field is less or equal than the entered date
+     * @param {Date} opts.dateStart Returns results with date greater or equal than the \"date_start\" date
+     * @param {Date} opts.dateEnd Returns results with date less or equal than the \"date_end\" date
+     * @param {Date} opts.updatedStart Returns results where the \"last_updated\" field is greater or equal than the entered date
+     * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
+     * @param {Number} opts.page Represents the current page
+     * @param {Number} opts.pageSize Represents the number of results per page.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VouchersViewModel} and HTTP response
+     */
+
+  }, {
+    key: "getVouchersWithHttpInfo",
+    value: function getVouchersWithHttpInfo(opts) {
       opts = opts || {};
       var postBody = null;
       var pathParams = {};
       var queryParams = {
+        'name': opts['name'],
         'created_start': opts['createdStart'],
         'created_end': opts['createdEnd'],
         'date_start': opts['dateStart'],
@@ -89,8 +167,9 @@ var VoucherApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/v1/vouchers', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Gets a list of Vouchers with pagination.
+     * Returns a paginated list of vouchers.
      * @param {Object} opts Optional parameters
+     * @param {String} opts.name Represents the name of voucher.  For example, the name of a voucher can be like 'RC-01-45'.
      * @param {Date} opts.createdStart Returns results where the \"created\" field is greater or equal than the entered date
      * @param {Date} opts.createdEnd Returns results where the \"created\" field is less or equal than the entered date
      * @param {Date} opts.dateStart Returns results with date greater or equal than the \"date_start\" date
@@ -103,85 +182,9 @@ var VoucherApi = /*#__PURE__*/function () {
      */
 
   }, {
-    key: "v1VouchersGet",
-    value: function v1VouchersGet(opts) {
-      return this.v1VouchersGetWithHttpInfo(opts).then(function (response_and_data) {
-        return response_and_data.data;
-      });
-    }
-    /**
-     * Gets a Voucher by GUID.
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoucherViewModel} and HTTP response
-     */
-
-  }, {
-    key: "v1VouchersIdGetWithHttpInfo",
-    value: function v1VouchersIdGetWithHttpInfo(id) {
-      var postBody = null; // verify the required parameter 'id' is set
-
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling v1VouchersIdGet");
-      }
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {};
-      var headerParams = {};
-      var formParams = {};
-      var authNames = ['Bearer'];
-      var contentTypes = [];
-      var accepts = ['text/plain', 'application/json', 'text/json'];
-      var returnType = _VoucherViewModel["default"];
-      return this.apiClient.callApi('/v1/vouchers/{id}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
-    }
-    /**
-     * Gets a Voucher by GUID.
-     * @param {String} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/VoucherViewModel}
-     */
-
-  }, {
-    key: "v1VouchersIdGet",
-    value: function v1VouchersIdGet(id) {
-      return this.v1VouchersIdGetWithHttpInfo(id).then(function (response_and_data) {
-        return response_and_data.data;
-      });
-    }
-    /**
-     * Creates an Voucher.
-     * @param {Object} opts Optional parameters
-     * @param {module:model/CreateVoucherCommand} opts.createVoucherCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/VoucherViewModel} and HTTP response
-     */
-
-  }, {
-    key: "v1VouchersPostWithHttpInfo",
-    value: function v1VouchersPostWithHttpInfo(opts) {
-      opts = opts || {};
-      var postBody = opts['createVoucherCommand'];
-      var pathParams = {};
-      var queryParams = {};
-      var headerParams = {};
-      var formParams = {};
-      var authNames = ['Bearer'];
-      var contentTypes = ['application/json-patch+json', 'application/json', 'text/json', 'application/_*+json'];
-      var accepts = ['text/plain', 'application/json', 'text/json'];
-      var returnType = _VoucherViewModel["default"];
-      return this.apiClient.callApi('/v1/vouchers', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
-    }
-    /**
-     * Creates an Voucher.
-     * @param {Object} opts Optional parameters
-     * @param {module:model/CreateVoucherCommand} opts.createVoucherCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/VoucherViewModel}
-     */
-
-  }, {
-    key: "v1VouchersPost",
-    value: function v1VouchersPost(opts) {
-      return this.v1VouchersPostWithHttpInfo(opts).then(function (response_and_data) {
+    key: "getVouchers",
+    value: function getVouchers(opts) {
+      return this.getVouchersWithHttpInfo(opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

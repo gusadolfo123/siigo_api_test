@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The PaymentsCommand model module.
  * @module model/PaymentsCommand
- * @version 0.1.0
+ * @version v1
  */
 var PaymentsCommand = /*#__PURE__*/function () {
   /**
@@ -83,17 +83,20 @@ var PaymentsCommand = /*#__PURE__*/function () {
   return PaymentsCommand;
 }();
 /**
+ * Represents the id of payment method
  * @member {Number} id
  */
 
 
 PaymentsCommand.prototype['id'] = undefined;
 /**
+ * represents the amount to paid per installment,  this value will be associated to payment method
  * @member {Number} value
  */
 
 PaymentsCommand.prototype['value'] = undefined;
 /**
+ * Represents the date of fee payment
  * @member {String} due_date
  */
 

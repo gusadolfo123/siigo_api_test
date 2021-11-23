@@ -55,7 +55,7 @@
         "id": 115064
     },
     "date": "2020-12-04",
-    "invoice": "5a124a1b-816d-411f-b01f-5e22577797e3",
+    "invoice": "38866804-ad85-43b6-a7c9-7a6c24e42f76",
     "items": [
         {
             "code": "1215",
@@ -97,12 +97,12 @@
         expect(result.response.body.id).to.be(id);
       });
     });
-    describe('getCreditNotePdf', function() {
-      it('should call getCreditNotePdf successfully', async function() {
+    describe('getCreditNotePDF', function() {
+      it('should call getCreditNotePDF successfully', async function() {
         try {      
-          result = await instance.getCreditNotePdfWithHttpInfo(id);
+          result = await instance.getCreditNotePDFWithHttpInfo(id);
         } catch (error) {
-          console.error(error.response.body);
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200); 
         expect(result.response.body.id).to.be(id);
@@ -110,14 +110,17 @@
     }); 
     describe('getCreditNotes', function() {
       it('should call getCreditNotes successfully', async function() {
+        let invoice = "";
         try {
           result = await instance.getCreditNotesWithHttpInfo();
+          id = result.response.body.results[0].id;
+          invoice = result.response.body.results[0].invoice.id;
         } catch (error) {
           console.error(error.response.body);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.results[0].id).to.be(id);
-        expect(result.response.body.results[0].invoice.id).to.be('5a124a1b-816d-411f-b01f-5e22577797e3');
+        expect(result.response.body.results[0].invoice.id).to.be(invoice);
       });
     });
   });

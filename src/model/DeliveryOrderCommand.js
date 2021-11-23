@@ -64,16 +64,19 @@ class DeliveryOrderCommand {
 }
 
 /**
+ * Represent the prefix of order type.
  * @member {String} prefix
  */
 DeliveryOrderCommand.prototype['prefix'] = undefined;
 
 /**
+ * Represents the number of the purchase.
  * @member {String} number
  */
 DeliveryOrderCommand.prototype['number'] = undefined;
 
 /**
+ * Represents the date of delivery.
  * @member {String} date
  */
 DeliveryOrderCommand.prototype['date'] = undefined;

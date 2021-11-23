@@ -35,7 +35,7 @@ var _PageListModel = _interopRequireDefault(require("./PageListModel"));
 /**
  * The CreditNotesViewModel model module.
  * @module model/CreditNotesViewModel
- * @version 0.1.0
+ * @version v1
  */
 var CreditNotesViewModel = /*#__PURE__*/function () {
   /**
@@ -96,7 +96,7 @@ var CreditNotesViewModel = /*#__PURE__*/function () {
 
 CreditNotesViewModel.prototype['pagination'] = undefined;
 /**
- * Contains the Results, this results will be a list of Credit Notes
+ * Contains the Results, this results will be a list of Credit Notes.
  * @member {Array.<module:model/CreditNoteViewModel>} results
  */
 

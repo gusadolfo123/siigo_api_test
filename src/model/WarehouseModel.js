@@ -61,11 +61,13 @@ class WarehouseModel {
 }
 
 /**
+ * Represents the id of warehouse, by default this field will be null.
  * @member {Number} id
  */
 WarehouseModel.prototype['id'] = undefined;
 
 /**
+ * Represents the name of warehouse.
  * @member {String} name
  */
 WarehouseModel.prototype['name'] = undefined;

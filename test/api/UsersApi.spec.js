@@ -54,15 +54,10 @@
   let result = {};
   describe("getUsers", function () {
     it("should call getUsers successfully", async function () {
-      //uncomment below and update the code to test getUsers
-      //instance.getUsers(function(error) {
-      //  if (error) throw error;
-      //expect().to.be();
-      //});
       try {
         result = await instance.getUsersWithHttpInfo();
       } catch (error) {
-        throw error;
+        console.error(error);
       }
       expect(result.response.statusCode).to.be(200);
       expect(result.response.body.results[0].id).to.be(18627)

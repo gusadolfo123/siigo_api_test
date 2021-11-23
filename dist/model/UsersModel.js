@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The UsersModel model module.
  * @module model/UsersModel
- * @version 0.1.0
+ * @version v1
  */
 var UsersModel = /*#__PURE__*/function () {
   /**
@@ -99,37 +99,44 @@ var UsersModel = /*#__PURE__*/function () {
   return UsersModel;
 }();
 /**
+ * Represents the id of the user, the value of this field must be an integer  number that represents the unique id of the user. For example '35071'.
  * @member {Number} id
  */
 
 
 UsersModel.prototype['id'] = undefined;
 /**
+ * Represents the user name. This value can be an alphanumeric name  like 'James' or 'DavidYepes27'.
  * @member {String} username
  */
 
 UsersModel.prototype['username'] = undefined;
 /**
+ * Represents the first name of the user. For example, 'James David'.
  * @member {String} first_name
  */
 
 UsersModel.prototype['first_name'] = undefined;
 /**
+ * Represents the last name of the user. For example, 'Freeman Smith'.
  * @member {String} last_name
  */
 
 UsersModel.prototype['last_name'] = undefined;
 /**
+ * Represents the email of the user. This value can be an alphanumeric email  like 'user@test.com' or 'james.freeman@gmail.com'.
  * @member {String} email
  */
 
 UsersModel.prototype['email'] = undefined;
 /**
+ * Represents if user status is activated or disabled,   the value of this status will be true (for activated) or false (disabled).  By default, this field will be true.
  * @member {Boolean} active
  */
 
 UsersModel.prototype['active'] = undefined;
 /**
+ * Represents the identification number of the user. For example '13832082'.
  * @member {String} identification
  */
 

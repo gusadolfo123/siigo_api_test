@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | [optional] 
-**name** | **String** |  | [optional] 
+**id** | **Number** | Represents the id of inventory classification. | [optional] 
+**name** | **String** | Represents the name of inventory classification. | [optional] 
 
 

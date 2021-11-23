@@ -88,11 +88,13 @@ ItemVoucher.prototype['due'] = undefined;
 ItemVoucher.prototype['tax'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} description
  */
 ItemVoucher.prototype['description'] = undefined;
 
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 ItemVoucher.prototype['value'] = undefined;

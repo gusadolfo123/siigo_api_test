@@ -64,16 +64,19 @@ class DeliveryOrderModel {
 }
 
 /**
+ * Represent the prefix of order type.  For example, 'OE' represents 'Delivery Order' and 'OC' means 'Purchase Order'.
  * @member {String} prefix
  */
 DeliveryOrderModel.prototype['prefix'] = undefined;
 
 /**
+ * Represents the number of the delivery order.
  * @member {String} number
  */
 DeliveryOrderModel.prototype['number'] = undefined;
 
 /**
+ * Represents the date of delivery.
  * @member {String} date
  */
 DeliveryOrderModel.prototype['date'] = undefined;

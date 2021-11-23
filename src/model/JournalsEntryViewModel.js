@@ -73,6 +73,7 @@ class JournalsEntryViewModel {
 JournalsEntryViewModel.prototype['pagination'] = undefined;
 
 /**
+ * Contains the Results, this results will be a list of Journals.
  * @member {Array.<module:model/JournalEntryViewModel>} results
  */
 JournalsEntryViewModel.prototype['results'] = undefined;

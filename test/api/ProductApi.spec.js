@@ -104,7 +104,7 @@
           id = result.response.body.id;
           document=result.response.body;
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(201);
         expect(result.response.body.id).to.be(document.id)
@@ -117,7 +117,7 @@
         try {
           result = await instance.getProductWithHttpInfo(id);
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.id).to.be(document.id)
@@ -132,7 +132,7 @@
         try {
           result = await instance.updateProductWithHttpInfo(id,  { 'productCommand': data });
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.body.code).to.be(newCode);
       });
@@ -144,7 +144,7 @@
         try {
           result = await instance.getProductsWithHttpInfo(opts);
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.results[0].id).to.be(id);
@@ -158,7 +158,7 @@
         try {
           result = await instance.deleteProductWithHttpInfo(id);
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.deleted).to.be(true);

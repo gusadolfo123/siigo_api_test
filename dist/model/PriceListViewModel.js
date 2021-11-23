@@ -31,7 +31,7 @@ var _PriceListItemViewModel = _interopRequireDefault(require("./PriceListItemVie
 /**
  * The PriceListViewModel model module.
  * @module model/PriceListViewModel
- * @version 0.1.0
+ * @version v1
  */
 var PriceListViewModel = /*#__PURE__*/function () {
   /**
@@ -81,12 +81,14 @@ var PriceListViewModel = /*#__PURE__*/function () {
   return PriceListViewModel;
 }();
 /**
+ * Represents the currency code.
  * @member {String} currency_code
  */
 
 
 PriceListViewModel.prototype['currency_code'] = undefined;
 /**
+ * Contains a price list.
  * @member {Array.<module:model/PriceListItemViewModel>} price_list
  */
 

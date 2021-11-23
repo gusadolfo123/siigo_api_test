@@ -72,6 +72,7 @@ class VouchersViewModel {
 VouchersViewModel.prototype['pagination'] = undefined;
 
 /**
+ * Contains the Results, this results will be a list of Vouchers
  * @member {Array.<module:model/VoucherViewModel>} results
  */
 VouchersViewModel.prototype['results'] = undefined;

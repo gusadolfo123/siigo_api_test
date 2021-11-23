@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The Tax model module.
  * @module model/Tax
- * @version 0.1.0
+ * @version v1
  */
 var Tax = /*#__PURE__*/function () {
   /**
@@ -87,22 +87,26 @@ var Tax = /*#__PURE__*/function () {
   return Tax;
 }();
 /**
+ * Represents the id of the tax, the value of this field must be an integer  number that represents the unique id of the tax.
  * @member {Number} id
  */
 
 
 Tax.prototype['id'] = undefined;
 /**
+ * Represents the name of the VAT. This value can be an alphanumeric  name like 'VAT 19%' or 'RET 0.55%'.
  * @member {String} name
  */
 
 Tax.prototype['name'] = undefined;
 /**
+ * Represents the type of tax. For example, 'IVA', 'Retefuente', 'ReteIVA',  'ReteICA', 'Impoconsumo', 'AdValorem', or 'Autorretencion'.
  * @member {String} type
  */
 
 Tax.prototype['type'] = undefined;
 /**
+ * Represents the percentage of the tax. For example, for Colombia in the year 2021   the percentage value of the VAT was 19%.
  * @member {Number} percentage
  */
 

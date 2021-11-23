@@ -36,7 +36,7 @@ var _querystring = _interopRequireDefault(require("querystring"));
 
 /**
 * @module ApiClient
-* @version 0.1.0
+* @version v1
 */
 
 /**
@@ -95,15 +95,15 @@ var ApiClient = /*#__PURE__*/function () {
      */
 
     this.defaultHeaders = {
-      'User-Agent': 'OpenAPI-Generator/0.1.0/Javascript'
+      'User-Agent': 'OpenAPI-Generator/v1/Javascript'
     };
     /**
      * The default HTTP timeout for all API calls.
      * @type {Number}
-     * @default 60000
+     * @default 420000
      */
 
-    this.timeout = 60000;
+    this.timeout = 420000;
     /**
      * If set to false an additional timestamp parameter is added to all API GET calls to
      * prevent browser caching

@@ -83,11 +83,6 @@
   describe('VoucherApi', function() {
     describe('createVoucher', function() {
       it('should call createVoucher successfully', async function() {
-        //uncomment below and update the code to test createVoucher
-        //instance.createVoucher(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
         let opts = {
           'createVoucherCommand': data
         };
@@ -96,7 +91,7 @@
           id = result.response.body.id;
           document=result.response.body;
         } catch (error) {
-          throw error;;
+          console.error(error);
         }  
         expect(result.response.statusCode).to.be(201); 
         expect(result.response.body.id).to.be(document.id)
@@ -108,15 +103,10 @@
     });
     describe('getVoucher', function() {
       it('should call getVoucher successfully', async function() {
-        //uncomment below and update the code to test getVoucher
-        //instance.getVoucher(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
         try {
           result = await instance.getVoucherWithHttpInfo(id);
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.id).to.be(document.id)
@@ -128,16 +118,11 @@
     });
     describe('getVouchers', function() {
       it('should call getVouchers successfully', async function() {
-        //uncomment below and update the code to test getVouchers
-        //instance.getVouchers(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
         let opts = {}
         try {
           result = await instance.getVouchersWithHttpInfo(opts);          
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.results[0].id).to.be(document.id)

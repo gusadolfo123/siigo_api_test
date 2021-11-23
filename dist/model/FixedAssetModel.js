@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The FixedAssetModel model module.
  * @module model/FixedAssetModel
- * @version 0.1.0
+ * @version v1
  */
 var FixedAssetModel = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var FixedAssetModel = /*#__PURE__*/function () {
   return FixedAssetModel;
 }();
 /**
+ * Represents the id of the fixed asset, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 
 
 FixedAssetModel.prototype['id'] = undefined;
 /**
+ * Represents the name of the fixed asset. This value can be an alphanumeric  name like 'Personal computer' or 'Furniture'.
  * @member {String} name
  */
 

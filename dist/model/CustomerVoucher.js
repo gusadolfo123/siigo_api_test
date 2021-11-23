@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The CustomerVoucher model module.
  * @module model/CustomerVoucher
- * @version 0.1.0
+ * @version v1
  */
 var CustomerVoucher = /*#__PURE__*/function () {
   /**
@@ -83,17 +83,20 @@ var CustomerVoucher = /*#__PURE__*/function () {
   return CustomerVoucher;
 }();
 /**
+ * Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 
 
 CustomerVoucher.prototype['id'] = undefined;
 /**
+ * Represents the identification number of customer.  For example, this identification can be like '13832081'.
  * @member {String} identification
  */
 
 CustomerVoucher.prototype['identification'] = undefined;
 /**
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 

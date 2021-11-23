@@ -33,7 +33,7 @@ var _PurchaseOrderCommand = _interopRequireDefault(require("./PurchaseOrderComma
 /**
  * The AdditionalFieldsCommand model module.
  * @module model/AdditionalFieldsCommand
- * @version 0.1.0
+ * @version v1
  */
 var AdditionalFieldsCommand = /*#__PURE__*/function () {
   /**

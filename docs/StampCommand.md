@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**send** | **Boolean** |  | [optional] 
+**send** | **Boolean** | Represents the status of document. | [optional] 
 
 

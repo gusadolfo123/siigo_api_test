@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The PursacheOrderModel model module.
  * @module model/PursacheOrderModel
- * @version 0.1.0
+ * @version v1
  */
 var PursacheOrderModel = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var PursacheOrderModel = /*#__PURE__*/function () {
   return PursacheOrderModel;
 }();
 /**
+ * For example, 'OE' represents 'Delivery Order' and 'OC' means 'Purchase Order'.
  * @member {String} prefix
  */
 
 
 PursacheOrderModel.prototype['prefix'] = undefined;
 /**
+ * Represents the number of the purchase order..
  * @member {String} number
  */
 

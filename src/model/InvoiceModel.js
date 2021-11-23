@@ -61,13 +61,13 @@ class InvoiceModel {
 }
 
 /**
- * Represents the unique Id of invoice, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+ * Represents the unique Id of invoice, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 InvoiceModel.prototype['id'] = undefined;
 
 /**
- * Contains information about document type,   document type Id and the sequential number of the document
+ * Contains information about document type,   document type Id, and the sequential number of the document.  For example 'FV-2-20' indicates that its document type is an 'Invoice',  its document type id is '2' and its sequential number is '22'.
  * @member {String} name
  */
 InvoiceModel.prototype['name'] = undefined;

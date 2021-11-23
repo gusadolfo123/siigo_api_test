@@ -41,7 +41,7 @@ var _JournalEntryTaxModel = _interopRequireDefault(require("./JournalEntryTaxMod
 /**
  * The JournalEntryItemModel model module.
  * @module model/JournalEntryItemModel
- * @version 0.1.0
+ * @version v1
  */
 var JournalEntryItemModel = /*#__PURE__*/function () {
   /**
@@ -130,6 +130,7 @@ JournalEntryItemModel.prototype['account'] = undefined;
 
 JournalEntryItemModel.prototype['customer'] = undefined;
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 
@@ -155,11 +156,13 @@ JournalEntryItemModel.prototype['fixed_asset'] = undefined;
 
 JournalEntryItemModel.prototype['product'] = undefined;
 /**
+ * Represents a description associated with the journal.
  * @member {String} description
  */
 
 JournalEntryItemModel.prototype['description'] = undefined;
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 

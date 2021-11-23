@@ -61,11 +61,13 @@ class Payment {
 }
 
 /**
+ * Represents the id of payment method.
  * @member {Number} id
  */
 Payment.prototype['id'] = undefined;
 
 /**
+ * Represents the amount to paid per installment,  this value will be associated to payment method.
  * @member {Number} value
  */
 Payment.prototype['value'] = undefined;

@@ -33,7 +33,7 @@ var _PursacheOrderModel = _interopRequireDefault(require("./PursacheOrderModel")
 /**
  * The AdditionalFieldsModel model module.
  * @module model/AdditionalFieldsModel
- * @version 0.1.0
+ * @version v1
  */
 var AdditionalFieldsModel = /*#__PURE__*/function () {
   /**

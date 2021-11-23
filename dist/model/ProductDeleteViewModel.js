@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The ProductDeleteViewModel model module.
  * @module model/ProductDeleteViewModel
- * @version 0.1.0
+ * @version v1
  */
 var ProductDeleteViewModel = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var ProductDeleteViewModel = /*#__PURE__*/function () {
   return ProductDeleteViewModel;
 }();
 /**
+ * Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000
  * @member {String} id
  */
 
 
 ProductDeleteViewModel.prototype['id'] = undefined;
 /**
+ * Represent the deleted status of product.
  * @member {Boolean} deleted
  */
 

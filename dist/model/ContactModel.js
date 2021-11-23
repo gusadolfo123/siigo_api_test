@@ -31,7 +31,7 @@ var _PhoneModel = _interopRequireDefault(require("./PhoneModel"));
 /**
  * The ContactModel model module.
  * @module model/ContactModel
- * @version 0.1.0
+ * @version v1
  */
 var ContactModel = /*#__PURE__*/function () {
   /**
@@ -89,20 +89,20 @@ var ContactModel = /*#__PURE__*/function () {
   return ContactModel;
 }();
 /**
- * Represents the first name
+ * Represents the first name.  For example, the first name 'Marcos'.
  * @member {String} first_name
  */
 
 
 ContactModel.prototype['first_name'] = undefined;
 /**
- * Represents the last name
+ * Represents the last name.  For example, the last name 'Castillo'.
  * @member {String} last_name
  */
 
 ContactModel.prototype['last_name'] = undefined;
 /**
- * Represents the email
+ * Represents the email.  For example, the email 'marcos.castillo@contacto.com'.
  * @member {String} email
  */
 

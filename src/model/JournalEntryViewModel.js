@@ -86,6 +86,7 @@ class JournalEntryViewModel {
 }
 
 /**
+ * Represents the unique Id of credit note, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 JournalEntryViewModel.prototype['id'] = undefined;
@@ -96,16 +97,19 @@ JournalEntryViewModel.prototype['id'] = undefined;
 JournalEntryViewModel.prototype['document'] = undefined;
 
 /**
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 JournalEntryViewModel.prototype['number'] = undefined;
 
 /**
+ * Contains information about document type,   document type Id, and the sequential number of the document.  For example, 'CC-10-20' indicates that its document type is a 'Journal',  its document type id is '10' and its sequential number is '20'.
  * @member {String} name
  */
 JournalEntryViewModel.prototype['name'] = undefined;
 
 /**
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'.  For example, '2021-10-10' to indicate the date 'October 10th, 2021'.
  * @member {String} date
  */
 JournalEntryViewModel.prototype['date'] = undefined;
@@ -116,11 +120,13 @@ JournalEntryViewModel.prototype['date'] = undefined;
 JournalEntryViewModel.prototype['currency'] = undefined;
 
 /**
+ * Contains a list of items associated with the journal.
  * @member {Array.<module:model/JournalEntryItemModel>} items
  */
 JournalEntryViewModel.prototype['items'] = undefined;
 
 /**
+ * Represent additional comments in document.
  * @member {String} observations
  */
 JournalEntryViewModel.prototype['observations'] = undefined;

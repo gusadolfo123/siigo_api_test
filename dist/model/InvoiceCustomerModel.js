@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The InvoiceCustomerModel model module.
  * @module model/InvoiceCustomerModel
- * @version 0.1.0
+ * @version v1
  */
 var InvoiceCustomerModel = /*#__PURE__*/function () {
   /**
@@ -83,20 +83,20 @@ var InvoiceCustomerModel = /*#__PURE__*/function () {
   return InvoiceCustomerModel;
 }();
 /**
- * Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+ * Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 
 
 InvoiceCustomerModel.prototype['id'] = undefined;
 /**
- * Represents the identification number of customer
+ * Represents the identification number of customer.
  * @member {String} identification
  */
 
 InvoiceCustomerModel.prototype['identification'] = undefined;
 /**
- * Represents the branch office number of the customer, default value will be 0
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 

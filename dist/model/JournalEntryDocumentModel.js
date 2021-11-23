@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The JournalEntryDocumentModel model module.
  * @module model/JournalEntryDocumentModel
- * @version 0.1.0
+ * @version v1
  */
 var JournalEntryDocumentModel = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var JournalEntryDocumentModel = /*#__PURE__*/function () {
   return JournalEntryDocumentModel;
 }();
 /**
+ * Represents the id of the journal.  For example, the number id '27441'.
  * @member {Number} id
  */
 

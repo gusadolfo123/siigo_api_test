@@ -33,12 +33,12 @@ var _UsersModel = _interopRequireDefault(require("./UsersModel"));
 /**
  * The UsersViewModel model module.
  * @module model/UsersViewModel
- * @version 0.1.0
+ * @version v1
  */
 var UsersViewModel = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>UsersViewModel</code>.
-   * Class that contain the jsons that the client will see after request  a user list with pagination that came from msusers
+   * Class that contain the jsons that the client will see after request  a user list with pagination that came from msusers.
    * @alias module:model/UsersViewModel
    */
   function UsersViewModel() {
@@ -90,6 +90,7 @@ var UsersViewModel = /*#__PURE__*/function () {
 
 UsersViewModel.prototype['pagination'] = undefined;
 /**
+ * Contains the Results, this results will be a list of users.
  * @member {Array.<module:model/UsersModel>} results
  */
 

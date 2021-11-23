@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The ItemDue model module.
  * @module model/ItemDue
- * @version 0.1.0
+ * @version v1
  */
 var ItemDue = /*#__PURE__*/function () {
   /**
@@ -87,22 +87,26 @@ var ItemDue = /*#__PURE__*/function () {
   return ItemDue;
 }();
 /**
+ * Represents the prefix of the invoice to which the credit or payment will be applied.
  * @member {String} prefix
  */
 
 
 ItemDue.prototype['prefix'] = undefined;
 /**
+ * Represents the consecutive of the invoice to which the credit or payment will be applied.
  * @member {Number} consecutive
  */
 
 ItemDue.prototype['consecutive'] = undefined;
 /**
+ * Represents the quota number of the credit or payment.
  * @member {Number} quote
  */
 
 ItemDue.prototype['quote'] = undefined;
 /**
+ * Represents the payment date of the fee.
  * @member {String} date
  */
 

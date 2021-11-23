@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**position** | **Number** |  | [optional] 
-**value** | **Number** |  | [optional] 
+**position** | **Number** | Represents the unique id of price list | [optional] 
+**value** | **Number** | Represents product price | [optional] 
 
 

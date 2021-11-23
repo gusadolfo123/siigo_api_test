@@ -58,6 +58,7 @@ class TaxesCommand {
 }
 
 /**
+ * Represents the id of the tax, the value of this field must be an integer  number that represents the unique id of the tax.
  * @member {Number} id
  */
 TaxesCommand.prototype['id'] = undefined;

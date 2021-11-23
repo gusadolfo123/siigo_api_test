@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The DeliveryOrderModel model module.
  * @module model/DeliveryOrderModel
- * @version 0.1.0
+ * @version v1
  */
 var DeliveryOrderModel = /*#__PURE__*/function () {
   /**
@@ -83,17 +83,20 @@ var DeliveryOrderModel = /*#__PURE__*/function () {
   return DeliveryOrderModel;
 }();
 /**
+ * Represent the prefix of order type.  For example, 'OE' represents 'Delivery Order' and 'OC' means 'Purchase Order'.
  * @member {String} prefix
  */
 
 
 DeliveryOrderModel.prototype['prefix'] = undefined;
 /**
+ * Represents the number of the delivery order.
  * @member {String} number
  */
 
 DeliveryOrderModel.prototype['number'] = undefined;
 /**
+ * Represents the date of delivery.
  * @member {String} date
  */
 

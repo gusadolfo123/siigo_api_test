@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The FiscalResponsibilitiesCommand model module.
  * @module model/FiscalResponsibilitiesCommand
- * @version 0.1.0
+ * @version v1
  */
 var FiscalResponsibilitiesCommand = /*#__PURE__*/function () {
   /**
@@ -79,14 +79,14 @@ var FiscalResponsibilitiesCommand = /*#__PURE__*/function () {
   return FiscalResponsibilitiesCommand;
 }();
 /**
- * Represents the fiscal Responsability code
+ * Represents the fiscal Responsability code.  For example, the code 'R-99-PN'.
  * @member {String} code
  */
 
 
 FiscalResponsibilitiesCommand.prototype['code'] = undefined;
 /**
- * Represents the fiscal Responsability name
+ * Represents the fiscal Responsability name.
  * @member {String} name
  */
 

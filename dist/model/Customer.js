@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The Customer model module.
  * @module model/Customer
- * @version 0.1.0
+ * @version v1
  */
 var Customer = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var Customer = /*#__PURE__*/function () {
   return Customer;
 }();
 /**
+ * Represents the identification number of customer.  For example, this identification can be like '13832081'.
  * @member {String} identification
  */
 
 
 Customer.prototype['identification'] = undefined;
 /**
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 

@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The LiteCustomerCommand model module.
  * @module model/LiteCustomerCommand
- * @version 0.1.0
+ * @version v1
  */
 var LiteCustomerCommand = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var LiteCustomerCommand = /*#__PURE__*/function () {
   return LiteCustomerCommand;
 }();
 /**
+ * Represents the identification number of customer.
  * @member {String} identification
  */
 
 
 LiteCustomerCommand.prototype['identification'] = undefined;
 /**
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 

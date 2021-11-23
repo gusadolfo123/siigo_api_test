@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The JournalEntryWarehouseModel model module.
  * @module model/JournalEntryWarehouseModel
- * @version 0.1.0
+ * @version v1
  */
 var JournalEntryWarehouseModel = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var JournalEntryWarehouseModel = /*#__PURE__*/function () {
   return JournalEntryWarehouseModel;
 }();
 /**
+ * Represents the id of warehouse, by default this field will be null.
  * @member {Number} id
  */
 
 
 JournalEntryWarehouseModel.prototype['id'] = undefined;
 /**
+ * Represents the name of warehouse.
  * @member {String} name
  */
 
