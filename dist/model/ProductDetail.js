@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The ProductDetail model module.
  * @module model/ProductDetail
- * @version 0.1.0
+ * @version v1
  */
 var ProductDetail = /*#__PURE__*/function () {
   /**

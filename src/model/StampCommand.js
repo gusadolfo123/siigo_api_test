@@ -58,6 +58,7 @@ class StampCommand {
 }
 
 /**
+ * Represents the status of document.
  * @member {Boolean} send
  */
 StampCommand.prototype['send'] = undefined;

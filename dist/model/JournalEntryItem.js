@@ -41,7 +41,7 @@ var _TaxesCommand = _interopRequireDefault(require("./TaxesCommand"));
 /**
  * The JournalEntryItem model module.
  * @module model/JournalEntryItem
- * @version 0.1.0
+ * @version v1
  */
 var JournalEntryItem = /*#__PURE__*/function () {
   /**
@@ -130,6 +130,7 @@ JournalEntryItem.prototype['account'] = undefined;
 
 JournalEntryItem.prototype['customer'] = undefined;
 /**
+ * Represents a description associated with the journal.
  * @member {String} description
  */
 
@@ -150,6 +151,7 @@ JournalEntryItem.prototype['due'] = undefined;
 
 JournalEntryItem.prototype['product'] = undefined;
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 
@@ -160,6 +162,7 @@ JournalEntryItem.prototype['cost_center'] = undefined;
 
 JournalEntryItem.prototype['fixed_asset'] = undefined;
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 

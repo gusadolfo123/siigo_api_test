@@ -61,11 +61,13 @@ class DiscountModel {
 }
 
 /**
+ * Represents the numerical percentage of the discount.  For example, '13' represents 13%.
  * @member {Number} percentage
  */
 DiscountModel.prototype['percentage'] = undefined;
 
 /**
+ * Represents the value of the discount.  For example, 130 dollars.
  * @member {Number} value
  */
 DiscountModel.prototype['value'] = undefined;

@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The Metadata model module.
  * @module model/Metadata
- * @version 0.1.0
+ * @version v1
  */
 var Metadata = /*#__PURE__*/function () {
   /**
@@ -83,20 +83,20 @@ var Metadata = /*#__PURE__*/function () {
   return Metadata;
 }();
 /**
- * Represents the creation date of organization
+ * Represents the creation date of organization.
  * @member {Date} created
  */
 
 
 Metadata.prototype['created'] = undefined;
 /**
- * Represents the last update date of organization, this field by the default will be null
+ * Represents the last update date of organization, this field by the default will be null.
  * @member {Date} last_updated
  */
 
 Metadata.prototype['last_updated'] = undefined;
 /**
- * Represents the last stock update date
+ * Represents the last stock update date.
  * @member {Date} stock_updated
  */
 

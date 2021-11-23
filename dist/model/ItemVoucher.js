@@ -35,7 +35,7 @@ var _TaxesModel = _interopRequireDefault(require("./TaxesModel"));
 /**
  * The ItemVoucher model module.
  * @module model/ItemVoucher
- * @version 0.1.0
+ * @version v1
  */
 var ItemVoucher = /*#__PURE__*/function () {
   /**
@@ -113,11 +113,13 @@ ItemVoucher.prototype['due'] = undefined;
 
 ItemVoucher.prototype['tax'] = undefined;
 /**
+ * Represents product description.
  * @member {String} description
  */
 
 ItemVoucher.prototype['description'] = undefined;
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 

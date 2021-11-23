@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The CostCentersViewModel model module.
  * @module model/CostCentersViewModel
- * @version 0.1.0
+ * @version v1
  */
 var CostCentersViewModel = /*#__PURE__*/function () {
   /**
@@ -87,22 +87,26 @@ var CostCentersViewModel = /*#__PURE__*/function () {
   return CostCentersViewModel;
 }();
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 
 
 CostCentersViewModel.prototype['id'] = undefined;
 /**
+ * Represents the identification code of the cost center.   This code will represent the unique code id of the cost center.
  * @member {String} code
  */
 
 CostCentersViewModel.prototype['code'] = undefined;
 /**
+ * Represents the name of the cost center. This value can be an alphanumeric  name like 'Main Cost Center' or 'Center-1'.
  * @member {String} name
  */
 
 CostCentersViewModel.prototype['name'] = undefined;
 /**
+ * Represents if the status of a cost center is activated or disabled,   the value of this status will be true (for activated) or false (disabled).  By default, this field will be active.
  * @member {Boolean} active
  */
 

@@ -31,7 +31,7 @@ var _TaxViewModel = _interopRequireDefault(require("../model/TaxViewModel"));
 /**
 * Taxes service.
 * @module api/TaxesApi
-* @version 0.1.0
+* @version v1
 */
 var TaxesApi = /*#__PURE__*/function () {
   /**
@@ -46,14 +46,14 @@ var TaxesApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Gets a list of Taxes.
+   * Returns a list of taxes.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TaxViewModel} and HTTP response
    */
 
 
   (0, _createClass2["default"])(TaxesApi, [{
-    key: "v1TaxesGetWithHttpInfo",
-    value: function v1TaxesGetWithHttpInfo() {
+    key: "getTaxesWithHttpInfo",
+    value: function getTaxesWithHttpInfo() {
       var postBody = null;
       var pathParams = {};
       var queryParams = {};
@@ -66,14 +66,14 @@ var TaxesApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/v1/taxes', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Gets a list of Taxes.
+     * Returns a list of taxes.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TaxViewModel}
      */
 
   }, {
-    key: "v1TaxesGet",
-    value: function v1TaxesGet() {
-      return this.v1TaxesGetWithHttpInfo().then(function (response_and_data) {
+    key: "getTaxes",
+    value: function getTaxes() {
+      return this.getTaxesWithHttpInfo().then(function (response_and_data) {
         return response_and_data.data;
       });
     }

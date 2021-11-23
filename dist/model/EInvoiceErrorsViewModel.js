@@ -31,7 +31,7 @@ var _EInvoiceErrorViewModel = _interopRequireDefault(require("./EInvoiceErrorVie
 /**
  * The EInvoiceErrorsViewModel model module.
  * @module model/EInvoiceErrorsViewModel
- * @version 0.1.0
+ * @version v1
  */
 var EInvoiceErrorsViewModel = /*#__PURE__*/function () {
   /**
@@ -81,12 +81,14 @@ var EInvoiceErrorsViewModel = /*#__PURE__*/function () {
   return EInvoiceErrorsViewModel;
 }();
 /**
+ * Represents the unique Id of invoice, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 
 
 EInvoiceErrorsViewModel.prototype['id'] = undefined;
 /**
+ * Contains a list of messages error.
  * @member {Array.<module:model/EInvoiceErrorViewModel>} errors
  */
 

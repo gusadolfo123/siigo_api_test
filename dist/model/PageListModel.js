@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The PageListModel model module.
  * @module model/PageListModel
- * @version 0.1.0
+ * @version v1
  */
 var PageListModel = /*#__PURE__*/function () {
   /**
@@ -83,7 +83,7 @@ var PageListModel = /*#__PURE__*/function () {
   return PageListModel;
 }();
 /**
- * Represents the current page
+ * Represents the current page.
  * @member {Number} page
  */
 
@@ -96,7 +96,7 @@ PageListModel.prototype['page'] = undefined;
 
 PageListModel.prototype['page_size'] = undefined;
 /**
- * Respresents the total count of the results
+ * Respresents the total count of the results.
  * @member {Number} total_results
  */
 

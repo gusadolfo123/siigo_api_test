@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The RelatedUsersCommand model module.
  * @module model/RelatedUsersCommand
- * @version 0.1.0
+ * @version v1
  */
 var RelatedUsersCommand = /*#__PURE__*/function () {
   /**
@@ -79,14 +79,14 @@ var RelatedUsersCommand = /*#__PURE__*/function () {
   return RelatedUsersCommand;
 }();
 /**
- * Represents the seller Id
+ * Represents the seller Id.
  * @member {Number} seller_id
  */
 
 
 RelatedUsersCommand.prototype['seller_id'] = undefined;
 /**
- * Represents the debt collector Id
+ * Represents the debt collector Id.
  * @member {Number} collector_id
  */
 

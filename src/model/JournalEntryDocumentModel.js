@@ -58,6 +58,7 @@ class JournalEntryDocumentModel {
 }
 
 /**
+ * Represents the id of the journal.  For example, the number id '27441'.
  * @member {Number} id
  */
 JournalEntryDocumentModel.prototype['id'] = undefined;

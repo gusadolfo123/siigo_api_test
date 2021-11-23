@@ -78,6 +78,7 @@ class Item {
 Item.prototype['account'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} description
  */
 Item.prototype['description'] = undefined;
@@ -93,6 +94,7 @@ Item.prototype['due'] = undefined;
 Item.prototype['tax'] = undefined;
 
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 Item.prototype['value'] = undefined;

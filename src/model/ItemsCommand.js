@@ -86,51 +86,61 @@ class ItemsCommand {
 }
 
 /**
+ * Represents the unique code of the item. This value can be an alphanumeric  code that will represent the code id of the item.  For example,'item-1' or 'toy-007'.
  * @member {String} code
  */
 ItemsCommand.prototype['code'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} description
  */
 ItemsCommand.prototype['description'] = undefined;
 
 /**
+ * Represents the id of the warehouse, by default this field will be null.
  * @member {Number} warehouse
  */
 ItemsCommand.prototype['warehouse'] = undefined;
 
 /**
+ * Represents product quantity.  For example, '2' quantities of the 'item-01'.
  * @member {Number} quantity
  */
 ItemsCommand.prototype['quantity'] = undefined;
 
 /**
+ * Represents product price.  For example, '50', dollars.
  * @member {Number} price
  */
 ItemsCommand.prototype['price'] = undefined;
 
 /**
+ * Represents the price of item with the tax included.
  * @member {Number} taxed_price
  */
 ItemsCommand.prototype['taxed_price'] = undefined;
 
 /**
+ * Represents the numerical percentage of the discount.  For example, '13' represents 13%.
  * @member {Number} discount
  */
 ItemsCommand.prototype['discount'] = undefined;
 
 /**
+ * Represents the Id of the seller associated with the invoice,   For example, the id '629' can represent a seller called 'Micke'.
  * @member {Number} seller
  */
 ItemsCommand.prototype['seller'] = undefined;
 
 /**
+ * Represents whether this product is excluded or does not to pay VAT.
  * @member {Boolean} vat_excluded
  */
 ItemsCommand.prototype['vat_excluded'] = undefined;
 
 /**
+ * Contains a list of Ids of taxes associated to invoice.
  * @member {Array.<module:model/TaxesCommand>} taxes
  */
 ItemsCommand.prototype['taxes'] = undefined;

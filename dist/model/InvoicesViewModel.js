@@ -35,7 +35,7 @@ var _PageListModel = _interopRequireDefault(require("./PageListModel"));
 /**
  * The InvoicesViewModel model module.
  * @module model/InvoicesViewModel
- * @version 0.1.0
+ * @version v1
  */
 var InvoicesViewModel = /*#__PURE__*/function () {
   /**
@@ -96,6 +96,7 @@ var InvoicesViewModel = /*#__PURE__*/function () {
 
 InvoicesViewModel.prototype['pagination'] = undefined;
 /**
+ * Contains the Results, this results will be a list of invoices
  * @member {Array.<module:model/InvoiceViewModel>} results
  */
 

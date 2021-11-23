@@ -2,16 +2,16 @@
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1UsersGet**](UsersApi.md#v1UsersGet) | **GET** /v1/users | Gets a list of Users with pagination.
+[**getUsers**](UsersApi.md#getUsers) | **GET** /v1/users | Returns a paginated list of users.
 
 
 
 
-## v1UsersGet
+## getUsers
 
-> UsersViewModel v1UsersGet(opts)
+> UsersViewModel getUsers(opts)
 
-Gets a list of Users with pagination.
+Returns a paginated list of users.
 
 ### Example
 
@@ -23,11 +23,11 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.UsersApi();
 
 let opts = {
-  'page': 56, // Number | 
-  'pageSize': 56 // Number | 
+  'page': 1, // Number | Represents the current page of the results that you get. For example, '1'.
+  'pageSize': 25 // Number | Represents the number of users that you will get per page. For example, '20'.
 };
 
-apiInstance.v1UsersGet(opts).then((data) => {
+apiInstance.getUsers(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -42,11 +42,11 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.UsersApi();
     let opts = {
-    'page': 56, // Number | 
-    'pageSize': 56 // Number | 
+    'page': 1, // Number | Represents the current page of the results that you get. For example, '1'.
+    'pageSize': 25 // Number | Represents the number of users that you will get per page. For example, '20'.
     };
 
-    const data = await apiInstance.v1UsersGet(opts);
+    const data = await apiInstance.getUsers(opts);
     console.log('API called successfully. Returned data: ' + data);
   } catch (error) {
     console.error(error);
@@ -60,8 +60,8 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**|  | [optional] 
- **pageSize** | **Number**|  | [optional] 
+ **page** | **Number**| Represents the current page of the results that you get. For example, &#39;1&#39;. | [optional] 
+ **pageSize** | **Number**| Represents the number of users that you will get per page. For example, &#39;20&#39;. | [optional] 
 
 ### Return type
 

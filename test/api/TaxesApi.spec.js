@@ -54,15 +54,10 @@
   let result = {};
   describe("getTaxes", function () {
     it("should call getTaxes successfully", async function () {
-      //uncomment below and update the code to test getTaxes
-      //instance.getTaxes(function(error) {
-      //  if (error) throw error;
-      //expect().to.be();
-      //});
       try {
         result = await instance.getTaxesWithHttpInfo();
       } catch (error) {
-        throw error;
+        console.error(error);
       }
       expect(result.response.statusCode).to.be(200);
       expect(result.response.body[0].id).to.be(67540);

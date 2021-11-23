@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The Payment model module.
  * @module model/Payment
- * @version 0.1.0
+ * @version v1
  */
 var Payment = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var Payment = /*#__PURE__*/function () {
   return Payment;
 }();
 /**
+ * Represents the id of payment method.
  * @member {Number} id
  */
 
 
 Payment.prototype['id'] = undefined;
 /**
+ * Represents the amount to paid per installment,  this value will be associated to payment method.
  * @member {Number} value
  */
 

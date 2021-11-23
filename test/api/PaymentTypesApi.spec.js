@@ -59,16 +59,11 @@
   let result = {};
     describe('getPaymentTypes', function() {
       it('should call getPaymentTypes successfully', async function() {
-        //uncomment below and update the code to test getPaymentTypes
-        //instance.getPaymentTypes(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
         let opts = {documentType: 'FV'};
         try {
           result = await instance.getPaymentTypesWithHttpInfo(opts);
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.id).to.be(document.id);

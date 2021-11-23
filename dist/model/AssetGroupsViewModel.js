@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The AssetGroupsViewModel model module.
  * @module model/AssetGroupsViewModel
- * @version 0.1.0
+ * @version v1
  */
 var AssetGroupsViewModel = /*#__PURE__*/function () {
   /**
@@ -83,17 +83,20 @@ var AssetGroupsViewModel = /*#__PURE__*/function () {
   return AssetGroupsViewModel;
 }();
 /**
+ * Represents the id of the fixed assets group, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 
 
 AssetGroupsViewModel.prototype['id'] = undefined;
 /**
+ * Represents the Name of the fixed assets group.
  * @member {String} name
  */
 
 AssetGroupsViewModel.prototype['name'] = undefined;
 /**
+ * Indicates if the fixed assets group is in use.  the value of this status will be true or false.  By default, this field will be active (true).
  * @member {Boolean} active
  */
 

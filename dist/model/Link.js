@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The Link model module.
  * @module model/Link
- * @version 0.1.0
+ * @version v1
  */
 var Link = /*#__PURE__*/function () {
   /**

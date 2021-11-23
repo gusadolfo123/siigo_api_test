@@ -31,7 +31,7 @@ var _JournalEntryWarehouseModel = _interopRequireDefault(require("./JournalEntry
 /**
  * The JournalEntryProductModel model module.
  * @module model/JournalEntryProductModel
- * @version 0.1.0
+ * @version v1
  */
 var JournalEntryProductModel = /*#__PURE__*/function () {
   /**
@@ -93,17 +93,20 @@ var JournalEntryProductModel = /*#__PURE__*/function () {
   return JournalEntryProductModel;
 }();
 /**
+ * Represents the unique Id of item, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 
 
 JournalEntryProductModel.prototype['id'] = undefined;
 /**
+ * Represents the unique code of the item. This value can be an alphanumeric  code that will represent the code id of the item.  For example,'item-1' or 'toy-007'.
  * @member {String} code
  */
 
 JournalEntryProductModel.prototype['code'] = undefined;
 /**
+ * Represents the name of product or service.
  * @member {String} name
  */
 
@@ -114,6 +117,7 @@ JournalEntryProductModel.prototype['name'] = undefined;
 
 JournalEntryProductModel.prototype['warehouse'] = undefined;
 /**
+ * Represents product quantity.  For example, '2' quantities of the 'item-01'.
  * @member {Number} quantity
  */
 

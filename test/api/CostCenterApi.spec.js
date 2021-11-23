@@ -19,12 +19,11 @@
     // CommonJS-like environments that support module.exports, like Node.
     factory(require('expect.js'), require(process.cwd() + '/src/index'), require(process.cwd() + '/test/app.js'));
   } else {
-    // Browser globals (root is window)
+    
     factory(root.expect, root.SiigoApi, root.app);
   }
 }(this, function (expect, SiigoApi, app) {
   'use strict';
-
   var instance;
 
   var result;
@@ -32,8 +31,6 @@
   before(function () {
     SiigoApi = app._test.initialize(SiigoApi);
     instance = new SiigoApi.CostCenterApi();
-    // console.log(app);
-    // console.log(instance)
   });
 
   var getProperty = function (object, getter, property) {
@@ -59,7 +56,7 @@
         try {
           result = await instance.getCostCentersWithHttpInfo();
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.data[0].id).to.be(13212);

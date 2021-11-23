@@ -31,7 +31,7 @@ var _UsersViewModel = _interopRequireDefault(require("../model/UsersViewModel"))
 /**
 * Users service.
 * @module api/UsersApi
-* @version 0.1.0
+* @version v1
 */
 var UsersApi = /*#__PURE__*/function () {
   /**
@@ -46,17 +46,17 @@ var UsersApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Gets a list of Users with pagination.
+   * Returns a paginated list of users.
    * @param {Object} opts Optional parameters
-   * @param {Number} opts.page 
-   * @param {Number} opts.pageSize 
+   * @param {Number} opts.page Represents the current page of the results that you get. For example, '1'.
+   * @param {Number} opts.pageSize Represents the number of users that you will get per page. For example, '20'.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UsersViewModel} and HTTP response
    */
 
 
   (0, _createClass2["default"])(UsersApi, [{
-    key: "v1UsersGetWithHttpInfo",
-    value: function v1UsersGetWithHttpInfo(opts) {
+    key: "getUsersWithHttpInfo",
+    value: function getUsersWithHttpInfo(opts) {
       opts = opts || {};
       var postBody = null;
       var pathParams = {};
@@ -73,17 +73,17 @@ var UsersApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/v1/users', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Gets a list of Users with pagination.
+     * Returns a paginated list of users.
      * @param {Object} opts Optional parameters
-     * @param {Number} opts.page 
-     * @param {Number} opts.pageSize 
+     * @param {Number} opts.page Represents the current page of the results that you get. For example, '1'.
+     * @param {Number} opts.pageSize Represents the number of users that you will get per page. For example, '20'.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UsersViewModel}
      */
 
   }, {
-    key: "v1UsersGet",
-    value: function v1UsersGet(opts) {
-      return this.v1UsersGetWithHttpInfo(opts).then(function (response_and_data) {
+    key: "getUsers",
+    value: function getUsers(opts) {
+      return this.getUsersWithHttpInfo(opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

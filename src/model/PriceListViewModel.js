@@ -62,11 +62,13 @@ class PriceListViewModel {
 }
 
 /**
+ * Represents the currency code.
  * @member {String} currency_code
  */
 PriceListViewModel.prototype['currency_code'] = undefined;
 
 /**
+ * Contains a price list.
  * @member {Array.<module:model/PriceListItemViewModel>} price_list
  */
 PriceListViewModel.prototype['price_list'] = undefined;

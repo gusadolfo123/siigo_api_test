@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The FixedAssetCommand model module.
  * @module model/FixedAssetCommand
- * @version 0.1.0
+ * @version v1
  */
 var FixedAssetCommand = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var FixedAssetCommand = /*#__PURE__*/function () {
   return FixedAssetCommand;
 }();
 /**
+ * Represents the id of the fixed asset, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} id
  */
 

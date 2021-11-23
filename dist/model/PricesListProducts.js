@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The PricesListProducts model module.
  * @module model/PricesListProducts
- * @version 0.1.0
+ * @version v1
  */
 var PricesListProducts = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var PricesListProducts = /*#__PURE__*/function () {
   return PricesListProducts;
 }();
 /**
+ * Represents the unique id of price list
  * @member {Number} position
  */
 
 
 PricesListProducts.prototype['position'] = undefined;
 /**
+ * Represents product price
  * @member {Number} value
  */
 

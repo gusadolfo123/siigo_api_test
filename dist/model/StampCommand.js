@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The StampCommand model module.
  * @module model/StampCommand
- * @version 0.1.0
+ * @version v1
  */
 var StampCommand = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var StampCommand = /*#__PURE__*/function () {
   return StampCommand;
 }();
 /**
+ * Represents the status of document.
  * @member {Boolean} send
  */
 

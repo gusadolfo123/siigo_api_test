@@ -23,6 +23,8 @@ var _InvoiceCustomerModel = _interopRequireDefault(require("./InvoiceCustomerMod
 
 var _ItemsModel = _interopRequireDefault(require("./ItemsModel"));
 
+var _MailViewModel = _interopRequireDefault(require("./MailViewModel"));
+
 var _Metadata = _interopRequireDefault(require("./Metadata"));
 
 var _PaymentsModel = _interopRequireDefault(require("./PaymentsModel"));
@@ -47,7 +49,7 @@ var _StampViewModel = _interopRequireDefault(require("./StampViewModel"));
 /**
  * The InvoiceViewModel model module.
  * @module model/InvoiceViewModel
- * @version 0.1.0
+ * @version v1
  */
 var InvoiceViewModel = /*#__PURE__*/function () {
   /**
@@ -155,6 +157,10 @@ var InvoiceViewModel = /*#__PURE__*/function () {
           obj['stamp'] = _StampViewModel["default"].constructFromObject(data['stamp']);
         }
 
+        if (data.hasOwnProperty('mail')) {
+          obj['mail'] = _MailViewModel["default"].constructFromObject(data['mail']);
+        }
+
         if (data.hasOwnProperty('metadata')) {
           obj['metadata'] = _Metadata["default"].constructFromObject(data['metadata']);
         }
@@ -166,6 +172,7 @@ var InvoiceViewModel = /*#__PURE__*/function () {
   return InvoiceViewModel;
 }();
 /**
+ * Represents the unique Id of invoice, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 
@@ -177,16 +184,19 @@ InvoiceViewModel.prototype['id'] = undefined;
 
 InvoiceViewModel.prototype['document'] = undefined;
 /**
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 
 InvoiceViewModel.prototype['number'] = undefined;
 /**
+ * Contains information about document type,   document type Id, and the sequential number of the document.  For example, 'FV-2-22' indicates that its document type is an 'invoice',  its document type id is '2' and its sequential number is '22'.
  * @member {String} name
  */
 
 InvoiceViewModel.prototype['name'] = undefined;
 /**
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'.  For example, '2021-10-10' to indicate the date 'October 10th, 2021'.
  * @member {String} date
  */
 
@@ -197,6 +207,7 @@ InvoiceViewModel.prototype['date'] = undefined;
 
 InvoiceViewModel.prototype['customer'] = undefined;
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 
@@ -207,41 +218,49 @@ InvoiceViewModel.prototype['cost_center'] = undefined;
 
 InvoiceViewModel.prototype['currency'] = undefined;
 /**
+ * Represents the Id of the seller associated with the invoice.   For example, the id '629' can represent a seller called 'Mike'.
  * @member {Number} seller
  */
 
 InvoiceViewModel.prototype['seller'] = undefined;
 /**
+ * Contains a list information about every Retention associated to invoice.
  * @member {Array.<module:model/RetentionsOutModel>} retentions
  */
 
 InvoiceViewModel.prototype['retentions'] = undefined;
 /**
+ * Represent the Advance Payment. For example, an advance payment of 33.3 dollars  for a product of 40 dollars.
  * @member {Number} advance_payment
  */
 
 InvoiceViewModel.prototype['advance_payment'] = undefined;
 /**
+ * Represent the total value of document. For example, 25.5 dollars.
  * @member {Number} total
  */
 
 InvoiceViewModel.prototype['total'] = undefined;
 /**
+ * Represents balance pending payment on the invoice.
  * @member {Number} balance
  */
 
 InvoiceViewModel.prototype['balance'] = undefined;
 /**
+ * Represent additional comments in document.
  * @member {String} observations
  */
 
 InvoiceViewModel.prototype['observations'] = undefined;
 /**
+ * Contains a list of items associated with the invoice.
  * @member {Array.<module:model/ItemsModel>} items
  */
 
 InvoiceViewModel.prototype['items'] = undefined;
 /**
+ * Contains a list with payments types associated to invoice.
  * @member {Array.<module:model/PaymentsModel>} payments
  */
 
@@ -256,6 +275,11 @@ InvoiceViewModel.prototype['additional_fields'] = undefined;
  */
 
 InvoiceViewModel.prototype['stamp'] = undefined;
+/**
+ * @member {module:model/MailViewModel} mail
+ */
+
+InvoiceViewModel.prototype['mail'] = undefined;
 /**
  * @member {module:model/Metadata} metadata
  */

@@ -61,11 +61,13 @@ class AccountModel {
 }
 
 /**
+ * Represents Accounting account code.
  * @member {String} code
  */
 AccountModel.prototype['code'] = undefined;
 
 /**
+ * Represents the type of movement, this movement will be 'Debit' or 'Credit'.
  * @member {String} movement
  */
 AccountModel.prototype['movement'] = undefined;

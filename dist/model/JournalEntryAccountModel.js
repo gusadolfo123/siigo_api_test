@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The JournalEntryAccountModel model module.
  * @module model/JournalEntryAccountModel
- * @version 0.1.0
+ * @version v1
  */
 var JournalEntryAccountModel = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var JournalEntryAccountModel = /*#__PURE__*/function () {
   return JournalEntryAccountModel;
 }();
 /**
+ * Represents the Accounting account code.
  * @member {String} code
  */
 
 
 JournalEntryAccountModel.prototype['code'] = undefined;
 /**
+ * Represents the type of movement to be made with the account.  This field can be 'Debit' or 'Credit'.
  * @member {String} movement
  */
 

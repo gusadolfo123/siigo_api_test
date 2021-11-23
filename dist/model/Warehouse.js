@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The Warehouse model module.
  * @module model/Warehouse
- * @version 0.1.0
+ * @version v1
  */
 var Warehouse = /*#__PURE__*/function () {
   /**
@@ -83,17 +83,20 @@ var Warehouse = /*#__PURE__*/function () {
   return Warehouse;
 }();
 /**
+ * Represents the unique id of the warehouse.
  * @member {Number} id
  */
 
 
 Warehouse.prototype['id'] = undefined;
 /**
+ * Represents the name of the warehouse.
  * @member {String} name
  */
 
 Warehouse.prototype['name'] = undefined;
 /**
+ * Represents the available quantity of the product in warehouse.
  * @member {Number} quantity
  */
 

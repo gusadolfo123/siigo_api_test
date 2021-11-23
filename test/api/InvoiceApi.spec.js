@@ -156,10 +156,10 @@
         expect(result.response.body.base64).not.to.be('');
       });
     });
-    describe('getInvoiceErrors', function() {
-      it('should call getInvoiceErrors successfully', async function() {
+    describe('getElectronicInvoiceErrors', function() {
+      it('should call getElectronicInvoiceErrors successfully', async function() {
         try {
-          result = await instance.getInvoiceErrorsWithHttpInfo(document.id);
+          result = await instance.getElectronicInvoiceErrorsWithHttpInfo(document.id);
         } catch (error) {
           console.error(error);
         }

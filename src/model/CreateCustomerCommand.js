@@ -112,31 +112,31 @@ class CreateCustomerCommand {
 }
 
 /**
- * Represents the customer type (\"Customer\", \"Supplier\" and \"Other\"),  this field will be \"Customer\" by default
+ * Represents the customer type (this type can be 'Customer', 'Supplier 'and 'Other'),  this field will be 'Customer' by default.
  * @member {String} type
  */
 CreateCustomerCommand.prototype['type'] = undefined;
 
 /**
- * Represents the person type, this type can be a \"Person\" or \"Company\"
+ * Represents the person type, this type can be a 'Person' or 'Company'.
  * @member {String} person_type
  */
 CreateCustomerCommand.prototype['person_type'] = undefined;
 
 /**
- * Represents the code of type id
+ * Represents the code of type id.
  * @member {String} id_type
  */
 CreateCustomerCommand.prototype['id_type'] = undefined;
 
 /**
- * Represents the identification number of customer
+ * Represents the identification number of customer.  For example, the identifitication number '13832081'.
  * @member {String} identification
  */
 CreateCustomerCommand.prototype['identification'] = undefined;
 
 /**
- * Represents the check digit, this digit will be calculated automatically
+ * Represents the check digit, this digit will be calculated automatically.
  * @member {String} check_digit
  */
 CreateCustomerCommand.prototype['check_digit'] = undefined;
@@ -148,31 +148,31 @@ CreateCustomerCommand.prototype['check_digit'] = undefined;
 CreateCustomerCommand.prototype['name'] = undefined;
 
 /**
- * Represents the commercial name of customer organization
+ * Represents the commercial name of customer organization.  For example, 'Siigo'.
  * @member {String} commercial_name
  */
 CreateCustomerCommand.prototype['commercial_name'] = undefined;
 
 /**
- * Represents the branch office of customer, this value by default will be 0
+ * Represents the branch office of customer, this value by default will be 0.
  * @member {Number} branch_office
  */
 CreateCustomerCommand.prototype['branch_office'] = undefined;
 
 /**
- * Represents the state of customer, this value by default will be true
+ * Represents the state of customer.  This value can be 'true' or 'false', by default will be true.
  * @member {Boolean} active
  */
 CreateCustomerCommand.prototype['active'] = undefined;
 
 /**
- * Represents whether a person is responsible for VAT, by default will be false
+ * Represents whether a person is responsible for VAT.  This value can be 'true' or 'false', by default will be false.
  * @member {Boolean} vat_responsible
  */
 CreateCustomerCommand.prototype['vat_responsible'] = undefined;
 
 /**
- * Represents a list of tax responsibilities of a person, by default will be R-99-PN
+ * Represents a list of tax responsibilities of a person, by default will be 'R-99-PN'.
  * @member {Array.<module:model/FiscalResponsibilitiesCommand>} fiscal_responsibilities
  */
 CreateCustomerCommand.prototype['fiscal_responsibilities'] = undefined;
@@ -183,19 +183,19 @@ CreateCustomerCommand.prototype['fiscal_responsibilities'] = undefined;
 CreateCustomerCommand.prototype['address'] = undefined;
 
 /**
- * Represents the phones of client
+ * Represents the phones of the customer.
  * @member {Array.<module:model/PhoneCommand>} phones
  */
 CreateCustomerCommand.prototype['phones'] = undefined;
 
 /**
- * Represents the associated contantacts of customer
+ * Represents the associated contantacts of customer.
  * @member {Array.<module:model/ContactCommand>} contacts
  */
 CreateCustomerCommand.prototype['contacts'] = undefined;
 
 /**
- * Represents additional comments or observations
+ * Represents additional comments or observations.
  * @member {String} comments
  */
 CreateCustomerCommand.prototype['comments'] = undefined;

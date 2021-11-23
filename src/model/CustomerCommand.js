@@ -112,25 +112,25 @@ class CustomerCommand {
 }
 
 /**
- * Represents the person type, this type can be a \"Person\" or \"Company\"
+ * Represents the person type, this type can be a 'Person' or 'Company'.
  * @member {String} person_type
  */
 CustomerCommand.prototype['person_type'] = undefined;
 
 /**
- * Represents the code of type id
+ * Represents the code of type id.
  * @member {String} id_type
  */
 CustomerCommand.prototype['id_type'] = undefined;
 
 /**
- * Represents the identification number of customer
+ * Represents the identification number of customer.  For example, the identifitication number '13832081'.
  * @member {String} identification
  */
 CustomerCommand.prototype['identification'] = undefined;
 
 /**
- * Represents the check digit, this digit will be calculated automatically
+ * Represents the check digit, this digit will be calculated automatically.
  * @member {String} check_digit
  */
 CustomerCommand.prototype['check_digit'] = undefined;
@@ -142,13 +142,13 @@ CustomerCommand.prototype['check_digit'] = undefined;
 CustomerCommand.prototype['name'] = undefined;
 
 /**
- * Represents the commercial name of customer organization
+ * Represents the commercial name of customer organization.  For example, 'Siigo'.
  * @member {String} commercial_name
  */
 CustomerCommand.prototype['commercial_name'] = undefined;
 
 /**
- * Represents the branch office of customer, this value by default will be 0
+ * Represents the branch office of customer, this value by default will be 0.
  * @member {Number} branch_office
  */
 CustomerCommand.prototype['branch_office'] = undefined;
@@ -164,7 +164,7 @@ CustomerCommand.prototype['active'] = undefined;
 CustomerCommand.prototype['vat_responsible'] = undefined;
 
 /**
- * Represents a list of tax responsibilities of a person, by default will be R-99-PN
+ * Represents a list of tax responsibilities of a person, by default will be 'R-99-PN'.
  * @member {Array.<module:model/FiscalResponsibilitiesCommand>} fiscal_responsibilities
  */
 CustomerCommand.prototype['fiscal_responsibilities'] = undefined;
@@ -175,19 +175,19 @@ CustomerCommand.prototype['fiscal_responsibilities'] = undefined;
 CustomerCommand.prototype['address'] = undefined;
 
 /**
- * Represents the phones of client
+ * Represents the phones of the customer.
  * @member {Array.<module:model/PhoneCommand>} phones
  */
 CustomerCommand.prototype['phones'] = undefined;
 
 /**
- * Represents the associated contantacts of customer
+ * Represents the associated contantacts of customer.
  * @member {Array.<module:model/ContactCommand>} contacts
  */
 CustomerCommand.prototype['contacts'] = undefined;
 
 /**
- * Represents additional comments or observations
+ * Represents additional comments or observations.
  * @member {String} comments
  */
 CustomerCommand.prototype['comments'] = undefined;

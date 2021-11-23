@@ -122,16 +122,19 @@ class ProductsModel {
 }
 
 /**
+ * Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 ProductsModel.prototype['id'] = undefined;
 
 /**
+ * Represents the identification code of the product. This value can be an alphanumeric  code that will represent the code id of the cost center.  For example, this name can be 'Item-1' or 'toy007'.
  * @member {String} code
  */
 ProductsModel.prototype['code'] = undefined;
 
 /**
+ * Represents the name of product or service.
  * @member {String} name
  */
 ProductsModel.prototype['name'] = undefined;
@@ -142,41 +145,49 @@ ProductsModel.prototype['name'] = undefined;
 ProductsModel.prototype['account_group'] = undefined;
 
 /**
+ * Represents the type of product. This product could be of type 'Product', 'Service' or 'Consumer Good',  by the default this field will be 'Product'.
  * @member {String} type
  */
 ProductsModel.prototype['type'] = undefined;
 
 /**
+ * Represents the inventory control.  This field can be 'true' or 'false', by the fault this field will be false.
  * @member {Boolean} stock_control
  */
 ProductsModel.prototype['stock_control'] = undefined;
 
 /**
+ * Represents the status of product.  This field can be 'true' or 'false', by default this field will be true.
  * @member {Boolean} active
  */
 ProductsModel.prototype['active'] = undefined;
 
 /**
+ * Represent the tax classification, this field could be 'Taxed', 'Exempt' or 'Excluded'.
  * @member {String} tax_classification
  */
 ProductsModel.prototype['tax_classification'] = undefined;
 
 /**
+ * Represents whether this product has VAT included.  This field can be 'true' or 'false'.
  * @member {Boolean} tax_included
  */
 ProductsModel.prototype['tax_included'] = undefined;
 
 /**
+ * Represents value of consumption tax.
  * @member {Number} tax_consumption_value
  */
 ProductsModel.prototype['tax_consumption_value'] = undefined;
 
 /**
+ * Contains a list of taxes associated to item.
  * @member {Array.<module:model/Tax>} taxes
  */
 ProductsModel.prototype['taxes'] = undefined;
 
 /**
+ * Contains a list with 'prices list' of product. Every product can have up to 12 price list.
  * @member {Array.<module:model/PriceListViewModel>} prices
  */
 ProductsModel.prototype['prices'] = undefined;
@@ -187,16 +198,19 @@ ProductsModel.prototype['prices'] = undefined;
 ProductsModel.prototype['unit'] = undefined;
 
 /**
+ * Represents Unit of measure for invoice printing.
  * @member {String} unit_label
  */
 ProductsModel.prototype['unit_label'] = undefined;
 
 /**
+ * Represents the Reference or factory code of the product or service.
  * @member {String} reference
  */
 ProductsModel.prototype['reference'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} description
  */
 ProductsModel.prototype['description'] = undefined;
@@ -207,11 +221,13 @@ ProductsModel.prototype['description'] = undefined;
 ProductsModel.prototype['additional_fields'] = undefined;
 
 /**
+ * Represents the Available Quantity of the product.
  * @member {Number} available_quantity
  */
 ProductsModel.prototype['available_quantity'] = undefined;
 
 /**
+ * Contains a list of information about the warehouse associated to item.
  * @member {Array.<module:model/Warehouse>} warehouses
  */
 ProductsModel.prototype['warehouses'] = undefined;

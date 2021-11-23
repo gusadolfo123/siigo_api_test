@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The RetentionsOutModel model module.
  * @module model/RetentionsOutModel
- * @version 0.1.0
+ * @version v1
  */
 var RetentionsOutModel = /*#__PURE__*/function () {
   /**
@@ -91,27 +91,32 @@ var RetentionsOutModel = /*#__PURE__*/function () {
   return RetentionsOutModel;
 }();
 /**
+ * Represents the id of the retention, the value of this field must be an integer  number that represents the unique id of the retention.
  * @member {Number} id
  */
 
 
 RetentionsOutModel.prototype['id'] = undefined;
 /**
+ * Represents the name of the retention. This value can be an alphanumeric  name like 'VAT 19%' or 'RET 0.55%'.
  * @member {String} name
  */
 
 RetentionsOutModel.prototype['name'] = undefined;
 /**
+ * Represents the type of retention. For example its type can be IVA, 'Retefuente', 'ReteIVA',  'ReteICA', 'Impoconsumo', 'AdValorem', 'Autorretencion', or 'ReteIVA'.
  * @member {String} type
  */
 
 RetentionsOutModel.prototype['type'] = undefined;
 /**
+ * Represents the percentage of the tax. For example, for Colombia in the year 2021   the percentage value of the VAT was 19%.
  * @member {Number} percentage
  */
 
 RetentionsOutModel.prototype['percentage'] = undefined;
 /**
+ * Represents the value of retention associated with the document.   For example, 5 dollars.
  * @member {Number} value
  */
 

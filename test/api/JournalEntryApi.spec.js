@@ -107,7 +107,7 @@
           id = result.response.body.id;
           document=result.response.body
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(201);
         expect(result.response.body.id).to.be(document.id);
@@ -127,7 +127,7 @@
         try {
           result = await instance.getJournalWithHttpInfo(id);
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body.id).to.be(document.id);
@@ -138,19 +138,15 @@
     });
     describe("getJournals", function () {
       it("should call getJournals successfully", async function () {
-        //uncomment below and update the code to test getJournals
-        //instance.getJournals(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
+
         let opts = {}
         try {
           result = await instance.getJournalsWithHttpInfo(opts);
           } catch (error) {
-          throw error;
+            console.error(error);
         }
-       expect(result.response.statusCode).to.be(200);
-       expect(result.response.body.results[0].id).to.be(document.id);
+        expect(result.response.statusCode).to.be(200);
+        expect(result.response.body.results[0].id).to.be(document.id);
         expect(result.response.body.results[0].name).to.be(document.name);
         expect(result.response.body.results[0].date).to.be(document.date);
         expect(result.response.body.results[0].observations).to.be(document.observations);

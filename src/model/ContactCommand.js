@@ -68,19 +68,19 @@ class ContactCommand {
 }
 
 /**
- * Represents the first name
+ * Represents the first name.  For example, the first name 'Marcos'.
  * @member {String} first_name
  */
 ContactCommand.prototype['first_name'] = undefined;
 
 /**
- * Represents the last name
+ * Represents the last name.  For example, the last name 'Castillo'.
  * @member {String} last_name
  */
 ContactCommand.prototype['last_name'] = undefined;
 
 /**
- * Represents the email
+ * Represents the email.  For example, the email 'marcos.castillo@contacto.com'.
  * @member {String} email
  */
 ContactCommand.prototype['email'] = undefined;

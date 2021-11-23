@@ -61,13 +61,13 @@ class CustomerDeleteViewModel {
 }
 
 /**
- * Represents the unique Id of customer, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+ * Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 CustomerDeleteViewModel.prototype['id'] = undefined;
 
 /**
- * Represent the deleted status of customer
+ * Represent the deleted status of customer.
  * @member {Boolean} deleted
  */
 CustomerDeleteViewModel.prototype['deleted'] = undefined;

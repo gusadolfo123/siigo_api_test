@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The AccountModel model module.
  * @module model/AccountModel
- * @version 0.1.0
+ * @version v1
  */
 var AccountModel = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var AccountModel = /*#__PURE__*/function () {
   return AccountModel;
 }();
 /**
+ * Represents Accounting account code.
  * @member {String} code
  */
 
 
 AccountModel.prototype['code'] = undefined;
 /**
+ * Represents the type of movement, this movement will be 'Debit' or 'Credit'.
  * @member {String} movement
  */
 

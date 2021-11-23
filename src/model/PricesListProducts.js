@@ -61,11 +61,13 @@ class PricesListProducts {
 }
 
 /**
+ * Represents the unique id of price list
  * @member {Number} position
  */
 PricesListProducts.prototype['position'] = undefined;
 
 /**
+ * Represents product price
  * @member {Number} value
  */
 PricesListProducts.prototype['value'] = undefined;
