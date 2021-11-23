@@ -54,15 +54,10 @@
   let result = {};
   describe("getPriceList", function () {
     it("should call getPriceList successfully", async function () {
-      //uncomment below and update the code to test getPriceList
-      //instance.getPriceList(function(error) {
-      //  if (error) throw error;
-      //expect().to.be();
-      //});
       try {
         result = await instance.getPriceListWithHttpInfo();
       } catch (error) {
-        throw error;
+        console.error(error);
       }
       expect(result.response.statusCode).to.be(200);
       expect(result.response.body[0].id).to.be(38081);

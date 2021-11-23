@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The DocumentCommand model module.
  * @module model/DocumentCommand
- * @version 0.1.0
+ * @version v1
  */
 var DocumentCommand = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var DocumentCommand = /*#__PURE__*/function () {
   return DocumentCommand;
 }();
 /**
+ * Represents the Id of document. The value of this field must be an integer  number that represents the unique id of the document type, for example '22'.
  * @member {Number} id
  */
 

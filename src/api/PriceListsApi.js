@@ -36,10 +36,10 @@ export default class PriceListsApi {
 
 
     /**
-     * Get a list of Price Lists.
+     * Returns a list of price lists.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/PriceListsViewModel>} and HTTP response
      */
-    v1PriceListsGetWithHttpInfo() {
+    getPriceListWithHttpInfo() {
       let postBody = null;
 
       let pathParams = {
@@ -63,11 +63,11 @@ export default class PriceListsApi {
     }
 
     /**
-     * Get a list of Price Lists.
+     * Returns a list of price lists.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/PriceListsViewModel>}
      */
-    v1PriceListsGet() {
-      return this.v1PriceListsGetWithHttpInfo()
+    getPriceList() {
+      return this.getPriceListWithHttpInfo()
         .then(function(response_and_data) {
           return response_and_data.data;
         });

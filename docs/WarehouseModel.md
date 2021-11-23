@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | [optional] 
-**name** | **String** |  | [optional] 
+**id** | **Number** | Represents the id of warehouse, by default this field will be null. | [optional] 
+**name** | **String** | Represents the name of warehouse. | [optional] 
 
 

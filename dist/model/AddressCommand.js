@@ -31,7 +31,7 @@ var _CityCommand = _interopRequireDefault(require("./CityCommand"));
 /**
  * The AddressCommand model module.
  * @module model/AddressCommand
- * @version 0.1.0
+ * @version v1
  */
 var AddressCommand = /*#__PURE__*/function () {
   /**
@@ -85,7 +85,7 @@ var AddressCommand = /*#__PURE__*/function () {
   return AddressCommand;
 }();
 /**
- * Represents the address of customer
+ * Represents the address of customer.
  * @member {String} address
  */
 
@@ -97,7 +97,7 @@ AddressCommand.prototype['address'] = undefined;
 
 AddressCommand.prototype['city'] = undefined;
 /**
- * Represent the Postal Code of customer
+ * Represent the Postal Code of customer.  For example, the code '110911'
  * @member {String} postal_code
  */
 

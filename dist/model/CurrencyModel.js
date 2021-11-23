@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The CurrencyModel model module.
  * @module model/CurrencyModel
- * @version 0.1.0
+ * @version v1
  */
 var CurrencyModel = /*#__PURE__*/function () {
   /**
@@ -79,14 +79,14 @@ var CurrencyModel = /*#__PURE__*/function () {
   return CurrencyModel;
 }();
 /**
- * Represents the Id code of currency
+ * Represents the Id code of currency. For example, 'USD' represents   the dollar and 'EUR' means 'Euro'.
  * @member {String} code
  */
 
 
 CurrencyModel.prototype['code'] = undefined;
 /**
- * Represents the exchange rate of currency
+ * Represents the exchange rate of currency. For example, 'USD' could have   an exchange rate of '0.86' to 'EUR'.
  * @member {Number} exchange_rate
  */
 

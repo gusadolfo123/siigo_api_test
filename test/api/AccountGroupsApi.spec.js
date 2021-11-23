@@ -57,7 +57,7 @@
         try {
           result = await instance.getAccountGroupsWithHttpInfo();
         } catch (error) {
-          throw error
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body[0].id).to.be(26529);

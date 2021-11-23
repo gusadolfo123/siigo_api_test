@@ -61,13 +61,13 @@ class IdTypeModel {
 }
 
 /**
- * Represents the code of type id
+ * Represents the code of type id.
  * @member {String} code
  */
 IdTypeModel.prototype['code'] = undefined;
 
 /**
- * Represents the name of type id
+ * Represents the name of type id.
  * @member {String} name
  */
 IdTypeModel.prototype['name'] = undefined;

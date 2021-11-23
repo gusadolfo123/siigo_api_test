@@ -41,7 +41,7 @@ var _PaymentsModel = _interopRequireDefault(require("./PaymentsModel"));
 /**
  * The VoucherViewModel model module.
  * @module model/VoucherViewModel
- * @version 0.1.0
+ * @version v1
  */
 var VoucherViewModel = /*#__PURE__*/function () {
   /**
@@ -135,6 +135,7 @@ var VoucherViewModel = /*#__PURE__*/function () {
   return VoucherViewModel;
 }();
 /**
+ * Represents the unique Id of voucher, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 
@@ -146,26 +147,31 @@ VoucherViewModel.prototype['id'] = undefined;
 
 VoucherViewModel.prototype['document'] = undefined;
 /**
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 
 VoucherViewModel.prototype['number'] = undefined;
 /**
+ * Contains information about document type,   document type Id and the sequential number of the document.  For example, 'RC-2-22' indicates that its document type is a 'voucher',  its document type id is '2' and its sequential number is '22'.
  * @member {String} name
  */
 
 VoucherViewModel.prototype['name'] = undefined;
 /**
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'.  For example, '2021-10-31' to indicate the date 'October 31st, 2021'.
  * @member {String} date
  */
 
 VoucherViewModel.prototype['date'] = undefined;
 /**
+ * Represents the voucher type, this type will be 'DebtPayment', 'AdvancePayment' or 'Detailed'.
  * @member {String} type
  */
 
 VoucherViewModel.prototype['type'] = undefined;
 /**
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 
@@ -181,6 +187,7 @@ VoucherViewModel.prototype['customer'] = undefined;
 
 VoucherViewModel.prototype['currency'] = undefined;
 /**
+ * Contains a list with items associated to voucher.
  * @member {Array.<module:model/ItemVoucher>} items
  */
 
@@ -191,6 +198,7 @@ VoucherViewModel.prototype['items'] = undefined;
 
 VoucherViewModel.prototype['payment'] = undefined;
 /**
+ * Represents additional comments in document.
  * @member {String} observations
  */
 

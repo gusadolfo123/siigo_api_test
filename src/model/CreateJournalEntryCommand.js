@@ -81,11 +81,13 @@ class CreateJournalEntryCommand {
 CreateJournalEntryCommand.prototype['document'] = undefined;
 
 /**
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 CreateJournalEntryCommand.prototype['number'] = undefined;
 
 /**
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'.  For example, '2021-10-10' to indicate the date 'October 10th, 2021'.
  * @member {String} date
  */
 CreateJournalEntryCommand.prototype['date'] = undefined;
@@ -96,11 +98,13 @@ CreateJournalEntryCommand.prototype['date'] = undefined;
 CreateJournalEntryCommand.prototype['currency'] = undefined;
 
 /**
+ * Contains a list of items associated with the journal.
  * @member {Array.<module:model/JournalEntryItem>} items
  */
 CreateJournalEntryCommand.prototype['items'] = undefined;
 
 /**
+ * Represent additional comments in document.
  * @member {String} observations
  */
 CreateJournalEntryCommand.prototype['observations'] = undefined;

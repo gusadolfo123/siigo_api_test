@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The DeliveryOrderCommand model module.
  * @module model/DeliveryOrderCommand
- * @version 0.1.0
+ * @version v1
  */
 var DeliveryOrderCommand = /*#__PURE__*/function () {
   /**
@@ -83,17 +83,20 @@ var DeliveryOrderCommand = /*#__PURE__*/function () {
   return DeliveryOrderCommand;
 }();
 /**
+ * Represent the prefix of order type.
  * @member {String} prefix
  */
 
 
 DeliveryOrderCommand.prototype['prefix'] = undefined;
 /**
+ * Represents the number of the purchase.
  * @member {String} number
  */
 
 DeliveryOrderCommand.prototype['number'] = undefined;
 /**
+ * Represents the date of delivery.
  * @member {String} date
  */
 

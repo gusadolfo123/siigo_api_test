@@ -58,6 +58,7 @@ class EInvoiceErrorViewModel {
 }
 
 /**
+ * Respresents a message error like 'Error 401: ...'.
  * @member {String} message
  */
 EInvoiceErrorViewModel.prototype['message'] = undefined;

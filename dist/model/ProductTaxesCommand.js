@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The ProductTaxesCommand model module.
  * @module model/ProductTaxesCommand
- * @version 0.1.0
+ * @version v1
  */
 var ProductTaxesCommand = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var ProductTaxesCommand = /*#__PURE__*/function () {
   return ProductTaxesCommand;
 }();
 /**
+ * Represents the Id of the tax
  * @member {Number} id
  */
 

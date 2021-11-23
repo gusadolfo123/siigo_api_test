@@ -31,7 +31,7 @@ var _Link = _interopRequireDefault(require("./Link"));
 /**
  * The LinksPagination model module.
  * @module model/LinksPagination
- * @version 0.1.0
+ * @version v1
  */
 var LinksPagination = /*#__PURE__*/function () {
   /**

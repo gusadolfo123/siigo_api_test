@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The EInvoiceErrorViewModel model module.
  * @module model/EInvoiceErrorViewModel
- * @version 0.1.0
+ * @version v1
  */
 var EInvoiceErrorViewModel = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var EInvoiceErrorViewModel = /*#__PURE__*/function () {
   return EInvoiceErrorViewModel;
 }();
 /**
+ * Respresents a message error like 'Error 401: ...'.
  * @member {String} message
  */
 

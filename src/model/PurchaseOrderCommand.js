@@ -61,11 +61,13 @@ class PurchaseOrderCommand {
 }
 
 /**
+ * Represent the prefix of order type.
  * @member {String} prefix
  */
 PurchaseOrderCommand.prototype['prefix'] = undefined;
 
 /**
+ * Represents the number of the purchase.
  * @member {String} number
  */
 PurchaseOrderCommand.prototype['number'] = undefined;

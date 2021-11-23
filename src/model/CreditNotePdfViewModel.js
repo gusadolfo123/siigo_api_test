@@ -64,19 +64,19 @@ class CreditNotePdfViewModel {
 }
 
 /**
- * Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+ * Represents the unique Id of credit note, this value must be a 'Guid'  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 CreditNotePdfViewModel.prototype['id'] = undefined;
 
 /**
- * Represents the CUDE of credit note
+ * Represents the CUDE of credit note.
  * @member {String} cude
  */
 CreditNotePdfViewModel.prototype['cude'] = undefined;
 
 /**
- * Represents the data of the credit note on base 64 to convert it to PDF
+ * Represents the data of the credit note on base 64 to convert it to PDF.
  * @member {String} base64
  */
 CreditNotePdfViewModel.prototype['base64'] = undefined;

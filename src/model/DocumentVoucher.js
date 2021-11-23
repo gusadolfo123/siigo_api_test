@@ -58,6 +58,7 @@ class DocumentVoucher {
 }
 
 /**
+ * Represents the id of the document, the value of this field must be an integer  number that represents the unique id of the document.
  * @member {Number} id
  */
 DocumentVoucher.prototype['id'] = undefined;

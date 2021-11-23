@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The PhoneCommand model module.
  * @module model/PhoneCommand
- * @version 0.1.0
+ * @version v1
  */
 var PhoneCommand = /*#__PURE__*/function () {
   /**
@@ -83,20 +83,20 @@ var PhoneCommand = /*#__PURE__*/function () {
   return PhoneCommand;
 }();
 /**
- * Represents the indicative number of country
+ * Represents the indicative number of country.  For example, the number '57' representate to Colombia.
  * @member {String} indicative
  */
 
 
 PhoneCommand.prototype['indicative'] = undefined;
 /**
- * Represents the phone number
+ * Represents the phone number.  For example, the phone number '3006003345'.
  * @member {String} number
  */
 
 PhoneCommand.prototype['number'] = undefined;
 /**
- * Represents the extension number
+ * Represents the extension number.  For example, the extension number '132'.
  * @member {String} extension
  */
 

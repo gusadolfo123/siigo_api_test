@@ -53,16 +53,12 @@
   };
 
   let result = {};
-  describe("getProductWarehouse", function () {
-    it("should call getProductWarehouse successfully", async function () {
-      //uncomment below and update the code to test getAccountGroups
-      //instance.getAccountGroups(function(data,error) {
-      //  if (error) throw error;
-      // expect().to.be();
+  describe("getWarehouse", function () {
+    it("should call getWarehouse successfully", async function () {
       try {
-        result = await instance.getProductWarehouseWithHttpInfo();
+        result = await instance.getWarehouseWithHttpInfo();
       } catch (error) {
-        throw error;
+        console.error(error);
       }
       expect(result.response.statusCode).to.be(200);
       expect(result.response.body[0].id).to.be(1459);

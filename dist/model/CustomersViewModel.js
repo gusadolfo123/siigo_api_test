@@ -35,7 +35,7 @@ var _PageListModel = _interopRequireDefault(require("./PageListModel"));
 /**
  * The CustomersViewModel model module.
  * @module model/CustomersViewModel
- * @version 0.1.0
+ * @version v1
  */
 var CustomersViewModel = /*#__PURE__*/function () {
   /**
@@ -96,7 +96,7 @@ var CustomersViewModel = /*#__PURE__*/function () {
 
 CustomersViewModel.prototype['pagination'] = undefined;
 /**
- * Contains the Results, this results will be a list of Customers
+ * Contains the Results, this results will be a list of Customers.
  * @member {Array.<module:model/CustomerViewModel>} results
  */
 

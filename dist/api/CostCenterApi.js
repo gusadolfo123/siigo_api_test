@@ -31,7 +31,7 @@ var _CostCentersViewModel = _interopRequireDefault(require("../model/CostCenters
 /**
 * CostCenter service.
 * @module api/CostCenterApi
-* @version 0.1.0
+* @version v1
 */
 var CostCenterApi = /*#__PURE__*/function () {
   /**
@@ -46,7 +46,7 @@ var CostCenterApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Gets a list of Cost Centers.
+   * Returns a list of cost centers.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/CostCentersViewModel>} and HTTP response
    */
 
@@ -66,7 +66,7 @@ var CostCenterApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/v1/cost-centers', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Gets a list of Cost Centers.
+     * Returns a list of cost centers.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/CostCentersViewModel>}
      */
 

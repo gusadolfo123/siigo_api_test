@@ -119,7 +119,7 @@ class CreditNoteViewModel {
 }
 
 /**
- * Represents the unique Id of credit note, this value must be a \"Guid\"  with the next format 00000000-0000-0000-0000-000000000000
+ * Represents the unique Id of credit note, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 CreditNoteViewModel.prototype['id'] = undefined;
@@ -130,19 +130,19 @@ CreditNoteViewModel.prototype['id'] = undefined;
 CreditNoteViewModel.prototype['document'] = undefined;
 
 /**
- * Represents the sequential number of the document,   this number is required depending of document type
+ * Represents the sequential number of the document,   this number is required depending of document type.
  * @member {Number} number
  */
 CreditNoteViewModel.prototype['number'] = undefined;
 
 /**
- * Contains information about document type,   document type Id and the sequential number of the document
+ * Contains information about document type,   document type Id, and the sequential number of the document.  For example 'NC-2-22' indicates that its document type is a 'Credit note',  its document type id is '2' and its sequential number is '22'.
  * @member {String} name
  */
 CreditNoteViewModel.prototype['name'] = undefined;
 
 /**
- * Represents the date of document. This format must be yyyy-MM-dd
+ * Represents the date of the document. This format must be 'yyyy-MM-dd'.  For example, '2021-10-31' to indicate the date 'October 31st, 2021'.
  * @member {String} date
  */
 CreditNoteViewModel.prototype['date'] = undefined;
@@ -158,7 +158,7 @@ CreditNoteViewModel.prototype['invoice'] = undefined;
 CreditNoteViewModel.prototype['customer'] = undefined;
 
 /**
- * Represents the number of the cost center
+ * Represents the id of the cost center, the value of this field must be an integer  number that represents the unique id of the cost center.
  * @member {Number} cost_center
  */
 CreditNoteViewModel.prototype['cost_center'] = undefined;
@@ -169,43 +169,43 @@ CreditNoteViewModel.prototype['cost_center'] = undefined;
 CreditNoteViewModel.prototype['currency'] = undefined;
 
 /**
- * Represents the Id of seller associated to invoice
+ * Represents the Id of the seller associated with the invoice.   For example, the id '629' can represent a seller called 'Mike'.
  * @member {Number} seller
  */
 CreditNoteViewModel.prototype['seller'] = undefined;
 
 /**
- * Contains a list information about every Retention associated to invoice
+ * Contains a list of information about every Retention associated to the invoice.
  * @member {Array.<module:model/RetentionsOutModel>} retentions
  */
 CreditNoteViewModel.prototype['retentions'] = undefined;
 
 /**
- * Represent the Advance Payment
+ * Represent the Advance Payment. For example, an advance payment of 33.3 dollars  for a product of 40 dollars.
  * @member {Number} advance_payment
  */
 CreditNoteViewModel.prototype['advance_payment'] = undefined;
 
 /**
- * Represent the total value of document
+ * Represent the total value of document. For example, 25.5 dollars.
  * @member {Number} total
  */
 CreditNoteViewModel.prototype['total'] = undefined;
 
 /**
- * Represent additional comments in document
+ * Represent additional comments in document.
  * @member {String} observations
  */
 CreditNoteViewModel.prototype['observations'] = undefined;
 
 /**
- * Contains a list with items associated to invoice
+ * Contains a list with items associated to invoice.
  * @member {Array.<module:model/ItemsModel>} items
  */
 CreditNoteViewModel.prototype['items'] = undefined;
 
 /**
- * Contains a list with payments types associated to invoice
+ * Contains a list with payments types associated to invoice.
  * @member {Array.<module:model/PaymentsModel>} payments
  */
 CreditNoteViewModel.prototype['payments'] = undefined;

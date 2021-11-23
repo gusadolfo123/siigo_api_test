@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The CustomFieldsModel model module.
  * @module model/CustomFieldsModel
- * @version 0.1.0
+ * @version v1
  */
 var CustomFieldsModel = /*#__PURE__*/function () {
   /**
@@ -79,14 +79,14 @@ var CustomFieldsModel = /*#__PURE__*/function () {
   return CustomFieldsModel;
 }();
 /**
- * Represents the Id of additional field
+ * Represents the Id of additional field  For example, an additional field called 'YearsOld'.
  * @member {String} key
  */
 
 
 CustomFieldsModel.prototype['key'] = undefined;
 /**
- * Represents the value of additional field
+ * Represents the value of additional field.  For example, this field can be '29'.
  * @member {String} value
  */
 

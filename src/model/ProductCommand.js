@@ -110,81 +110,97 @@ class ProductCommand {
 }
 
 /**
+ * Represents the unique Id of product, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} product_id
  */
 ProductCommand.prototype['product_id'] = undefined;
 
 /**
+ * Represents the identification code of the product. This value can be an alphanumeric  code that will represent the code id of the cost center.  For example, this name can be 'Item-1' or 'toy007'.
  * @member {String} code
  */
 ProductCommand.prototype['code'] = undefined;
 
 /**
+ * Represents the name of product or service.
  * @member {String} name
  */
 ProductCommand.prototype['name'] = undefined;
 
 /**
+ * Represents the id of inventory classification.
  * @member {Number} account_group
  */
 ProductCommand.prototype['account_group'] = undefined;
 
 /**
+ * Represents the type of product. This product could be of type 'Product', 'Service' or 'Consumer Good',  by the default this field will be 'Product'.
  * @member {String} type
  */
 ProductCommand.prototype['type'] = undefined;
 
 /**
+ * Represents the inventory control.  This field can be 'true' or 'false', by the fault this field will be false.
  * @member {Boolean} stock_control
  */
 ProductCommand.prototype['stock_control'] = undefined;
 
 /**
+ * Represents the status of product.  This field can be 'true' or 'false', by default this field will be true.
  * @member {Boolean} active
  */
 ProductCommand.prototype['active'] = undefined;
 
 /**
+ * Represent the tax classification, this field could be 'Taxed', 'Exempt' or 'Excluded'.
  * @member {String} tax_classification
  */
 ProductCommand.prototype['tax_classification'] = undefined;
 
 /**
+ * Represents whether this product has VAT included.  This field can be 'true' or 'false'.
  * @member {Boolean} tax_included
  */
 ProductCommand.prototype['tax_included'] = undefined;
 
 /**
+ * Represents value of consumption tax.
  * @member {Number} tax_consumption_value
  */
 ProductCommand.prototype['tax_consumption_value'] = undefined;
 
 /**
+ * Contains a list with ids of taxes associated to item.
  * @member {Array.<module:model/ProductTaxesCommand>} taxes
  */
 ProductCommand.prototype['taxes'] = undefined;
 
 /**
+ * Contains a list with 'prices list' of product. Every product can have up to 12 price list.
  * @member {Array.<module:model/PricesProducts>} prices
  */
 ProductCommand.prototype['prices'] = undefined;
 
 /**
+ * Represents the id of an unit of measurement, by default this field will be 94.
  * @member {String} unit
  */
 ProductCommand.prototype['unit'] = undefined;
 
 /**
+ * Represents Unit of measure for invoice printing.
  * @member {String} unit_label
  */
 ProductCommand.prototype['unit_label'] = undefined;
 
 /**
+ * Represents the Reference or factory code of the product or service.
  * @member {String} reference
  */
 ProductCommand.prototype['reference'] = undefined;
 
 /**
+ * Represents product description.
  * @member {String} description
  */
 ProductCommand.prototype['description'] = undefined;

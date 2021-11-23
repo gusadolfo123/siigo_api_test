@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The AdditionalFields model module.
  * @module model/AdditionalFields
- * @version 0.1.0
+ * @version v1
  */
 var AdditionalFields = /*#__PURE__*/function () {
   /**
@@ -87,22 +87,26 @@ var AdditionalFields = /*#__PURE__*/function () {
   return AdditionalFields;
 }();
 /**
+ * Represents the barcode.
  * @member {String} barcode
  */
 
 
 AdditionalFields.prototype['barcode'] = undefined;
 /**
+ * Represents the brand of product.
  * @member {String} brand
  */
 
 AdditionalFields.prototype['brand'] = undefined;
 /**
+ * Represents the tariff code of product.
  * @member {String} tariff
  */
 
 AdditionalFields.prototype['tariff'] = undefined;
 /**
+ * Represents the model of product.
  * @member {String} model
  */
 

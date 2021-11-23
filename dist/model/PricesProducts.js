@@ -31,7 +31,7 @@ var _PricesListProducts = _interopRequireDefault(require("./PricesListProducts")
 /**
  * The PricesProducts model module.
  * @module model/PricesProducts
- * @version 0.1.0
+ * @version v1
  */
 var PricesProducts = /*#__PURE__*/function () {
   /**
@@ -81,12 +81,14 @@ var PricesProducts = /*#__PURE__*/function () {
   return PricesProducts;
 }();
 /**
+ * Represents the currency code
  * @member {String} currency_code
  */
 
 
 PricesProducts.prototype['currency_code'] = undefined;
 /**
+ * Contains a price list
  * @member {Array.<module:model/PricesListProducts>} price_list
  */
 

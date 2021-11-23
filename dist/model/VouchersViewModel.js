@@ -35,7 +35,7 @@ var _VoucherViewModel = _interopRequireDefault(require("./VoucherViewModel"));
 /**
  * The VouchersViewModel model module.
  * @module model/VouchersViewModel
- * @version 0.1.0
+ * @version v1
  */
 var VouchersViewModel = /*#__PURE__*/function () {
   /**
@@ -95,6 +95,7 @@ var VouchersViewModel = /*#__PURE__*/function () {
 
 VouchersViewModel.prototype['pagination'] = undefined;
 /**
+ * Contains the Results, this results will be a list of Vouchers
  * @member {Array.<module:model/VoucherViewModel>} results
  */
 

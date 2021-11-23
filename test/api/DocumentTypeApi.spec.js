@@ -55,7 +55,7 @@
         try {
           result = await instance.getDocumentTypesWithHttpInfo({ type: 'FV' });
         } catch (error) {
-          throw error;
+          console.error(error);
         }
         expect(result.response.statusCode).to.be(200);
         expect(result.response.body[0].id).to.be(115057);

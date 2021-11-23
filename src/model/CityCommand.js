@@ -64,19 +64,19 @@ class CityCommand {
 }
 
 /**
- * Represents the city Code
+ * Represents the country Code.   For example, the code 'Co' to Colombia.
  * @member {String} country_code
  */
 CityCommand.prototype['country_code'] = undefined;
 
 /**
- * Represents the state code
+ * Represents the state code.   For example, the state code '19' to 'Cauca'.
  * @member {String} state_code
  */
 CityCommand.prototype['state_code'] = undefined;
 
 /**
- * Represents the city code
+ * Represents the city code.   For example, the code '19001' to 'Popayán'.
  * @member {String} city_code
  */
 CityCommand.prototype['city_code'] = undefined;

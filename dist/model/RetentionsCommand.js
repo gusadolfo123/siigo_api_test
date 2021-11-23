@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The RetentionsCommand model module.
  * @module model/RetentionsCommand
- * @version 0.1.0
+ * @version v1
  */
 var RetentionsCommand = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var RetentionsCommand = /*#__PURE__*/function () {
   return RetentionsCommand;
 }();
 /**
+ * Represents the id of the retention, the value of this field must be an integer  number that represents the unique id of the retention.
  * @member {Number} id
  */
 

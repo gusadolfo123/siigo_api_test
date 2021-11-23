@@ -35,7 +35,7 @@ var _TaxesCommand = _interopRequireDefault(require("./TaxesCommand"));
 /**
  * The Item model module.
  * @module model/Item
- * @version 0.1.0
+ * @version v1
  */
 var Item = /*#__PURE__*/function () {
   /**
@@ -103,6 +103,7 @@ var Item = /*#__PURE__*/function () {
 
 Item.prototype['account'] = undefined;
 /**
+ * Represents product description.
  * @member {String} description
  */
 
@@ -118,6 +119,7 @@ Item.prototype['due'] = undefined;
 
 Item.prototype['tax'] = undefined;
 /**
+ * Represents the price of item.  For example, '119000'.
  * @member {Number} value
  */
 

@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The PurchaseOrderCommand model module.
  * @module model/PurchaseOrderCommand
- * @version 0.1.0
+ * @version v1
  */
 var PurchaseOrderCommand = /*#__PURE__*/function () {
   /**
@@ -79,12 +79,14 @@ var PurchaseOrderCommand = /*#__PURE__*/function () {
   return PurchaseOrderCommand;
 }();
 /**
+ * Represent the prefix of order type.
  * @member {String} prefix
  */
 
 
 PurchaseOrderCommand.prototype['prefix'] = undefined;
 /**
+ * Represents the number of the purchase.
  * @member {String} number
  */
 

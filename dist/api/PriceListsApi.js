@@ -31,7 +31,7 @@ var _PriceListsViewModel = _interopRequireDefault(require("../model/PriceListsVi
 /**
 * PriceLists service.
 * @module api/PriceListsApi
-* @version 0.1.0
+* @version v1
 */
 var PriceListsApi = /*#__PURE__*/function () {
   /**
@@ -46,14 +46,14 @@ var PriceListsApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Get a list of Price Lists.
+   * Returns a list of price lists.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/PriceListsViewModel>} and HTTP response
    */
 
 
   (0, _createClass2["default"])(PriceListsApi, [{
-    key: "v1PriceListsGetWithHttpInfo",
-    value: function v1PriceListsGetWithHttpInfo() {
+    key: "getPriceListWithHttpInfo",
+    value: function getPriceListWithHttpInfo() {
       var postBody = null;
       var pathParams = {};
       var queryParams = {};
@@ -66,14 +66,14 @@ var PriceListsApi = /*#__PURE__*/function () {
       return this.apiClient.callApi('/v1/price-lists', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Get a list of Price Lists.
+     * Returns a list of price lists.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/PriceListsViewModel>}
      */
 
   }, {
-    key: "v1PriceListsGet",
-    value: function v1PriceListsGet() {
-      return this.v1PriceListsGetWithHttpInfo().then(function (response_and_data) {
+    key: "getPriceList",
+    value: function getPriceList() {
+      return this.getPriceListWithHttpInfo().then(function (response_and_data) {
         return response_and_data.data;
       });
     }

@@ -73,7 +73,7 @@ class CustomersViewModel {
 CustomersViewModel.prototype['pagination'] = undefined;
 
 /**
- * Contains the Results, this results will be a list of Customers
+ * Contains the Results, this results will be a list of Customers.
  * @member {Array.<module:model/CustomerViewModel>} results
  */
 CustomersViewModel.prototype['results'] = undefined;

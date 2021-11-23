@@ -2,16 +2,16 @@
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1WarehousesGet**](WarehousesApi.md#v1WarehousesGet) | **GET** /v1/warehouses | Gets a list of Warehouses.
+[**getWarehouse**](WarehousesApi.md#getWarehouse) | **GET** /v1/warehouses | Returns a list of warehouse.
 
 
 
 
-## v1WarehousesGet
+## getWarehouse
 
-> WarehouseViewModel v1WarehousesGet()
+> WarehouseViewModel getWarehouse()
 
-Gets a list of Warehouses.
+Returns a list of warehouse.
 
 ### Example
 
@@ -23,7 +23,7 @@ import * as SiigoApi from 'siigo_api';
 let apiInstance = new SiigoApi.WarehousesApi();
 
 
-apiInstance.v1WarehousesGet().then((data) => {
+apiInstance.getWarehouse().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -38,7 +38,7 @@ async function main(){
   try {
     let apiInstance = new SiigoApi.WarehousesApi();
 
-    const data = await apiInstance.v1WarehousesGet();
+    const data = await apiInstance.getWarehouse();
     console.log('API called successfully. Returned data: ' + data);
   } catch (error) {
     console.error(error);

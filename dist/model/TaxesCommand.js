@@ -29,7 +29,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 /**
  * The TaxesCommand model module.
  * @module model/TaxesCommand
- * @version 0.1.0
+ * @version v1
  */
 var TaxesCommand = /*#__PURE__*/function () {
   /**
@@ -75,6 +75,7 @@ var TaxesCommand = /*#__PURE__*/function () {
   return TaxesCommand;
 }();
 /**
+ * Represents the id of the tax, the value of this field must be an integer  number that represents the unique id of the tax.
  * @member {Number} id
  */
 

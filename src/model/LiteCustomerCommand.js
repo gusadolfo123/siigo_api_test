@@ -61,11 +61,13 @@ class LiteCustomerCommand {
 }
 
 /**
+ * Represents the identification number of customer.
  * @member {String} identification
  */
 LiteCustomerCommand.prototype['identification'] = undefined;
 
 /**
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 LiteCustomerCommand.prototype['branch_office'] = undefined;

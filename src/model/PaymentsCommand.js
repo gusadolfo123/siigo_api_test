@@ -64,16 +64,19 @@ class PaymentsCommand {
 }
 
 /**
+ * Represents the id of payment method
  * @member {Number} id
  */
 PaymentsCommand.prototype['id'] = undefined;
 
 /**
+ * represents the amount to paid per installment,  this value will be associated to payment method
  * @member {Number} value
  */
 PaymentsCommand.prototype['value'] = undefined;
 
 /**
+ * Represents the date of fee payment
  * @member {String} due_date
  */
 PaymentsCommand.prototype['due_date'] = undefined;

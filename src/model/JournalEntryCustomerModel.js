@@ -64,16 +64,19 @@ class JournalEntryCustomerModel {
 }
 
 /**
+ * Represents the unique Id of customer, this value must be a Guid  with the next format 00000000-0000-0000-0000-000000000000.
  * @member {String} id
  */
 JournalEntryCustomerModel.prototype['id'] = undefined;
 
 /**
+ * Represents the identification number of customer.
  * @member {String} identification
  */
 JournalEntryCustomerModel.prototype['identification'] = undefined;
 
 /**
+ * Represents the branch office number of the customer, default value will be 0.
  * @member {Number} branch_office
  */
 JournalEntryCustomerModel.prototype['branch_office'] = undefined;
